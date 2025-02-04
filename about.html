@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Trevisani - About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> 
+            <a class="logo" href="home.html">Dominic Trevisani</a>
+            </div>
+            <ul class="nav-links">
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="clientwork.html">Client Work</a></li>
+               <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+<div class="logo">Dominic Trevisani</div>
+<div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+</div>
+</nav>
+
+<!--Page Specific Code Starts Here-->
+
+<section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="about-me">About Me</div>
+</section>
+
+<!-- From Uiverse.io by ClawHack1 --> 
+
+<div class="contact-form">
+    <span class="heading">Need to Connect?</span>
+    <form class="form__contact">
+      <label for="name">Name:</label>
+      <input type="text" required="">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required="">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required=""></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
