@@ -419,10 +419,84 @@ section {
 
 
 
+/* Page Title */
+
+.page_title {
+    margin-top: 13vw;
+    text-align: center;
+}
+
+.page_title_text {
+    color: bisque;
+    font-size: 5vw;
+}
+
+
+
+/* Project Page */
+
+#projectpage {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/BerryBluePoster_SmallerFileSize.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+
+
+/* Project Body Copy */
+
+#projectinfo {
+    font-size: 1.25vw;
+    color: bisque;
+}
+
+.projectcopy a{
+    color:#E5AA70;
+    text-decoration: none;
+}
+
+.projectcopy a:hover{
+    color:beige;
+}
+
+#projectimages{
+    
+}
+
+
+
+/* Berryblue Poster Page */
+
+#berryblue_poster {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/BerryBluePoster_SmallerFileSize.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.berryblueimages img{
+    max-width: 50%;
+    max-height: 50%;    
+}
+
+
+
 /* About Me */
-
-
-
 
 #about {                                               /* Background Image */
     display: flex;
@@ -534,6 +608,7 @@ section {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
   }
+
 
 
 
