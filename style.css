@@ -432,7 +432,6 @@ section {
 }
 
 
-
 /* Project Page */
 
 #projectpage {                                               /* Background Image */
@@ -448,7 +447,194 @@ section {
     background-position: top;
 }
 
+#allprojects {
+    height: 65vw;
+}
 
+.allprojects-parent {
+    display: flex;
+}
+
+.allprojects-parent a{
+    text-decoration: none;
+}
+
+/* Projects Boxes */
+
+   /* 1 */ .project1 {
+        width: 24vw;
+        height: 24vw;
+        border-radius: 3vw;
+        cursor: pointer;
+        margin: 1vw;
+        transition: 300ms;
+        text-align: right;
+        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-size: contain;
+}
+    
+    .project1:hover {
+        transform: scale(1.05);
+}
+    
+     /* 2 */ .project2 {
+        width: 24vw;
+        height: 24vw;
+        border-radius: 3vw;
+        cursor: pointer;
+        margin: 1vw;
+        transition: 300ms;
+        text-align: right;
+        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-size: contain;
+}
+    
+    .project2:hover {
+        transform: scale(1.05);
+}
+    
+     /* 3 */ .project3 {
+        width: 24vw;
+        height: 24vw;
+        border-radius: 3vw;
+        cursor: pointer;
+        margin: 1vw;
+        transition: 300ms;
+        text-align: right;
+        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-size: contain;
+}
+    
+    .project3:hover {
+        transform: scale(1.05);
+}
+
+   /* 4 */ .project4 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-size: contain;
+}
+
+.project4:hover {
+    transform: scale(1.05);
+}
+
+ /* 5 */ .project5 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-size: contain;
+}
+
+.project5:hover {
+    transform: scale(1.05);
+}
+
+ /* 6 */ .project6 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-size: contain;
+}
+
+.project6:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Client Work Page */
+
+#clientworkpage {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/BerryBluePoster_SmallerFileSize.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#clientwork {
+    height: 65vw;
+}
+
+.clientwork-parent {
+    display: flex;
+}
+
+.clientwork-parent a{
+    text-decoration: none;
+}
+
+/* Client Work Boxes */
+
+   /* 1 */ .client1 {
+        width: 24vw;
+        height: 24vw;
+        border-radius: 3vw;
+        cursor: pointer;
+        margin: 1vw;
+        transition: 300ms;
+        text-align: right;
+        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-size: contain;
+}
+    
+    .client1:hover {
+        transform: scale(1.05);
+}
+    
+     /* 2 */ .client2 {
+        width: 24vw;
+        height: 24vw;
+        border-radius: 3vw;
+        cursor: pointer;
+        margin: 1vw;
+        transition: 300ms;
+        text-align: right;
+        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-size: contain;
+}
+    
+    .client2:hover {
+        transform: scale(1.05);
+}
+    
+     /* 3 */ .client3 {
+        width: 24vw;
+        height: 24vw;
+        border-radius: 3vw;
+        cursor: pointer;
+        margin: 1vw;
+        transition: 300ms;
+        text-align: right;
+        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-size: contain;
+}
+    
+    .client3:hover {
+        transform: scale(1.05);
+}
 
 
 
@@ -468,9 +654,6 @@ section {
     color:beige;
 }
 
-#projectimages{
-    
-}
 
 
 
@@ -489,11 +672,21 @@ section {
     background-position: top;
 }
 
-.berryblueimages img{
-    max-width: 50%;
-    max-height: 50%;    
+.projectcopy img{
+    max-width: 40%;
+    max-height: 40%;    
+    padding: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vw;
+    display: block;
+    transition: 300ms;
 }
 
+.projectcopy img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
 
 
 /* About Me */
@@ -634,12 +827,14 @@ footer{
 .socialIcons a{
     text-decoration: none;
     background-color:#E5AA70;
-    margin: 0.5vw;
-    border-radius: 50%;
+    margin-top: 1.5vw;
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
+    border-radius: 100%;
 }
 
 .socialIcons a i{
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     padding: .75vw;
     color:#6F4E37;
     opacity: 1;
