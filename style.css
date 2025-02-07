@@ -325,7 +325,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
     background-size: contain;
 }
 
@@ -341,7 +341,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
     background-size: contain;
 }
 
@@ -357,7 +357,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/BerryBluePoster_SmallerFileSize.png);       /* Update Here */
+    background-image: url(./assets/BerryBlue/BerryBluePoster.png);       /* Update Here */
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -374,7 +374,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/11x17Poster_Text.png);       /* Update Here */
+    background-image: url(./assets/Clients/Hamlet/11x17Poster_Text.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -408,7 +408,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
+    background-image: url(./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -441,7 +441,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/BerryBluePoster_SmallerFileSize.png);
+    background-image: url(./assets/ProjectsHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -469,7 +469,7 @@ section {
         margin: 1vw;
         transition: 300ms;
         text-align: right;
-        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-image: url(./assets/Placeholder.png);       /* Update Here */
         background-size: contain;
 }
     
@@ -485,8 +485,8 @@ section {
         margin: 1vw;
         transition: 300ms;
         text-align: right;
-        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
-        background-size: contain;
+        background-image: url(./assets/BerryBlue/BerryBluePoster.png);       /* Update Here */
+        background-size: cover;
 }
     
     .project2:hover {
@@ -501,7 +501,7 @@ section {
         margin: 1vw;
         transition: 300ms;
         text-align: right;
-        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-image: url(./assets/Placeholder.png);       /* Update Here */
         background-size: contain;
 }
     
@@ -517,7 +517,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
     background-size: contain;
 }
 
@@ -533,7 +533,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-image: url(./assets/Planty/PlantyAppIconSquare.png);       /* Update Here */
     background-size: contain;
 }
 
@@ -549,13 +549,92 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: cover;
+}
+
+
+/* 7 */ .project7 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/DigitalPaintings/Apples.png);       /* Update Here */
+    background-size: cover;
+}
+
+.project7:hover {
+    transform: scale(1.05);
+}
+
+ /* 8 */ .project8 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/LittleSouls/LittleSouls.png);       /* Update Here */
     background-size: contain;
 }
 
-.project6:hover {
+.project8:hover {
     transform: scale(1.05);
 }
+
+ /* 9 */ .project9 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: cover;
+}
+
+
+.project9:hover {
+    transform: scale(1.05);
+}
+
+/* 10 */ .project10 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: contain;
+}
+
+.project10:hover {
+    transform: scale(1.05);
+}
+
+ /* 11 */ .project11 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin: 1vw;
+    transition: 300ms;
+    text-align: right;
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: cover;
+}
+
+.project11:hover {
+    transform: scale(1.05);
+}
+
 
 
 
@@ -568,7 +647,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/BerryBluePoster_SmallerFileSize.png);
+    background-image: url(./assets/ClientsHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -596,7 +675,7 @@ section {
         margin: 1vw;
         transition: 300ms;
         text-align: right;
-        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-image: url(./assets/Placeholder.png);       /* Update Here */
         background-size: contain;
 }
     
@@ -612,7 +691,7 @@ section {
         margin: 1vw;
         transition: 300ms;
         text-align: right;
-        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
+        background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
         background-size: contain;
 }
     
@@ -628,8 +707,8 @@ section {
         margin: 1vw;
         transition: 300ms;
         text-align: right;
-        background-image: url(./assets/VSTU_Pattern.png);       /* Update Here */
-        background-size: contain;
+        background-image: url(./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
+        background-size: cover;
 }
     
     .client3:hover {
@@ -654,24 +733,6 @@ section {
     color:beige;
 }
 
-
-
-
-/* Berryblue Poster Page */
-
-#berryblue_poster {                                               /* Background Image */
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(./assets/BerryBluePoster_SmallerFileSize.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-}
-
 .projectcopy img{
     max-width: 40%;
     max-height: 40%;    
@@ -689,18 +750,107 @@ section {
 }
 
 
+/* Berryblue Poster Page */
+
+#berryblue_poster {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/BerryBlue/BerryBluePoster.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Planty Page */
+
+#planty {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Planty/PlantyMockups.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.plantycopy p{
+    color: bisque;
+}
+
+.plantycopy h1{
+    font-size:2.5vw;
+    text-align:center;
+}
+
+.plantycopy a{
+    color:#E5AA70;
+    text-decoration: none;
+}
+
+.plantycopy a:hover{
+    color:beige;
+}
+
+.plantycopy img{
+    max-width: 90%;
+    max-height: 90%;
+    margin-left:0.25vw;
+    margin-right:0.25vw;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.plantycopy img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.plantycopy table{
+    padding-bottom:2vw;
+}
+
+.plantyimg2 {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    max-height: 70%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top:1.5vw;
+    padding-bottom: 2vw;
+    transition: 300ms;
+    cursor:pointer;
+   
+}
+
+.plantyimg2:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
 /* About Me */
 
 #about {                                               /* Background Image */
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 45vw;
+    height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/WebsiteHeader.png);
+    background-image: url(./assets/AboutMeHeader.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top;
 }
 
