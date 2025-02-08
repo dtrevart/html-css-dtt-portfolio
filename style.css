@@ -553,6 +553,9 @@ section {
     background-size: cover;
 }
 
+.project6:hover {
+    transform: scale(1.05);
+}
 
 /* 7 */ .project7 {
     width: 24vw;
@@ -594,7 +597,7 @@ section {
     margin: 1vw;
     transition: 300ms;
     text-align: right;
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-image: url(./assets/Brochure/BrochureIcon.png);       /* Update Here */
     background-size: cover;
 }
 
@@ -733,6 +736,11 @@ section {
     color:beige;
 }
 
+.projectcopy h1{
+    font-size:2.5vw;
+    text-align:center;
+}
+
 .projectcopy img{
     max-width: 40%;
     max-height: 40%;    
@@ -759,7 +767,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/BerryBlue/BerryBluePoster.png);
+    background-image: url(./assets/BerryBlue/BerryBlueHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -776,7 +784,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Planty/PlantyMockups.png);
+    background-image: url(./assets/Planty/PlantyHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -837,6 +845,55 @@ section {
 .plantyimg2:hover{
     transform: scale(1.05);
     transition: 300ms;
+}
+
+
+
+/* Brochure Page */
+
+#brochure {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Brochure/BrochureHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.brochure img{
+    max-width: 95%;
+    max-height: 95%;
+    margin-left:0.25vw;
+    margin-right:0.25vw;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.brochure img:hover {
+    transform: scale(1.05);
+}
+
+.brochure table{
+    margin-left: 0.5vw;
+}
+
+.brochure2 img{
+    margin-left: 0.75vw;
+    max-width: 97.5%;
+    max-height: 97.5%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.brochure2 img:hover {
+    transform: scale(1.05);
 }
 
 /* About Me */
