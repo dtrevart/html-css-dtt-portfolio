@@ -15,6 +15,11 @@ body {
     background-color: #483C32;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     color: bisque;
 }
@@ -40,8 +45,7 @@ nav,
 display: flex;
 }
 
-nav {                                                       /* NavBar */
- justify-content: space-around;   
+nav {                                                       /* NavBar */  
  align-items: center;
  height: 12vh;
  position: fixed;
@@ -51,9 +55,11 @@ nav {                                                       /* NavBar */
 }
 
 .nav-links {
-    gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.3vw;
+    gap: 1.5vw;
+    white-space: nowrap;
+    padding-left: 58.5vw;
 }
 
 a {
@@ -73,6 +79,9 @@ a:hover {
     font-size: 2vw;
     text-decoration: none;
     cursor:pointer;
+    text-align: left;
+    margin-left: 2.5%;
+    white-space: nowrap;
 }
 
 .logo:hover {
@@ -98,20 +107,23 @@ a:hover {
     height: 24px;
     width: 30px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: bisque;
     transition: all 0.3 ease-in-out;
+    z-index: 2;
 }
 
 .menu-links {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: black;
+    opacity: 0.5;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -123,7 +135,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: bisque;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -158,6 +170,19 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+/* Hamburger Overlay */
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: none; 
+    z-index: 999; 
 }
 
 /* Sections */
@@ -278,10 +303,15 @@ section {
 
 .recent-projects-header-text {
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .recent-project-parent {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 2vw;
+    margin-top: 2vw;
+    justify-content: center;
 }
 
 .recent-project-parent a{
@@ -293,7 +323,7 @@ section {
     height:100%;
     top:0;
     left:0;
-     border-radius: 3vw;
+    border-radius: 12.5%;
     background:rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
@@ -315,104 +345,65 @@ section {
 
 /* Recent Project Displays */
 
-
-
-/* 1 */ .box1 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 12.5%;
     cursor: pointer;
-    margin: 1vw;
     transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
     background-size: contain;
 }
 
+
+/* 1 */ .box1 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+}
 .box1:hover {
     transform: scale(1.05);
 }
 
-/* 2 */ .box2 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
-    background-size: contain;
-}
 
+/* 2 */ .box2 {
+    background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
+}
 .box2:hover {
     transform: scale(1.05);
 }
 
+
 /* 3 */ .box3 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
     background-image: url(./assets/BerryBlue/BerryBluePoster.png);       /* Update Here */
     background-size:cover;
     background-repeat: no-repeat;
 }
-
 .box3:hover {
     transform: scale(1.05);
 }
 
+
 /* 4 */ .box4 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
     background-image: url(./assets/Clients/Hamlet/11x17Poster_Text.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .box4:hover {
     transform: scale(1.05);
 }
 
 /* 5 */ .box5 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
     background-image: url(./assets/CocoCritters/CocoCritters_Render.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .box5:hover {
     transform: scale(1.05);
 }
 
 /* 6 */ .box6 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
     background-image: url(./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .box6:hover {
     transform: scale(1.05);
 }
@@ -894,6 +885,176 @@ section {
 
 .brochure2 img:hover {
     transform: scale(1.05);
+}
+
+
+
+/* Dead By Daylight Poster Collection */
+
+#dbd_posters {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Cookbook Pages */
+
+#cookbook {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* CoCoCritters */
+
+#cococritters {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Magazine Layout */
+
+#magazinepages {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Apple Still Life */
+
+#apples {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Omori Playing Cards */
+
+#omori_cards {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* STAX */
+
+#stax {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Hamlet Posters */
+
+#hamlet_poster {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* VTSU Wellness Center */
+
+#vtsu_wellness {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Student Voter Drive */
+
+#student_voter_drive {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 /* About Me */

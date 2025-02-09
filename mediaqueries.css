@@ -1,8 +1,37 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav {
         display: flex;
+        justify-content: space-between; /* Keeps logo and menu in place */
+        align-items: center;
+        padding: 2vw 4vw;
+        width: 100%; /* Ensures full-width navbar */
+        height: 13vw; /* Adjust height to avoid cutting */
+        color: bisque;
+        box-sizing: border-box; /* Prevents overflow from padding */
+        position: relative;
     }
+
+    .logo {
+        font-size: 5vw;
+        padding-right: 5vw;
+        white-space: nowrap; /* Prevents text from breaking */
+    }
+
+    .hamburger-menu {
+        font-size: 5vw;
+        cursor: pointer;
+        position: absolute;
+        right: 5vw; /* Keeps it inside the navbar */
+        top: 50%;
+        transform: translateY(-50%); /* Centers it vertically */
+    }
+
+    footer {
+        padding: 1rem; /* Adjust padding if needed */
+    }
+
 }
