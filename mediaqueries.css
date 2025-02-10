@@ -30,8 +30,105 @@
         transform: translateY(-50%); /* Centers it vertically */
     }
 
-    footer {
-        padding: 1rem; /* Adjust padding if needed */
+    /* Projects */
+
+    #projectinfo {
+        padding: 3vw;
+        margin: 0 auto;
+        height: 50vw;
     }
 
+    .page_title {
+        margin-top:0;
+    }
+
+    .page_title h1{
+        font-size: 7.5vw;
+        margin-top: none;
+    }
+
+    .projectcopy {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+    .projectcopy h1{
+        font-size: 7.5vw;
+        text-align: center;
+    }
+    .projectcopy img{
+        max-width: 75%;
+        max-height: 75%;    
+        padding: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10vw;
+        display: block;
+        transition: 300ms;
+    }
+
+    /* Planty */
+
+    .plantycopy {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+
+    .plantycopy h1{
+        font-size:7.5vw;
+        text-align:center;
+    }
+
+    /* Magazine Pages */
+    .magazinecopy {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+    .magazinecopy h1{
+        font-size:7.5vw;
+        text-align:center;
+    }
+    .magazineimg2 {
+        height: 50vw;
+    }
+
+    /* Brochure */
+    .brochure2 {
+        height: 68vw;
+    }
+
+    /* Little Souls */
+    .mobile-filler {
+        height: 29.75vw;
+    }
+
+    /* Footer Adjustmnets */
+
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+    }
+    .socialIcons a{
+        height: 5vw;    
+        width: 5vw;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-size: 2vw;
+    }
+    .socialIcons a i{
+      height: 2vw;
+      width: 2vw;
+      font-size: 3vw;
+      padding-top: 1vw;
+      padding-right: 1.5vw;
+    }
+    .footerNav ul li a{
+        font-size: 2vw;
+    }
+    .footerBottom {
+        padding: 1vw;
+    }
+    .footerBottom p{
+        font-size: 1.25vw;
+    }
 }

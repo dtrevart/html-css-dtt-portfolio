@@ -634,6 +634,10 @@ section {
     color: bisque;
 }
 
+.projectcopy p{
+    color: bisque;
+}
+
 .projectcopy a{
     color:#E5AA70;
     text-decoration: none;
@@ -1006,11 +1010,68 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/Clients/VTSU_Wellness/VTSUHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
+
+.wellness-copy p{
+    color: bisque;
+}
+
+.wellness-copy h1{
+    font-size:2.5vw;
+    text-align:center;
+}
+
+.wellness-copy a{
+    color:#E5AA70;
+    text-decoration: none;
+}
+
+.wellness-copy a:hover{
+    color:beige;
+}
+
+.wellness-copy img{
+    max-width: 97.5%;
+    max-height: 97.5%;
+    margin-left:0.25vw;
+    margin-right:0.25vw;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.wellness-copy img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.wellness-copy table{
+    padding-bottom:2vw;
+}
+
+.plantyimg2 {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    max-height: 70%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top:1.5vw;
+    padding-bottom: 2vw;
+    transition: 300ms;
+    cursor:pointer;
+}
+
+.plantyimg2:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
 
 
 
@@ -1028,6 +1089,133 @@ section {
     background-size: cover;
     background-position: top;
 }
+
+
+
+/* Lego Projects Page */
+
+#legopage {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/ClientsHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#legoprojects {
+    height: 65vw;
+}
+
+.lego-projects-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 2vw;
+    margin-top: 2vw;
+    justify-content: center;
+}
+
+.lego-projects-parent a{
+    text-decoration: none;
+}
+
+/* Client Work Boxes */
+
+.lego1, .lego2, .lego3, .lego4, .lego5, .lego6 {
+    width: 25vw;
+   height: 25vw;
+   border-radius: 12.5%;
+   cursor: pointer;
+   transition: 300ms;
+   background-size: contain;
+}
+
+
+
+/* 1 */ .lego1 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: contain;
+}    
+.lego1:hover {
+    transform: scale(1.05);
+}
+    
+ /* 2 */ .lego2 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */ 
+}    
+.lego2:hover {
+    transform: scale(1.05);
+}
+
+ /* 3 */ .lego3 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: cover;
+}
+.lego3:hover {
+    transform: scale(1.05);
+}
+
+/* 4 */ .lego4 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: contain;
+}    
+.lego4:hover {
+    transform: scale(1.05);
+}
+    
+ /* 5 */ .lego5 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: contain;
+}    
+.lego5:hover {
+    transform: scale(1.05);
+}
+    
+ /* 6 */ .lego6 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: cover;
+}
+.lego6:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Astarion Brickheadz */
+
+#astarionbrickheadz {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Minecraft House Diorama */
+
+#housediorama {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/DisplayHouseHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
 
 /* About Me */
 
@@ -1056,8 +1244,11 @@ section {
     background-color: #483C32;
     padding: 20px;
     border-radius: 10px;
-    display:inline-block;
-    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
   
   .contact-form label {
