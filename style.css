@@ -59,7 +59,7 @@ nav {                                                       /* NavBar */
     font-size: 1.3vw;
     gap: 1.5vw;
     white-space: nowrap;
-    padding-left: 58.5vw;
+    padding-left: 52.5vw;
 }
 
 a {
@@ -439,11 +439,15 @@ section {
 }
 
 #allprojects {
-    height: 65vw;
+    height: 120vw;
 }
 
 .allprojects-parent {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 2vw;
+    margin-top: 2vw;
+    justify-content: center;
 }
 
 .allprojects-parent a{
@@ -452,182 +456,103 @@ section {
 
 /* Projects Boxes */
 
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10, .project11 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: contain;
+}
+
+
    /* 1 */ .project1 {
-        width: 24vw;
-        height: 24vw;
-        border-radius: 3vw;
-        cursor: pointer;
-        margin: 1vw;
-        transition: 300ms;
-        text-align: right;
         background-image: url(./assets/Placeholder.png);       /* Update Here */
         background-size: contain;
-}
-    
+    }
     .project1:hover {
         transform: scale(1.05);
-}
+    }
     
      /* 2 */ .project2 {
-        width: 24vw;
-        height: 24vw;
-        border-radius: 3vw;
-        cursor: pointer;
-        margin: 1vw;
-        transition: 300ms;
-        text-align: right;
         background-image: url(./assets/BerryBlue/BerryBluePoster.png);       /* Update Here */
         background-size: cover;
-}
-    
+    }
     .project2:hover {
         transform: scale(1.05);
-}
+    }
     
      /* 3 */ .project3 {
-        width: 24vw;
-        height: 24vw;
-        border-radius: 3vw;
-        cursor: pointer;
-        margin: 1vw;
-        transition: 300ms;
-        text-align: right;
         background-image: url(./assets/Placeholder.png);       /* Update Here */
         background-size: contain;
-}
-    
+    }
     .project3:hover {
         transform: scale(1.05);
-}
+    }
 
    /* 4 */ .project4 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
-    background-size: contain;
-}
+        background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.png);       /* Update Here */
+        background-size: contain;
+    }
+    .project4:hover {
+        transform: scale(1.05);
+    }
 
-.project4:hover {
-    transform: scale(1.05);
-}
+    /* 5 */ .project5 {
+        background-image: url(./assets/Planty/PlantyAppIconSquare.png);       /* Update Here */
+        background-size: contain;
+    }
+    .project5:hover {
+        transform: scale(1.05);
+    }
 
- /* 5 */ .project5 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Planty/PlantyAppIconSquare.png);       /* Update Here */
-    background-size: contain;
-}
+    /* 6 */ .project6 {
+        background-image: url(./assets/MagazinePages/MagazineThumbnail.png);       /* Update Here */
+        background-size: cover;
+    }
+    .project6:hover {
+        transform: scale(1.05);
+    }
 
-.project5:hover {
-    transform: scale(1.05);
-}
+    /* 7 */ .project7 {
+        background-image: url(./assets/DigitalPaintings/AppleThumbnail.png);       /* Update Here */
+        background-size: cover;
+    }
+    .project7:hover {
+        transform: scale(1.05);
+    }
 
- /* 6 */ .project6 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
-    background-size: cover;
-}
+    /* 8 */ .project8 {
+        background-image: url(./assets/LittleSouls/LittleSouls.png);       /* Update Here */
+        background-size: contain;
+    }
+    .project8:hover {
+        transform: scale(1.05);
+    }
 
-.project6:hover {
-    transform: scale(1.05);
-}
+    /* 9 */ .project9 {
+        background-image: url(./assets/Brochure/BrochureIcon.png);       /* Update Here */
+        background-size: cover;
+    }
+    .project9:hover {
+        transform: scale(1.05);
+    }
 
-/* 7 */ .project7 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/DigitalPaintings/Apples.png);       /* Update Here */
-    background-size: cover;
-}
+    /* 10 */ .project10 {
+        background-image: url(./assets/Placeholder.png);       /* Update Here */
+        background-size: contain;
+    }
+    .project10:hover {
+        transform: scale(1.05);
+    }
 
-.project7:hover {
-    transform: scale(1.05);
-}
-
- /* 8 */ .project8 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/LittleSouls/LittleSouls.png);       /* Update Here */
-    background-size: contain;
-}
-
-.project8:hover {
-    transform: scale(1.05);
-}
-
- /* 9 */ .project9 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Brochure/BrochureIcon.png);       /* Update Here */
-    background-size: cover;
-}
-
-
-.project9:hover {
-    transform: scale(1.05);
-}
-
-/* 10 */ .project10 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
-    background-size: contain;
-}
-
-.project10:hover {
-    transform: scale(1.05);
-}
-
- /* 11 */ .project11 {
-    width: 24vw;
-    height: 24vw;
-    border-radius: 3vw;
-    cursor: pointer;
-    margin: 1vw;
-    transition: 300ms;
-    text-align: right;
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
-    background-size: cover;
-}
-
-.project11:hover {
-    transform: scale(1.05);
-}
+    /* 11 */ .project11 {
+        background-image: url(./assets/Placeholder.png);       /* Update Here */
+        background-size: cover;
+    }
+    .project11:hover {
+        transform: scale(1.05);
+    }
 
 
 
@@ -652,7 +577,11 @@ section {
 }
 
 .clientwork-parent {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 2vw;
+    margin-top: 2vw;
+    justify-content: center;
 }
 
 .clientwork-parent a{
@@ -661,52 +590,39 @@ section {
 
 /* Client Work Boxes */
 
-   /* 1 */ .client1 {
-        width: 24vw;
-        height: 24vw;
-        border-radius: 3vw;
-        cursor: pointer;
-        margin: 1vw;
-        transition: 300ms;
-        text-align: right;
-        background-image: url(./assets/Placeholder.png);       /* Update Here */
-        background-size: contain;
+.client1, .client2, .client3 {
+    width: 25vw;
+   height: 25vw;
+   border-radius: 12.5%;
+   cursor: pointer;
+   transition: 300ms;
+   background-size: contain;
+}
+
+
+
+/* 1 */ .client1 {
+    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.png);       /* Update Here */
+    background-size: contain;
+}    
+.client1:hover {
+    transform: scale(1.05);
 }
     
-    .client1:hover {
-        transform: scale(1.05);
+ /* 2 */ .client2 {
+    background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
+    background-size: contain;
+}    
+.client2:hover {
+    transform: scale(1.05);
 }
     
-     /* 2 */ .client2 {
-        width: 24vw;
-        height: 24vw;
-        border-radius: 3vw;
-        cursor: pointer;
-        margin: 1vw;
-        transition: 300ms;
-        text-align: right;
-        background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
-        background-size: contain;
+ /* 3 */ .client3 {
+    background-image: url(./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
+    background-size: cover;
 }
-    
-    .client2:hover {
-        transform: scale(1.05);
-}
-    
-     /* 3 */ .client3 {
-        width: 24vw;
-        height: 24vw;
-        border-radius: 3vw;
-        cursor: pointer;
-        margin: 1vw;
-        transition: 300ms;
-        text-align: right;
-        background-image: url(./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
-        background-size: cover;
-}
-    
-    .client3:hover {
-        transform: scale(1.05);
+.client3:hover {
+    transform: scale(1.05);
 }
 
 
@@ -830,7 +746,6 @@ section {
     padding-bottom: 2vw;
     transition: 300ms;
     cursor:pointer;
-   
 }
 
 .plantyimg2:hover{
@@ -932,7 +847,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/CocoCritters/CocoCrittersHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -949,13 +864,54 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/MagazinePages/MagazineHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
+.magazinecopy h1{
+    font-size:2.5vw;
+    text-align:center;
+}
 
+.magazinecopy img{
+    max-width: 90%;
+    max-height: 90%;
+    margin-left:0.25vw;
+    margin-right:0.25vw;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.magazinecopy img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.magazinecopy table{
+    padding-bottom:2vw;
+}
+
+.magazineimg2 img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    max-height: 70%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top:1.5vw;
+    padding-bottom: 2vw;
+    transition: 300ms;
+    cursor:pointer;
+}
+
+.magazineimg2 img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
 
 /* Apple Still Life */
 
@@ -966,7 +922,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/DigitalPaintings/ApplesHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1008,6 +964,22 @@ section {
 
 
 
+/* Little Souls */
+
+#little_souls {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/LittleSouls/LittleSoulsHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
 /* Hamlet Posters */
 
 #hamlet_poster {
@@ -1017,7 +989,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/Clients/Hamlet/HamletHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
