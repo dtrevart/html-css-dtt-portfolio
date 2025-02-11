@@ -1101,7 +1101,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/ClientsHeader.png);
+    background-image: url(./assets/LegoHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1145,7 +1145,7 @@ section {
 }
     
  /* 2 */ .lego2 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */ 
+    background-image: url(./assets/LEGO/Brickheadz/Astarion/AstarionThumbnail.png);       /* Update Here */ 
 }    
 .lego2:hover {
     transform: scale(1.05);
@@ -1160,7 +1160,7 @@ section {
 }
 
 /* 4 */ .lego4 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellThumbnail.png);       /* Update Here */
     background-size: contain;
 }    
 .lego4:hover {
@@ -1186,7 +1186,6 @@ section {
 
 
 /* Astarion Brickheadz */
-
 #astarionbrickheadz {
     display: flex;
     justify-content: center;
@@ -1194,14 +1193,13 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/LEGO/Brickheadz/Astarion/AstarionHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
 /* Minecraft House Diorama */
-
 #housediorama {
     display: flex;
     justify-content: center;
@@ -1215,7 +1213,47 @@ section {
     background-position: top;
 }
 
+/* The Bridge */
+#the-bridge {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 
+/* Bee House (Game Scale) */
+#bee-house {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Buffalo Bills Wall Art */
+#bills-art {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 
 /* About Me */
 
