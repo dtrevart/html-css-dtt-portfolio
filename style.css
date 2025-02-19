@@ -12,7 +12,7 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    background-color: #483C32;
+    background-color: #534e46;
 }
 
 body, html {
@@ -21,7 +21,7 @@ body, html {
 }
 
 .logo {
-    color: bisque;
+    color: #F2E5D7;
 }
 
 html {
@@ -29,7 +29,7 @@ html {
 }
 
 p {
-    color: beige;
+    color: #F2E5D7;
 }
 
 /* Transition */
@@ -40,8 +40,7 @@ a, .btn {
 
 /* Desktop Navigation */
 
-nav,
-.nav-links {
+nav, .nav-links {
 display: flex;
 }
 
@@ -49,7 +48,7 @@ nav {                                                       /* NavBar */
  align-items: center;
  height: 12vh;
  position: fixed;
- background-color: #6F4E37;
+ background-color: #262322;
  width: 100%;
  z-index: 1;
 }
@@ -63,16 +62,18 @@ nav {                                                       /* NavBar */
 }
 
 a {
-    color: #EADDCA; 
+    color: #F2E5D7; 
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: #F2E5D7;
+    transition: 300ms ease;
 }
 
 a:hover {
-    color: bisque;
+    color: #7C886D;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: bisque;
+    text-decoration-color: #7C886D;
+    transition: 300ms ease;
 }
 
 .logo {
@@ -113,7 +114,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: bisque;
+    background-color: F2E5D7;
     transition: all 0.3 ease-in-out;
     z-index: 2;
 }
@@ -135,7 +136,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: bisque;
+    color: #F2E5D7;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -229,19 +230,19 @@ section {
     text-align: center;
     font-size: 1.1vw;
     margin-bottom: -0.25vw;
-    color:#483C32;
+    color:#262322;
 }
 
 .section__text__p2 {
     font-size: 1.75vw;
     margin-bottom: 1vw;
     margin-top: -0.25vw;
-    color:#483C32;
+    color:#262322;
 }
 
 .title {
     font-size: 3vw;
-    color: #EADDCA;
+    color: #F2E5D7;
     text-align: center;
 }
 
@@ -279,16 +280,16 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: #6F4E37 0.1rem solid;
-    background:#6F4E37;
-    color: beige;
+    border: #262322 0.1rem solid;
+    background:#262322;
+    color: #E5DFE5;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
     cursor: pointer;
-    background: #E5AA70;
-    color: #6F4E37;
+    background: #ABB3A0;
+    color: #262322;
 }
 
 .btn-container {
@@ -330,7 +331,7 @@ section {
     align-items: center;
     flex-direction:column;
     opacity: 0;
-    color: beige;
+    color: #F2E5D7;
     font-size: 2vw;
     font-weight:500;
     transition: 300ms;
@@ -382,7 +383,7 @@ section {
 
 
 /* 4 */ .box4 {
-    background-image: url(./assets/Clients/Hamlet/11x17Poster_Text.png);       /* Update Here */
+    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -391,7 +392,7 @@ section {
 }
 
 /* 5 */ .box5 {
-    background-image: url(./assets/CocoCritters/CocoCritters_Render.png);       /* Update Here */
+    background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -418,7 +419,7 @@ section {
 }
 
 .page_title_text {
-    color: bisque;
+    color: #F2E5D7;
     font-size: 5vw;
 }
 
@@ -631,20 +632,20 @@ section {
 
 #projectinfo {
     font-size: 1.25vw;
-    color: bisque;
+    color: #F2E5D7;
 }
 
 .projectcopy p{
-    color: bisque;
+    color: #F2E5D7;
 }
 
 .projectcopy a{
-    color:#E5AA70;
+    color:#E8D0B7;
     text-decoration: none;
 }
 
 .projectcopy a:hover{
-    color:beige;
+    color:#A1AB96;
 }
 
 .projectcopy h1{
@@ -702,7 +703,7 @@ section {
 }
 
 .plantycopy p{
-    color: bisque;
+    color: F2E5D7;
 }
 
 .plantycopy h1{
@@ -711,12 +712,12 @@ section {
 }
 
 .plantycopy a{
-    color:#E5AA70;
+    color:#E8D0B7;
     text-decoration: none;
 }
 
 .plantycopy a:hover{
-    color:beige;
+    color: #A1AB96;
 }
 
 .plantycopy img{
@@ -1017,7 +1018,7 @@ section {
 }
 
 .wellness-copy p{
-    color: bisque;
+    color: #F2E5D7;
 }
 
 .wellness-copy h1{
@@ -1026,12 +1027,12 @@ section {
 }
 
 .wellness-copy a{
-    color:#E5AA70;
-    text-decoration: none;
+    color:#E8D0B7;
 }
 
 .wellness-copy a:hover{
-    color:beige;
+    color:#ABB3A0;
+    text-decoration: none;
 }
 
 .wellness-copy img{
@@ -1290,12 +1291,12 @@ section {
   }
   
   .contact-form label {
-    color: bisque;
+    color: #F2E5D7;
   }
   
   .contact-form .heading {
     font-size: 2.5vw;
-    color: bisque;
+    color: #F2E5D7;
     margin-bottom: .25vw;
     font-weight:550;
     display: block;
@@ -1324,7 +1325,7 @@ section {
     width: 30vw;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: bisque;
+    background-color: #F2E5D7;
     font-family: Outfit;
   }
 
@@ -1342,21 +1343,21 @@ section {
     width: 30vw;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: bisque;
+    background-color: #F2E5D7;
     font-family: Outfit;
   }
   
   .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
-    box-shadow: 0 0 5px beige;
+    box-shadow: 0 0 5px #E5DFE5;
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     font-family: Outfit;
   }
   
   .contact-form button[type="submit"] {
-    background-color: bisque;
-    color: #6F4E37;
+    background-color: #F2E5D7;
+    color: #262322;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -1368,7 +1369,7 @@ section {
   
   .contact-form button[type="submit"]:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
   }
 
 
@@ -1379,13 +1380,13 @@ section {
 
 
 footer{
-    background-color:#6F4E37;
+    background-color:#262322;
 }
 
 .footer-container{
     width: 100%;
     margin:auto;
-    background-color:#6F4E37;
+    background-color:#262322;
 }
 
 .socialIcons{
@@ -1395,7 +1396,7 @@ footer{
 
 .socialIcons a{
     text-decoration: none;
-    background-color:#E5AA70;
+    background-color:#F2E5D7;
     margin-top: 1.5vw;
     margin-left: 0.75vw;
     margin-right: 0.75vw;
@@ -1405,18 +1406,13 @@ footer{
 .socialIcons a i{
     font-size: 1.5vw;
     padding: .75vw;
-    color:#6F4E37;
+    color:#262322;
     opacity: 1;
 }
 
 .socialIcons a:hover{
-    background-color:bisque;
+    background-color: #7C886D;
     transition: 300ms;
-    border-radius: 50%;
-}
-
-.socialIcons a:hover i{
-    background-color:bisque;
     border-radius: 50%;
 }
 
@@ -1431,16 +1427,15 @@ footer{
 }
 
 .footerNav ul li a{
-    color: bisque;
+    color: #F2E5D7;
     margin: 2vw;
     text-decoration: none;
     font-size: 1vw;
-    opacity: 0.7;
     transition: 300ms;
 }
 
 .footerNav ul li a:hover{
-    color: beige;
+    color: #7C886D;
     margin: 2vw;
     text-decoration: none;
     font-size: 1vw;
@@ -1449,12 +1444,12 @@ footer{
 }
 
 .footerBottom{
-    background-color: #6F4E37;
+    background-color: #262322;
     padding: 2vw;
     text-align: center;
 }
 
 .footerBottom p{
-    color: bisque;
+    color: #F2E5D7;
     font-size: 0.75vw;
 }
