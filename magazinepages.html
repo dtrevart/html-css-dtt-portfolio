@@ -59,21 +59,20 @@
         this project, and I did some shape building with text a scratch vector to create the title art.
         </p>
         <br>
-        <br>
         <h1>Pages</h1>
 
         <table width=100%>
             <tr>
-                <td><img src="./assets/MagazinePages/MagazineP1.png" alt="Cats Aren't Jerks Page 1"></td>
-                <td><img src="./assets/MagazinePages/MagazineP2.png" alt="Cats Aren't Jerks Page 2"></td>
-                <td><img src="./assets/MagazinePages/MagazineP3.png" alt="Cats Aren't Jerks Page 3"></td>
-                <td><img src="./assets/MagazinePages/MagazineP4.png" alt="Cats Aren't Jerks Page 4"></td>
+                <td><img src="./assets/MagazinePages/MagazineP1.png" alt="Cats Aren't Jerks Page 1" onclick="openImage(this)"></td>
+                <td><img src="./assets/MagazinePages/MagazineP2.png" alt="Cats Aren't Jerks Page 2" onclick="openImage(this)"></td>
+                <td><img src="./assets/MagazinePages/MagazineP3.png" alt="Cats Aren't Jerks Page 3" onclick="openImage(this)"></td>
+                <td><img src="./assets/MagazinePages/MagazineP4.png" alt="Cats Aren't Jerks Page 4" onclick="openImage(this)"></td>
             </tr>
         </table>
-        <h1>Pages</h1>
+        <h1>Display</h1>
         </div>
         <div class="magazineimg2">
-            <img src="./assets/MagazinePages/MagazineDisplay.png">
+            <img src="./assets/MagazinePages/MagazineDisplay.png" onclick="openImage(this)">
         </div>
 </section>
 
@@ -102,11 +101,12 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<script src="script.js"></script>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+    
 </body>
 </html>

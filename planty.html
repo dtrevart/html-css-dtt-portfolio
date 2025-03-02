@@ -63,28 +63,28 @@
 
     <table width=100%>
         <tr>
-            <td><img src="./assets/Planty/AppPages/1.png" alt="Landing Page for Planty App"></td>
-            <td><img src="./assets/Planty/AppPages/2.png" alt="Plant Icon Page"></td>
-            <td><img src="./assets/Planty/AppPages/3.png" alt="Photo Album Page"></td>
-            <td><img src="./assets/Planty/AppPages/4.png" alt="Plant Identifier Page"></td>
-            <td><img src="./assets/Planty/AppPages/5.png" alt="Plant Identified Page"></td>
+            <td><img src="./assets/Planty/AppPages/1.png" alt="Landing Page for Planty App" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/2.png" alt="Plant Icon Page" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/3.png" alt="Photo Album Page" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/4.png" alt="Plant Identifier Page" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/5.png" alt="Plant Identified Page" onclick="openImage(this)"></td>
         </tr>
     </table>
 
     <table width="100%">
         <tr>
-            <td><img src="./assets/Planty/AppPages/6.png" alt="Achievements Page"></td>
-            <td><img src="./assets/Planty/AppPages/7.png" alt="Home Page/Plant Status Page"></td>
-            <td><img src="./assets/Planty/AppPages/8.png" alt="Plant Profile Page"></td>
-            <td><img src="./assets/Planty/AppPages/9.png" alt="Plant Costume Page"></td>
-            <td><img src="./assets/Planty/AppPages/10.png" alt="Plant Profile Creation Page"></td>
+            <td><img src="./assets/Planty/AppPages/6.png" alt="Achievements Page" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/7.png" alt="Home Page/Plant Status Page" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/8.png" alt="Plant Profile Page" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/9.png" alt="Plant Costume Page" onclick="openImage(this)"></td>
+            <td><img src="./assets/Planty/AppPages/10.png" alt="Plant Profile Creation Page" onclick="openImage(this)"></td>
         </tr>
     </table>
     <h1>Project Mockup</h1>
-    </div>
+</div>
 
-    <div>
-    <img class="plantyimg2" src="./assets/Planty/PlantyMockups.png">
+<div>
+    <img class="plantyimg2" src="./assets/Planty/PlantyMockups.png" onclick="openImage(this)">
     <div class="plantycopy">
         <h1 class=>Video of App</h1>
     </div>
@@ -127,11 +127,12 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<script src="script.js"></script>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+    
 </body>
 </html>

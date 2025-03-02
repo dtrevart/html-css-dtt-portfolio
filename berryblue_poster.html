@@ -60,7 +60,7 @@
         If you are interested in her music, check her out on
         <a href="https://open.spotify.com/artist/7LwsFYi5ugJCKFsXmMVyua">Spotify</a>!
         </p>
-        <img src="./assets/BerryBlue/BerryBluePoster.png">
+        <img src="./assets/BerryBlue/BerryBluePoster.png" onclick="openImage(this)">
     </div>
 </section>
 
@@ -89,11 +89,14 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<script src="script.js"></script>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
 </body>
 </html>

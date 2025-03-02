@@ -52,13 +52,34 @@
 <section id="projectinfo">
     <div class="projectcopy">
         <p>
-        Hello World!
+        This was my first LEGO project I ever made using 
+        <a href="https://www.bricklink.com/v3/studio/download.page">Bricklink Studio</a>
+        as a Christmas gift more dad. There isn't much to say about this project,
+        as the art is just a recreation of the Buffalo Bills logo, but as my first
+        project of the sorts, it felt right to include.
         </p>
+
+        <br>
+
+        <h1>Render</h1>
+        <img src="./assets/LEGO/BillsArt/Render.png" onclick="openImage(this)">
+
+        <h1>Built Model</h1>
+        <img src="./assets/LEGO/BillsArt/BuiltModel.jpg" onclick="openImage(this)">
+ 
+        A link to the instructions can be found
+       <a class="links" href="./assets/LEGO/BillsArt/BuffaloBillsArt_Instructions.pdf">here</a>.
+       <br>
+       You can find the parts list (.xml)
+       <a class="links" href="./assets/LEGO/BillsArt/BuffaloBillsArt.xml">here</a>.
+       <br>
+       <br>
+   </div>
 </section>
 
 
 
-<!--Page Specific Code Starts Here-->
+<!--Page Specific Code Ends Here-->
 
 <footer>
     <div class="footer-container">
@@ -81,11 +102,11 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<script src="script.js"></script>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+    
 </body>
-</html>

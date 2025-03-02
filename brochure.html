@@ -63,8 +63,8 @@
     <div class="brochure">
         <table width=100%>
             <tr>
-                <td><img src="./assets/Brochure/BrochureFront.png" alt="Home Page for Planty App"></td>
-                <td><img src="./assets/Brochure/BrochureBack.png" alt="Home Page for Planty App"></td>
+                <td><img src="./assets/Brochure/BrochureFront.png" onclick="openImage(this)" alt="Front of Printed Brochure"></td>
+                <td><img src="./assets/Brochure/BrochureBack.png" onclick="openImage(this)" alt="Back of Printed Brochure"></td>
             </tr>
         </table>
     </div>
@@ -73,7 +73,7 @@
         <h1>Display</h1>
     </div>
     <div class="brochure2">
-        <img src="./assets/Brochure/BrochureDisplay.png">
+        <img src="./assets/Brochure/BrochureDisplay.png" onclick="openImage(this)">
     </div>
 </section>
 
@@ -103,10 +103,11 @@
 </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
 </body>
 </html>

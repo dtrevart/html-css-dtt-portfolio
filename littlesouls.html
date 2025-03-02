@@ -57,7 +57,7 @@
         with haunted animatronics, and I was inspired to make this piece with some characters from the game, stylized in a way to make them come off as cute and innocent
         as opposed to the way they are typically portrayed.
         </p>
-        <img src="./assets/LittleSouls/LittleSouls.png">
+        <img src="./assets/LittleSouls/LittleSouls.png" onclick="openImage(this)">
 </section>
 
     <div class="mobile-filler"></div>
@@ -88,10 +88,12 @@
 </footer>
 
     <script src="script.js"></script>
+
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
 </body>
 </html>
 
-   
-    <script src="script.js"></script>
-</body>
-</html>

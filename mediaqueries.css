@@ -30,6 +30,15 @@
         transform: translateY(-50%); /* Centers it vertically */
     }
 
+    .brief-intro {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .brief-image, .brief-text {
+        max-width: 100%;
+      }
+
     /* Projects */
 
     #projectinfo {
