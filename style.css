@@ -302,6 +302,7 @@ section {
   
 .brief-text p{
     margin: 1vw;
+    font-size: 1.25vw;
 }
 
 /* Recent Projects */
@@ -465,7 +466,7 @@ section {
 
 /* Projects Boxes */
 
-.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10, .project11 {
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10, .project11, .project12 {
     width: 25vw;
     height: 25vw;
     border-radius: 12.5%;
@@ -556,14 +557,23 @@ section {
     }
 
     /* 11 */ .project11 {
-        background-image: url(./assets/Placeholder.png);       /* Update Here */
+        background-image: url(./assets/Animated/STAXLogo.gif);       /* Update Here */
         background-size: cover;
+        background-position: 60% center;
     }
     .project11:hover {
         transform: scale(1.05);
     }
 
-
+      /* 12 */ .project12 {
+        background-image: url(./assets/Placeholder.png);      /* Update Here */
+        background-size: cover;
+        visibility: hidden;
+    }
+    
+    .project12:hover {
+        transform: scale(1.05);
+    }
 
 
 /* Client Work Page */
@@ -989,10 +999,10 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/Animated/STAXLogo.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center 10%;
 }
 
 
@@ -1026,6 +1036,38 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+.hamletcopy img{
+    max-width: 75%;
+    max-height: 75%;
+    padding-top: 1vw;
+    margin: 0 1vw;
+    transition: 300ms;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hamletcopy img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.hamletcopy table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.hamletcopy tr {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.hamlet td {
+    padding: none;
 }
 
 
@@ -1113,7 +1155,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/Clients/SutdentVoterDrive/VoterDriveHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
