@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominic Trevisani - Home</title>
+    <title>Dominic Trevisani - Dead By Daylight Poster Collection</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +23,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-<div class="logo">Dominic Trevisani</div>
+<div class="logo"><a href="index.html">Dominic Trevisani</a></div>
 <div class="hamburger-menu">
     <div class="hamburger-icon" onclick="toggleMenu()">
         <span></span>
@@ -37,7 +37,7 @@
         <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
     </div>
 </div>
-</nav>
+    </nav>
 
 <!--Page Specific Code Starts Here-->
 
@@ -52,8 +52,51 @@
 <section id="projectinfo">
     <div class="projectcopy">
         <p>
-        Hello World!
+        Dead by Daylight is, well, one of the games of all time. I was never really
+        into this genre of game, but my friends always tried to push me to play it.
+        Eventually I gave in, and I hated it! After playing it more, it became more tolerable,
+        and I don't even hate it that much anymore (don't tell anyone I said that, though).
+        One of the things that made me enjoy the game more was playing killer instead of survivor.
+        For those who don't know, Dead by Daylight is an asymmetrical horror game where 1 killer
+        tries to stop a group of 4 survivors from escaping. From what I've heard, survivor used
+        to be dramatically stronger than killer, and overtime due to balancing, killer has slowly
+        powercrept survivors, making it much easier for them to "win".
+        <br>
+        <br>
+        Something that I've really liked about the game is the design of (most of) their original
+        killers. One of the ones I was really interested in was the Plague, since I literally hadn't
+        ever played against here, so I unlocked her in game to try her out. 
+        <br>
+        <br>
+        During this time, I was getting a ton of poster design styles and inspiration posts
+        on Instagram and Pinterest, and I really wanted to try them out just to get some practice
+        with more unique styles. Since I was really enjoying Plague, I decided to make one of her.
+        I showed my friends, and they really liked it, so I asked if there were any characters
+        they'd like to see a poster of, and they said Spirit and Trickster. From there,
+        I had it in my head I was going to make a collection of posters, but 3 didn't seem
+        like a good amount, so I decided to do my favorite character design-wise, the Singularity.
+        <br>
+        <br>
+        The depiction of the killers are all from in-game screen captures of the characters, 
+        whether its from the player perspective, lore tabs, or gameplay trailers. There a lot of
+        small details that reference the characters, whether it be the chapter they came out in
+        or some random flavor text from an add-on. I tried to keep each within the spirit of the
+        character, staying within the characters theme, like the Magazine Cover style for Trickster
+        or the worn and somewhat ancient paper to depict ancestory for Spirit.
         </p>
+
+        <div class="DBD_Posters">
+            <table width=100%>
+                <tr>
+                    <td><img src="./assets/DBD_Posters/Plague.png" onclick="openImage(this)" alt="DBD Plague Poster"></td>
+                    <td><img src="./assets/DBD_Posters/Spirit.png" onclick="openImage(this)" alt="DBD Spirit Poster"></td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/DBD_Posters/Singularity.png" onclick="openImage(this)" alt="DBD Singularity Poster"></td>
+                    <td><img src="./assets/DBD_Posters/Trickster.png" onclick="openImage(this)" alt="DBD Trickster Poster"></td>
+                </tr>
+            </table>
+        </div>
 </section>
 
 
@@ -82,10 +125,11 @@
 </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
 </body>
 </html>

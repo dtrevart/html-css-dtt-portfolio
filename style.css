@@ -114,7 +114,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: F2E5D7;
+    background-color: #F2E5D7;
     transition: all 0.3 ease-in-out;
     z-index: 2;
 }
@@ -366,7 +366,7 @@ section {
 
 
 /* 1 */ .box1 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-image: url(./assets/DBD_Posters/DBDThumbnail.png);       /* Update Here */
 }
 .box1:hover {
     transform: scale(1.05);
@@ -410,7 +410,7 @@ section {
 }
 
 /* 6 */ .box6 {
-    background-image: url(./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
+    background-image: url(./assets/Clients/SutdentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -477,7 +477,7 @@ section {
 
 
    /* 1 */ .project1 {
-        background-image: url(./assets/Placeholder.png);       /* Update Here */
+        background-image: url(./assets/DBD_Posters/DBDThumbnail.png);       /* Update Here */
         background-size: contain;
     }
     .project1:hover {
@@ -637,7 +637,7 @@ section {
 }
     
  /* 3 */ .client3 {
-    background-image: url(./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png);       /* Update Here */
+    background-image: url(./assets/Clients/SutdentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
     background-size: cover;
 }
 .client3:hover {
@@ -840,10 +840,26 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/DBD_Posters/DBDHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+.DBD_Posters table{
+    margin-left: 0.5vw;
+}
+
+.DBD_Posters img{
+    max-width: 75%;
+    max-height: 75%;
+    padding-top: 1.25vw;
+    margin-bottom: 0vw;
+    transition: 300ms;
+}
+
+.DBD_Posters img:hover {
+    transform: scale(1.05);
 }
 
 
@@ -1124,25 +1140,6 @@ section {
     padding-bottom:2vw;
 }
 
-.plantyimg2 {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    max-height: 70%;
-    padding-left: auto;
-    padding-right: auto;
-    padding-top:1.5vw;
-    padding-bottom: 2vw;
-    transition: 300ms;
-    cursor:pointer;
-}
-
-.plantyimg2:hover{
-    transform: scale(1.05);
-    transition: 300ms;
-}
-
 
 
 
@@ -1161,7 +1158,39 @@ section {
     background-position: top;
 }
 
+.VTSU_VoterDrive1 img {
+    max-width: 50%;
+    max-height: 50%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin: 0 1vw;
+    transition: 300ms;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.VTSU_VoterDrive1 img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.VTSU_VoterDrive2 img {
+    max-width: 75%;
+    max-height: 75%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin: 0 1vw;
+    transition: 300ms;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.VTSU_VoterDrive2 img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
 
 /* Lego Projects Page */
 
@@ -1194,7 +1223,7 @@ section {
     text-decoration: none;
 }
 
-/* Client Work Boxes */
+/* Lego Project Boxes */
 
 .lego1, .lego2, .lego3, .lego4, .lego5, .lego6 {
     width: 25vw;
@@ -1297,6 +1326,64 @@ section {
     background-size: cover;
     background-position: top;
 }
+
+/* Desert Well */
+#desertwell {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.DesertWell_copy a{
+   color:#C2B4B4;
+}
+
+.DesertWell_copy a:hover{
+    color:#7C886D;
+    text-decoration: none;
+ }
+
+.DesertWell_copy img{
+    max-width: 55%;
+    max-height: 55%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.DesertWell_copy img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.DesertWell_copy2 img{
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.DesertWell_copy2 img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.DesertWell_copy2 table{
+    padding-bottom: 1vw;
+}
+
+
 
 /* Bee House (Game Scale) */
 #bee-house {

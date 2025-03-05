@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominic Trevisani - Home</title>
+    <title>Dominic Trevisani - VTSU Student Voter Drive 2024</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +23,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-<div class="logo">Dominic Trevisani</div>
+<div class="logo"><a href="index.html">Dominic Trevisani</a></div>
 <div class="hamburger-menu">
     <div class="hamburger-icon" onclick="toggleMenu()">
         <span></span>
@@ -37,7 +37,7 @@
         <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
     </div>
 </div>
-</nav>
+    </nav>
 
 <!--Page Specific Code Starts Here-->
 
@@ -50,7 +50,7 @@
 </section>
 
 <section id="projectinfo">
-    <div class="projectcopy">
+    <div class="VTSU_VoterDrive1">
         <p>
         Rich Clark, a Political Science professor at VTSU - Castleton, came to our graphic design club,
         Content Lab, asking for us to help make a student voter campaign to help push students to, well,
@@ -60,16 +60,24 @@
         project within our club, we all tackled different parts of it. I started messing around
         during one of our meetings, and people began to gather and we ended up creating our graphic
         standards pretty soon after, making small tweaks along the way.
-        <img src="./assets/Clients/SutdentVoterDrive/VoterDrive_Standards_Updated_10_17_24.png">
+        <img src="./assets/Clients/SutdentVoterDrive/VoterDrive_Standards_Updated_10_17_24.png" onclick="openImage(this)" alt="VTSU Voter Drive 'Gaphic Standards'">
         <br>
+        </p>
+    </div>
+    <div class="VTSU_VoterDrive2">
+        <p>
         We did some targeted posters towards our athletics programs, with sports and other things
         being highly incorporated into the design, though I didn't take part in those. Instead, I
         work on relatively generic and broad advertising that we gave to our Student Government to
         present to the other campuses. I believe they picked it up to be used across all campuses,
         though I'm unsure how much it got pushed. 
-        <img src="./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png">
-        <img src="./assets/Clients/SutdentVoterDrive/StudentVoterPosters.png">
+        <br>
+        <br>
+        <img src="./assets/Clients/SutdentVoterDrive/Student_Voter_Drive_Powerpoint_Graphic.png" onclick="openImage(this)" alt="VTSU Voter Drive Powerpoint Slide">
+        <img src="./assets/Clients/SutdentVoterDrive/StudentVoterPosters.png" onclick="openImage(this)" alt="3 Posters for VTSU Voter Drive">
+        <br>
         </p>
+    </div>
 </section>
 
 
@@ -96,12 +104,13 @@
         <p>Copyright &copy;2025; Designed by <span class="designer">Dominic Trevisani</span></p>
     </div>
 </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
    
     <script src="script.js"></script>
+
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
 </body>
 </html>
