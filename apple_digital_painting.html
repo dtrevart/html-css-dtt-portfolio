@@ -52,8 +52,30 @@
 <section id="projectinfo">
     <div class="projectcopy">
         <p>
-        Hello World!
+        This is the one assignment from this class that I saw before I took it, and it had me really
+        excited. I hadn't done digital painting before, so this was really a big jump for me.
+        Unfortunately, this turned out to just be an exercise in our class instead of a full assignment,
+        but I am so happy with how this turned out. I think for my first time doing a still life digitally,
+        it looks really accurate to our reference. 
         </p>
+    </div>
+
+    <div class="Apples">
+        <table width=100%>
+            <tr>
+                <td><h1 class="title">Reference</h1></td>
+                <td><h1 class="title">Painting</h1></td>
+            </tr>
+        </table>
+
+        <table width=100%>
+            <tr>
+                <td><img src="./assets/DigitalPaintings/Apple/Reference.jpg"  onclick="openImage(this)" alt="Apple Reference"></td>
+                <td><img src="./assets/DigitalPaintings/Apple/Apples.png"  onclick="openImage(this)" alt="Apple Painting"></td>
+            </tr>
+        </table>
+    </div>
+        
 </section>
 
 
@@ -81,11 +103,11 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
 
-   
     <script src="script.js"></script>
 </body>
 </html>

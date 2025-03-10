@@ -449,7 +449,7 @@ section {
 }
 
 #allprojects {
-    height: 120vw;
+    height: 140vw;
 }
 
 .allprojects-parent {
@@ -466,7 +466,7 @@ section {
 
 /* Projects Boxes */
 
-.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10, .project11, .project12 {
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10, .project11, .project12, .project13, .project14, .project15{
     width: 25vw;
     height: 25vw;
     border-radius: 12.5%;
@@ -484,6 +484,8 @@ section {
         transform: scale(1.05);
     }
     
+
+
      /* 2 */ .project2 {
         background-image: url(./assets/BerryBlue/BerryBluePoster.png);       /* Update Here */
         background-size: cover;
@@ -492,6 +494,8 @@ section {
         transform: scale(1.05);
     }
     
+
+
      /* 3 */ .project3 {
         background-image: url(./assets/Cookbook/CookBookThumbnail.png);       /* Update Here */
         background-size: contain;
@@ -500,13 +504,17 @@ section {
         transform: scale(1.05);
     }
 
+
+
    /* 4 */ .project4 {
         background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.png);       /* Update Here */
-        background-size: contain;
+        background-size: cover;
     }
     .project4:hover {
         transform: scale(1.05);
     }
+
+
 
     /* 5 */ .project5 {
         background-image: url(./assets/Planty/PlantyAppIconSquare.png);       /* Update Here */
@@ -516,6 +524,8 @@ section {
         transform: scale(1.05);
     }
 
+
+
     /* 6 */ .project6 {
         background-image: url(./assets/MagazinePages/MagazineThumbnail.png);       /* Update Here */
         background-size: cover;
@@ -524,13 +534,17 @@ section {
         transform: scale(1.05);
     }
 
+
+
     /* 7 */ .project7 {
-        background-image: url(./assets/DigitalPaintings/AppleThumbnail.png);       /* Update Here */
+        background-image: url(./assets/DigitalPaintings/Apple/AppleThumbnail.png);       /* Update Here */
         background-size: cover;
     }
     .project7:hover {
         transform: scale(1.05);
     }
+
+
 
     /* 8 */ .project8 {
         background-image: url(./assets/LittleSouls/LittleSouls.png);       /* Update Here */
@@ -540,6 +554,8 @@ section {
         transform: scale(1.05);
     }
 
+
+
     /* 9 */ .project9 {
         background-image: url(./assets/Brochure/BrochureIcon.png);       /* Update Here */
         background-size: cover;
@@ -548,6 +564,8 @@ section {
         transform: scale(1.05);
     }
 
+
+
     /* 10 */ .project10 {
         background-image: url(./assets/OmoriCards/OmoriCardsThumbnail.png);       /* Update Here */
         background-size: contain;
@@ -555,6 +573,8 @@ section {
     .project10:hover {
         transform: scale(1.05);
     }
+
+
 
     /* 11 */ .project11 {
         background-image: url(./assets/Animated/STAXLogo.gif);       /* Update Here */
@@ -565,13 +585,49 @@ section {
         transform: scale(1.05);
     }
 
+
+
       /* 12 */ .project12 {
+        background-image: url(./assets/Placeholder.png);      /* Update Here */
+        background-size: cover;
+    }
+    
+    .project12:hover {
+        transform: scale(1.05);
+    }
+
+
+
+    /* 13 */ .project13 {
+        background-image: url(./assets/1Fish/Thumbnail.png);      /* Update Here */
+        background-size: cover;
+    }
+
+    .project13:hover {
+        transform: scale(1.05);
+    }
+
+
+
+    /* 14 */ .project14 {
         background-image: url(./assets/Placeholder.png);      /* Update Here */
         background-size: cover;
         visibility: hidden;
     }
-    
-    .project12:hover {
+
+    .project14:hover {
+        transform: scale(1.05);
+    }
+
+
+
+    /* 15 */ .project15 {
+        background-image: url(./assets/Placeholder.png);      /* Update Here */
+        background-size: cover;
+        visibility: hidden;
+    }
+
+    .project15:hover {
         transform: scale(1.05);
     }
 
@@ -688,6 +744,7 @@ section {
 }
 
 
+
 /* Berryblue Poster Page */
 
 #berryblue_poster {                                               /* Background Image */
@@ -778,10 +835,6 @@ section {
 
 
 
-
-
-
-
 /* Brochure Page */
 
 #brochure {                                               /* Background Image */
@@ -846,8 +899,12 @@ section {
     background-position: top;
 }
 
-.DBD_Posters table{
-    margin-left: 0.5vw;
+.DBD_Posters td:first-child img{
+    float: right;
+}
+
+.DBD_Posters td:last-child img{
+    float: left;
 }
 
 .DBD_Posters img{
@@ -860,6 +917,10 @@ section {
 
 .DBD_Posters img:hover {
     transform: scale(1.05);
+}
+
+.DBD_Posters {
+    height: 97.5vw;
 }
 
 
@@ -893,9 +954,7 @@ section {
     transition: 300ms;
 }
 
-.brochure img:hover {
-    transform: scale(1.05);
-}
+
 
 /* CoCoCritters */
 
@@ -910,6 +969,82 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+/* Packaging Section */
+.Coco_Package {
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.Coco_Package img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.Coco_Package img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.Coco_Package table {
+    display: inline-block;
+    justify-content: center;
+}
+
+/* Render Section */
+.Coco_Render img{
+    margin: 0 auto;
+    display: block;
+    transition: 300ms;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+
+.Coco_Render img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+/*Advertisment Section*/
+.Coco_Ads td:first-child img{
+    float: right;
+}
+
+.Coco_Ads td:last-child img{
+    float: left;
+}
+
+.Coco_Ads table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.Coco_Ads td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 1vw;
+}
+
+.Coco_Ads td img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: 300ms;
+}
+
+.Coco_Ads img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.Coco_Ads {
+    height: 35vw;
 }
 
 
@@ -972,6 +1107,8 @@ section {
     transition: 300ms;
 }
 
+
+
 /* Apple Still Life */
 
 #apples {
@@ -981,11 +1118,38 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/DigitalPaintings/ApplesHeader.png);
+    background-image: url(./assets/DigitalPaintings/Apple/ApplesHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
+
+
+.Apples table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.Apples td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 1vw;
+}
+
+.Apples td img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: 300ms;
+}
+
+.Apples img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
 
 
 
@@ -1054,6 +1218,14 @@ section {
     background-position: top;
 }
 
+.hamletcopy p{
+    padding-bottom:1vw;
+}
+
+.hamletcopy h1{
+    padding-bottom: 1.5vw;
+}
+
 .hamletcopy img{
     max-width: 75%;
     max-height: 75%;
@@ -1063,6 +1235,7 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 3vw;
 }
 
 .hamletcopy img:hover {
@@ -1070,22 +1243,76 @@ section {
     transition: 300ms;
 }
 
-.hamletcopy table {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center; 
+
+/* No Text Posters */
+.HP_NoText td:first-child img{
+    float: right;
 }
 
-.hamletcopy tr {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+.HP_NoText td:last-child img{
+    float: left;
 }
 
-.hamlet td {
-    padding: none;
+.HP_NoText table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
+.HP_NoText td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 1vw;
+}
+
+.HP_NoText td img{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: 300ms;
+}
+
+.HP_NoText img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+
+/* Deliverables */
+.HP_Deliv td:first-child img{
+    float: right;
+}
+
+.HP_Deliv td:last-child img{
+    float: left;
+}
+
+.HP_Deliv table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.HP_Deliv td{
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.HP_Deliv td img{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: 300ms;
+}
+
+.HP_Deliv img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
 
 
 /* VTSU Wellness Center */
