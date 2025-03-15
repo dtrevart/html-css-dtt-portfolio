@@ -1,8 +1,12 @@
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const hamburgerMenuOverlay = document.querySelector('.hamburger-menu-overlay');
+const closeButton = document.querySelector('.close-btn');
+
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
+    const overlay = document.querySelector(".hamburger-menu-overlay");
     const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+    overlay.classList.toggle("active");
+    icon.classList.toggle("active")
 }
 
 function openImage(img) {
@@ -15,3 +19,7 @@ function openImage(img) {
 function closeImage() {
     document.getElementById("imageOverlay").classList.remove("active");
 }
+
+closeButton.addEventListener('click', function() {
+    hamburgerMenuOverlay.classList.remove('active');
+});

@@ -1,6 +1,7 @@
 @media screen and (max-width: 800px) {
     #desktop-nav {
         display: none;
+        visibility: collapse;
     }
 
     #hamburger-nav {
@@ -10,7 +11,7 @@
         padding: 2vw 4vw;
         width: 100%; /* Ensures full-width navbar */
         height: 13vw; /* Adjust height to avoid cutting */
-        color: bisque;
+        color: #F2E5D7;
         box-sizing: border-box; /* Prevents overflow from padding */
         position: relative;
     }
@@ -20,34 +21,38 @@
         padding-right: 5vw;
         white-space: nowrap; /* Prevents text from breaking */
     }
-
-    .hamburger-menu {
-        font-size: 5vw;
-        cursor: pointer;
-        position: absolute;
-        right: 5vw; /* Keeps it inside the navbar */
-        top: 50%;
-        transform: translateY(-50%); /* Centers it vertically */
-    }
+    
+    /*Text*/
 
     .brief-intro {
         flex-direction: column;
         text-align: center;
-      }
-    
-      .brief-image, .brief-text {
+    }
+    .brief-image, .brief-text {
         max-width: 100%;
-      }
+    }
 
-    /* Projects */
+    .brief-text h1{
+        padding-right:1.5vh;
+    }
+    .brief-text p{
+        font-size: 2.75vw;
+        padding:1.5rem;
+        padding-top:0;
+        padding-right: calc(1.5rem + 1.5vh);
+        word-wrap: break-word;
+        word-break: break-word;  
+    }
 
+
+/* Projects */
     #projectinfo {
         padding: 3vw;
         margin: 0 auto;
         height: 50vw;
     }
 
-    .page_title {
+    .page_title{
         margin-top:0;
     }
 
@@ -75,8 +80,41 @@
         transition: 300ms;
     }
 
-    /* Planty */
+/* Main Page Extenders */
+    .home_ME {
+        height: 9vh;
+    }
+    .projects_ME {
+        height: 6vh;
+    }
+    .clients_ME {
+        height: 56vh;
+    }
+    .lego_ME {
+        height: 43.5vh;
+    }
 
+
+
+/*DBD Posters */
+    .DBD_Posters {
+        padding-top: 1vh;
+    }
+    .DBD_Posters img{
+        max-width: 75%;
+        max-height: 75%;
+        padding-top: 2.25vw;
+        margin-bottom: 0vw;
+        transition: 300ms;
+    }
+    
+    .dbd_posters_ME {
+        height: 10vh;
+    }
+
+
+
+/* Planty */
     .plantycopy {
         font-size: 3vw;
         line-height: 1.5;
@@ -87,7 +125,9 @@
         text-align:center;
     }
 
-    /* Magazine Pages */
+
+
+/* Magazine Pages */
     .magazinecopy {
         font-size: 3vw;
         line-height: 1.5;
@@ -99,19 +139,136 @@
     .magazineimg2 {
         height: 50vw;
     }
+    .Magazine_ME {
+        height: 2.5vh;
+    }
 
-    /* Brochure */
+
+
+/* Brochure */
     .brochure2 {
         height: 68vw;
     }
 
-    /* Little Souls */
+
+
+/* Little Souls */
     .mobile-filler {
         height: 29.75vw;
     }
 
-    /* Footer Adjustmnets */
 
+
+/* Hamlet */
+    .hamletcopy {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+
+    .hamletcopy h1{
+        font-size:7.5vw;
+        text-align:center;
+    }
+
+
+
+/* Cookbook */
+    .CookBookPages table{
+        padding-top: 5vh;
+    }
+    .CookbookPages img{
+        max-width: 85%;
+        max-height: 85%;
+    }
+    .cookbook_ME {
+        height: 14.2vh;
+    }
+
+
+
+/* CoCoCritters */
+    .Coco_Package h1{
+        font-size:7.5vw;
+        padding-top: 0.5vh;
+        padding-bottom: 1.25vh;
+    }
+    .Coco_Render h1{
+        font-size:7.5vw;
+        padding-top: 0.5vh;
+        padding-bottom: 1.25vh;
+    }
+    .Coco_Ads h1{
+        font-size:7.5vw;
+        padding-top: 0.5vh;
+        padding-bottom: 1.25vh;
+    }
+    .Coco_ME {
+        height: 8vh;
+    }
+
+
+/* Apples */
+    .apples_ME {
+        height: 38.5vh;
+    }
+
+
+
+/* STAX */
+    .stax_ME {
+        height: 34.5vh;
+    }    
+
+
+
+/* VTSU Wellness */
+    .wellness-copy {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+    .wellness-copy h1{
+        font-size:7.5vw;
+        text-align:center;
+    }
+
+
+
+/* Student Voter Drive */
+    .VTSU_VoterDrive1 p{
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+    .VTSU_VoterDrive2 p{
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+
+
+
+/* Desert Well + Display House */
+    .DesertWell_copy p{
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+    .DesertWell_copy h1{
+        font-size:7.5vw;
+        text-align:center;
+    }
+    .DesertWell_copy2 h1{
+        font-size:7.5vw;
+        text-align:center;
+    }
+
+
+
+/* Astarion Brickheadz */
+    .astarionlego_ME {
+        height: 11vh;
+    }
+    
+    
+
+/* Footer Adjustmnets */
     .socialIcons{
         display: flex;
         justify-content: center;
