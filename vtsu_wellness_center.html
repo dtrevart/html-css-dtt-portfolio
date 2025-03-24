@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominic Trevisani - Hamlet Poster Collection</title>
+    <title>Dominic Trevisani - VTSU Wellness Center</title>
+    <link rel="icon" type="image/svg" href="./assets/MeLogo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -77,11 +78,11 @@
         </p> 
     <table width=100%>
         <tr>
-            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief1.png" alt="Creative Brief Page 1"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief2.png" alt="Creative Brief Page 2"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief3.png" alt="Creative Brief Page 3"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief4.png" alt="Creative Brief Page 4"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief5.png" alt="Creative Brief Page 5"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief1.png" alt="Creative Brief Page 1" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief2.png" alt="Creative Brief Page 2" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief3.png" alt="Creative Brief Page 3" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief4.png" alt="Creative Brief Page 4" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/CreativeBrief5.png" alt="Creative Brief Page 5" onclick="openImage(this)"></td>
         </tr>
     </table>
     <p>
@@ -101,16 +102,16 @@
     </p>
     <table width=100%>
         <tr>
-            <td><img src="./assets/Clients/VTSU_Wellness/Castleton_SolidBackground.png" alt="Castleton Wellness Logo"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/Johnson_SolidBackgound.png" alt="Johnson Wellness Logo"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/Lyndon_SolidBackgound.png" alt="Lyndon Wellness Logo"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/VTC_SolidBackgound.png" alt="Randolph Wellness Logo"></td>
-            <td><img src="./assets/Clients/VTSU_Wellness/VTSU_Long_SolidBackgound.png" alt="Vermont State University Wellness Logo"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/Castleton_SolidBackground.png" alt="Castleton Wellness Logo" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/Johnson_SolidBackgound.png" alt="Johnson Wellness Logo" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/Lyndon_SolidBackgound.png" alt="Lyndon Wellness Logo" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/VTC_SolidBackgound.png" alt="Randolph Wellness Logo" onclick="openImage(this)"></td>
+            <td><img src="./assets/Clients/VTSU_Wellness/VTSU_Long_SolidBackgound.png" alt="Vermont State University Wellness Logo" onclick="openImage(this)"></td>
         </tr>
     </table>
     <p>
         A link to the full Graphic Standards can be found
-        <a class="links" href="./assets/Clients/VTSU_Wellness/VTSU_WC_GraphicStandards.pdf">here</a>.
+        <a class="links" href="./assets/Clients/VTSU_Wellness/VTSU_WC_GraphicStandards.pdf" target="_blank">here</a>.
         <br>
         <br>    
     </p>
@@ -124,8 +125,8 @@
 <footer>
     <div class="footer-container">
         <div class="socialIcons">
-            <a href="https://www.instagram.com/ezli.nn/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/dtrev.art/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="footerNav">
             <ul>
@@ -143,10 +144,11 @@
 </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
 </body>
 </html>

@@ -92,6 +92,9 @@ a:hover {
     text-decoration: none;
 }
 
+.links {
+    color:#C2B4B4;
+}
 
 
 /* Hamburger Menu */
@@ -318,9 +321,10 @@ section {
 .brief-image {
     flex: 1;
     max-width: 100%;
+    scale: calc(125%);
     padding-left: 3vw;
     padding-bottom: 3vw;
-    
+    transform: scaleX(-1);
 }
   
 .brief-image img {
@@ -1198,6 +1202,36 @@ section {
     background-position: top;
 }
 
+.OMORIcards1 img{
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.OMORIcards1 img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.OMORIcards2 img{
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 300ms;
+}
+
+.OMORIcards2 img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
 
 
 /* STAX */
@@ -1254,6 +1288,10 @@ section {
 
 .hamletcopy h1{
     padding-bottom: 1.5vw;
+}
+
+.hamletcopy a:hover{
+    text-decoration: none;
 }
 
 .hamletcopy img{
@@ -1725,13 +1763,13 @@ section {
 }
 
 .aboutme {
-    background-color: #483C32;
+    background-color: #534e46;
 }
 
 /* Form */
 
 .contact-form {
-    background-color: #483C32;
+    background-color: #534e46;
     padding: 20px;
     border-radius: 10px;
     display:flex;

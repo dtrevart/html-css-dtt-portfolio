@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominic Trevisani - Hamlet Poster Collection</title>
+    <title>Dominic Trevisani - Omori Playing Cards</title>
+    <link rel="icon" type="image/svg" href="./assets/MeLogo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -66,8 +67,44 @@
 <section id="projectinfo">
     <div class="projectcopy">
         <p>
-        Hello World!
+        Playing
+        <a href="https://www.omori-game.com/en" target="_blank">OMORI</a>
+        was one of the most emotional and pivotal experience of my life. I won't get into it too much,
+        but the game is about trauma, how people process it, and how to move on. I haven't ever sobbed
+        as I hard as I have from any form media as I did with this game. It destroyed me in so many ways, 
+        so clearly I had to create something to commemorate my time with this game, and
+        the opportunity presented itself for my Vector Graphics final project: a deck of playing cards.
+        <br>
+        <br>
+        It seemed almost perfect. A lot of this game revolves around the joys of childhood and how simple
+        things were. One of the many ways this theme is communicated with the player is through the use
+        of childrens games. An OMORI deck of cards just seemed like a no brainer to me.
+        <br>
+        <br>
+        The back of the cards is inspired from the sky in headspace. The 3 characters represetned on the
+        Jack, Queen, and King are heavily inspired from the character models in game, and the same goes
+        for the figures on the Jokers. The font used is the font used in the game, created for the game.
         </p>
+
+        <div class="OMORIcards1">
+            <table>
+                <tr>
+                    <td><img src="./assets/OmoriCards/A_10.jpg" onclick="openImage(this)" alt="Ace of Spades - 10 of Spades"></td>
+                    <td><img src="./assets/OmoriCards/Suits.jpg" onclick="openImage(this)" alt="Card Suits"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="OMORIcards2">
+            <table>
+                <tr>
+                    <td><img src="./assets/OmoriCards/InfoCard.jpg" onclick="openImage(this)" alt="Info Cards and Card Back"></td>
+                    <td><img src="./assets/OmoriCards/FaceCards.jpg" onclick="openImage(this)" alt="Face Cards"></td>
+                    <td><img src="./assets/OmoriCards/Jokers.jpg" onclick="openImage(this)" alt="Jokes"></td>
+                </tr>
+            </table>
+        </div>
+
 </section>
 
 
@@ -77,8 +114,8 @@
 <footer>
     <div class="footer-container">
         <div class="socialIcons">
-            <a href="https://www.instagram.com/ezli.nn/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/dtrev.art/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="footerNav">
             <ul>
@@ -96,10 +133,11 @@
 </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
 
-   
-    <script src="script.js"></script>
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
 </body>
 </html>
