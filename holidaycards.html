@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Trevisani - Holiday Cards</title>
+    <link rel="icon" type="image/svg" href="./assets/MeLogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> 
+            <a class="logo" href="index.html">Dominic Trevisani</a>
+            </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="clientwork.html">Client Work</a></li>
+                <li><a href="lego.html">LEGO</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Mobile Navigation-->
+    
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Dominic Trevisani</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <!--Hamburger Icon-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hamburger-menu-overlay">
+        <div class="close-btn">
+            <!--X Icon-->
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="hamburger-menu-links">
+            <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="clientwork.html" onclick="toggleMenu()">Client Work</a></li>
+            <li><a href="lego.html" onclick="toggleMenu()">LEGO</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
+        </ul>
+    </div>
+
+
+    
+<!--Page Specific Code Starts Here-->
+
+
+  
+<section id="holiday_cards">
+    <div class="page_title">
+        <h1 class="page_title_text">Holiday Cards</h1>
+    </div>
+</section>
+
+<section id="projectinfo">
+    <div class="holidaycards_copy">
+        <p>
+        This was one of my favorite assignments from my time at Lyndon! We were tasked to make
+        a holiday card for any random holiday. It started off with a bunch of rough thumbnails,
+        then moving forward to choosing 3, presenting them to the class, then honing in on one of those
+        to make a final card!
+        <br>
+        <img src="./assets/HolidayCards/Roughs.jpg" onclick="openImage(this)">
+        I remember sitting in my Western Music History class paying absolutely no attention to the Material
+        being taught as I worked on these thumbnails the same day the assignment got assigned.
+        I had plent of ideas of what I wanted to do, choosing some obscure holidays since I thought
+        that seemed more fun. While I had silly ideas for National Scribble Day and even Apple Giving Day
+        of all "holidays", I decided to go with graduation, Valentines day, and National Kitten Day.
+        </p>
+    </div>
+
+    <div class="holidaycard_roughs">
+        <h1>Roughs</h1>
+        <table width=100%>
+            <tr>
+                <td><img src="./assets/HolidayCards/CardRough1.jpg" alt="" onclick="openImage(this)"></td>
+                <td><img src="./assets/HolidayCards/CardRough2.jpg" alt="" onclick="openImage(this)"></td>
+                <td><img src="./assets/HolidayCards/CardRough3.jpg" alt="" onclick="openImage(this)"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="holidaycards_copy">
+        <p>
+        Out of these 3, the graduation card seemed to be the biggest hit. Honestly, this was my
+        favorite too. The Valentines day one is in a bit of a different style, and is a little unsettling
+        (though that is the point), and I really only made the National Kitten Day to bother my professor.
+        There was a handful of feedback for the graduation card, however. The parents in the background were too
+        big, taking away from the graduate, the graduate was at kind of a weird angle, and with the way
+        the eyes were, you couldn't really tell that's what they were, causing confusion as to if the graduate was
+        going to hug their parents. I also added one of those silly graduation things you get for being
+        a good student or whatever, and overall just refined it a lot, making a much more cohesive card!
+        <img src="./assets/HolidayCards/CardFinal.jpg" onclick="openImage(this)">
+        </p>
+    </div>
+
+    <div class="apples_ME"></div>
+        
+</section>
+
+
+
+<!--Page Specific Code Ends Here-->
+
+<footer>
+    <div class="footer-container">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/dtrev.art/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="clientwork.html">Client Work</a></li>
+                <li><a href="lego.html">LEGO</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2025; Designed by <span class="designer">Dominic Trevisani</span></p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
+</body>
+</html>

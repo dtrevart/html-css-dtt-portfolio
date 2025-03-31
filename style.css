@@ -328,7 +328,7 @@ section {
 }
   
 .brief-image img {
-    width: 100%;
+    width: 17.5vw;
     height: auto;
     display: block;
     border-radius: 12.5%;
@@ -352,7 +352,7 @@ section {
 
 .recent-project-parent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
     gap: 2vw;
     margin-top: 2vw;
     justify-content: center;
@@ -426,7 +426,7 @@ section {
 
 
 /* 4 */ .box4 {
-    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.png);       /* Update Here */
+    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -435,7 +435,7 @@ section {
 }
 
 /* 5 */ .box5 {
-    background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.png);       /* Update Here */
+    background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -444,7 +444,7 @@ section {
 }
 
 /* 6 */ .box6 {
-    background-image: url(./assets/Clients/SutdentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
+    background-image: url(./assets/Clients/StudentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -483,12 +483,12 @@ section {
 }
 
 #allprojects {
-    height: 140vw;
+    height: 170vw;
 }
 
 .allprojects-parent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
     gap: 2vw;
     margin-top: 2vw;
     justify-content: center;
@@ -500,7 +500,9 @@ section {
 
 /* Projects Boxes */
 
-.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9, .project10, .project11, .project12, .project13, .project14, .project15{
+.project1, .project2, .project3, .project4, .project5, .project6, 
+.project7, .project8, .project9, .project10, .project11, .project12,
+.project13, .project14, .project15, .project16, .project17, .project18{
     width: 25vw;
     height: 25vw;
     border-radius: 12.5%;
@@ -541,7 +543,7 @@ section {
 
 
    /* 4 */ .project4 {
-        background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.png);       /* Update Here */
+        background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
     .project4:hover {
@@ -622,7 +624,7 @@ section {
 
 
       /* 12 */ .project12 {
-        background-image: url(./assets/Placeholder.png);      /* Update Here */
+        background-image: url(./assets/HolidayCards/HolidayCardThumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
     
@@ -644,9 +646,8 @@ section {
 
 
     /* 14 */ .project14 {
-        background-image: url(./assets/Placeholder.png);      /* Update Here */
+        background-image: url(./assets/ContentLab/ContentLabThumbnail.png);      /* Update Here */
         background-size: cover;
-        visibility: hidden;
     }
 
     .project14:hover {
@@ -656,12 +657,22 @@ section {
 
 
     /* 15 */ .project15 {
-        background-image: url(./assets/Placeholder.png);      /* Update Here */
+        background-image: url(./assets/Cuppys/CuppyThumbnail.png);      /* Update Here */
         background-size: cover;
-        visibility: hidden;
     }
 
     .project15:hover {
+        transform: scale(1.05);
+    }
+
+    
+
+    /* 16 */ .project16 {
+        background-image: url(./assets/VTSUnity/VTSUnityThumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+
+    .project16:hover {
         transform: scale(1.05);
     }
 
@@ -687,7 +698,7 @@ section {
 
 .clientwork-parent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
     gap: 2vw;
     margin-top: 2vw;
     justify-content: center;
@@ -699,7 +710,7 @@ section {
 
 /* Client Work Boxes */
 
-.client1, .client2, .client3 {
+.client1, .client2, .client3, .client4, .client5, .client6 {
     width: 25vw;
    height: 25vw;
    border-radius: 12.5%;
@@ -711,7 +722,7 @@ section {
 
 
 /* 1 */ .client1 {
-    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.png);       /* Update Here */
+    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.jpg);       /* Update Here */
     background-size: contain;
 }    
 .client1:hover {
@@ -727,10 +738,26 @@ section {
 }
     
  /* 3 */ .client3 {
-    background-image: url(./assets/Clients/SutdentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
+    background-image: url(./assets/Clients/StudentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
     background-size: cover;
 }
 .client3:hover {
+    transform: scale(1.05);
+}
+
+/* 4 */ .client4 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: contain;
+}    
+.client4:hover {
+    transform: scale(1.05);
+}
+    
+ /* 5 */ .client5 {
+    background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayThumbnail.jpg);       /* Update Here */       /* Update Here */
+    background-size: contain;
+}    
+.client5:hover {
     transform: scale(1.05);
 }
 
@@ -777,7 +804,10 @@ section {
     transition: 300ms;
 }
 
-
+.projectcopy table {
+    margin: 0;
+    padding: 0;
+}
 
 /* Berryblue Poster Page */
 
@@ -944,9 +974,9 @@ section {
 .DBD_Posters img{
     max-width: 75%;
     max-height: 75%;
-    padding-top: 1.25vw;
-    margin-bottom: 0vw;
+    padding: 2.5vh;
     transition: 300ms;
+    margin: 0;
 }
 
 .DBD_Posters img:hover {
@@ -954,7 +984,7 @@ section {
 }
 
 .DBD_Posters {
-    height: 97.5vw;
+    height: 207.5vh;
 }
 
 
@@ -974,18 +1004,13 @@ section {
     background-position: top;
 }
 
-.CookbookPages table{
-    margin-left: 0.5vw;
-}
-
 .CookbookPages img{
     max-width: 90%;
     max-height: 90%;
-    margin-left:0.25vw;
-    margin-right:0.25vw;
-    padding-top: 1.25vw;
-    margin-bottom: 0vw;
     transition: 300ms;
+    margin: 0;
+    padding: 4vh;
+
 }
 
 
@@ -1266,6 +1291,192 @@ section {
     background-position: top;
 }
 
+/* Cuppy's */
+
+#cuppys {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Cuppys/CuppyHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.cuppy_copy p{
+    color: #F2E5D7;
+}
+
+.cuppy_copy h1{
+    font-size:2.5vw;
+    text-align:center;
+}
+
+.cuppy_copy a{
+    color:#C2B4B4;
+    text-decoration: none;
+}
+
+.cuppy_copy a:hover{
+    color: #A1AB96;
+}
+
+
+
+/* VTSUnity Poster */
+
+#vtsunity_poster {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/VTSUnity/VTSUnityHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.vtsunity_poster img{
+    max-width: 90%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-content: center;
+}
+
+.vtsunity_poster table{
+    padding-top: 2vw;
+    align-items: center;
+    align-content: center;
+}
+
+.vtsunity_poster h1{
+    padding: 1.5vw;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Content Lab */
+
+#content_lab {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/ContentLab/ContentLabHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.CCG {
+    padding-top: 1vw;
+}
+
+.CCG table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.CCG td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 1vw;
+}
+
+.CCG td img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: 300ms;
+}
+
+.CCG img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+
+
+/* Holiday Cards */
+
+#holiday_cards {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/HolidayCards/HolidayCardHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.holidaycards_copy p{
+    color: #F2E5D7;
+}
+
+.holidaycards_copy img {
+    display: block;
+    margin: auto;
+    width: 50vw;
+    padding: 1.75vw;
+    transition: 300ms;
+}
+
+.holidaycards_copy img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.holidaycard_roughs {
+    padding-top: 1vw;
+}
+
+.holidaycard_roughs h1{
+    text-align: center;
+    font-size:2.5vw;
+}
+
+.holidaycard_roughs table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.holidaycard_roughs td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 1vw;
+}
+
+.holidaycard_roughs td img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: 300ms;
+}
+
+.holidaycard_roughs img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+
 
 /* Hamlet Posters */
 
@@ -1312,6 +1523,7 @@ section {
 }
 
 
+
 /* No Text Posters */
 .HP_NoText td:first-child img{
     float: right;
@@ -1345,7 +1557,6 @@ section {
     transform: scale(1.05);
     transition: 300ms;
 }
-
 
 /* Deliverables */
 .HP_Deliv td:first-child img{
@@ -1381,6 +1592,7 @@ section {
     transform: scale(1.05);
     transition: 300ms;
 }
+
 
 
 /* VTSU Wellness Center */
@@ -1437,7 +1649,6 @@ section {
 
 
 
-
 /* Student Voter Drive */
 
 #student_voter_drive {
@@ -1447,7 +1658,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Clients/SutdentVoterDrive/VoterDriveHeader.png);
+    background-image: url(./assets/Clients/StudentVoterDrive/VoterDriveHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1487,6 +1698,8 @@ section {
     transition: 300ms;
 }
 
+
+
 /* Lego Projects Page */
 
 #legopage {                                               /* Background Image */
@@ -1508,7 +1721,7 @@ section {
 
 .lego-projects-parent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
     gap: 2vw;
     margin-top: 2vw;
     justify-content: center;
@@ -1737,7 +1950,6 @@ section {
 .overlay img {
     max-width: 80%;
     max-height: 80%;
-    border-radius: 10px;
 }
 
 
