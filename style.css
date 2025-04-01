@@ -476,7 +476,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/ProjectsHeader.png);
+    background-image: url(./assets/ProjectsHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -686,7 +686,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/ClientsHeader.png);
+    background-image: url(./assets/ClientsHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -835,7 +835,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Planty/PlantyHeader.png);
+    background-image: url(./assets/Planty/PlantyHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -908,7 +908,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Brochure/BrochureHeader.png);
+    background-image: url(./assets/Brochure/BrochureHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -957,7 +957,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/DBD_Posters/DBDHeader.png);
+    background-image: url(./assets/DBD_Posters/DBDHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1024,7 +1024,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/CocoCritters/CocoCrittersHeader.png);
+    background-image: url(./assets/CocoCritters/CocoCrittersHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1117,7 +1117,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/MagazinePages/MagazineHeader.png);
+    background-image: url(./assets/MagazinePages/MagazineHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1177,7 +1177,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/DigitalPaintings/Apple/ApplesHeader.png);
+    background-image: url(./assets/DigitalPaintings/Apple/ApplesHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1285,7 +1285,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LittleSouls/LittleSoulsHeader.png);
+    background-image: url(./assets/LittleSouls/LittleSoulsHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1300,7 +1300,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Cuppys/CuppyHeader.png);
+    background-image: url(./assets/Cuppys/CuppyHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1487,7 +1487,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Clients/Hamlet/HamletHeader.png);
+    background-image: url(./assets/Clients/Hamlet/HamletHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1604,7 +1604,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Clients/VTSU_Wellness/VTSUHeader.png);
+    background-image: url(./assets/Clients/VTSU_Wellness/VTSUWellnessHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1658,7 +1658,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Clients/StudentVoterDrive/VoterDriveHeader.png);
+    background-image: url(./assets/Clients/StudentVoterDrive/VoterDriveHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1700,8 +1700,82 @@ section {
 
 
 
-/* Lego Projects Page */
+/* Earth Day Poster */
 
+#earthday25 {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.earthday25_copy img {
+    width: 25%;
+    height: 25%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin: 0 1vw;
+    transition: 300ms;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.earthday25_copy img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.earthday25_copy a{
+    color:#C2B4B4;
+}
+
+.earthday25_copy a:hover{
+    color:#ABB3A0;
+    text-decoration: none;
+}
+
+.earthday25_copy2 img {
+    width: 35%;
+    height: 35%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin: 0 1vw;
+    transition: 300ms;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.earthday25_copy2 img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+
+/* Friends of Castleton Parks & Rec */
+#fcpr {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+/* Lego Projects Page */
 #legopage {                                               /* Background Image */
     display: flex;
     justify-content: center;
@@ -1709,7 +1783,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LegoHeader.png);
+    background-image: url(./assets/LegoHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1815,7 +1889,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/DisplayHouseHeader.png);
+    background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/DisplayHouseHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1829,7 +1903,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/LEGO/LegoMinecraft/TheBridge/TheBridgeHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1843,7 +1917,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellHeader.png);
+    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
