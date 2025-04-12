@@ -400,7 +400,7 @@ section {
 
 
 /* 1 */ .box1 {
-    background-image: url(./assets/DBD_Posters/DBDThumbnail.png);       /* Update Here */
+    background-image: url(./assets/DBD_Posters/DBDThumbnail.jpg);       /* Update Here */
 }
 .box1:hover {
     transform: scale(1.05);
@@ -416,7 +416,7 @@ section {
 
 
 /* 3 */ .box3 {
-    background-image: url(./assets/BerryBlue/BerryBluePoster.png);       /* Update Here */
+    background-image: url(./assets/BerryBlue/BerryBluePoster.jpg);       /* Update Here */
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -513,7 +513,7 @@ section {
 
 
    /* 1 */ .project1 {
-        background-image: url(./assets/DBD_Posters/DBDThumbnail.png);       /* Update Here */
+        background-image: url(./assets/DBD_Posters/DBDThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
     .project1:hover {
@@ -523,7 +523,7 @@ section {
 
 
      /* 2 */ .project2 {
-        background-image: url(./assets/BerryBlue/BerryBluePoster.png);       /* Update Here */
+        background-image: url(./assets/BerryBlue/BerryBluePoster.jpg);       /* Update Here */
         background-size: cover;
     }
     .project2:hover {
@@ -533,7 +533,7 @@ section {
 
 
      /* 3 */ .project3 {
-        background-image: url(./assets/Cookbook/CookBookThumbnail.png);       /* Update Here */
+        background-image: url(./assets/Cookbook/CookBookThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
     .project3:hover {
@@ -553,7 +553,7 @@ section {
 
 
     /* 5 */ .project5 {
-        background-image: url(./assets/Planty/PlantyAppIconSquare.png);       /* Update Here */
+        background-image: url(./assets/Planty/PlantyThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
     .project5:hover {
@@ -563,7 +563,7 @@ section {
 
 
     /* 6 */ .project6 {
-        background-image: url(./assets/MagazinePages/MagazineThumbnail.png);       /* Update Here */
+        background-image: url(./assets/MagazinePages/CatMagazineThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
     .project6:hover {
@@ -573,7 +573,7 @@ section {
 
 
     /* 7 */ .project7 {
-        background-image: url(./assets/DigitalPaintings/Apple/AppleThumbnail.png);       /* Update Here */
+        background-image: url(./assets/DigitalPaintings/Apple/ApplesThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
     .project7:hover {
@@ -583,7 +583,7 @@ section {
 
 
     /* 8 */ .project8 {
-        background-image: url(./assets/LittleSouls/LittleSouls.png);       /* Update Here */
+        background-image: url(./assets/LittleSouls/LittleSoulsThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
     .project8:hover {
@@ -593,7 +593,7 @@ section {
 
 
     /* 9 */ .project9 {
-        background-image: url(./assets/Brochure/BrochureIcon.png);       /* Update Here */
+        background-image: url(./assets/Brochure/BrochureThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
     .project9:hover {
@@ -603,7 +603,7 @@ section {
 
 
     /* 10 */ .project10 {
-        background-image: url(./assets/OmoriCards/OmoriCardsThumbnail.png);       /* Update Here */
+        background-image: url(./assets/OmoriCards/OmoriCardsThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
     .project10:hover {
@@ -646,7 +646,7 @@ section {
 
 
     /* 14 */ .project14 {
-        background-image: url(./assets/ContentLab/ContentLabThumbnail.png);      /* Update Here */
+        background-image: url(./assets/ContentLab/ContentLabThumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
 
@@ -818,7 +818,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/BerryBlue/BerryBlueHeader.png);
+    background-image: url(./assets/BerryBlue/BerryBlueHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -946,6 +946,26 @@ section {
     transform: scale(1.05);
 }
 
+.MunchBrochure_Mockup h1{
+    font-size:2.5vw;
+    text-align:center;
+}
+
+.MunchBrochure_Mockup img{
+    margin-bottom: 0;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 95%;
+    padding-top: 1.25vw;
+    padding-bottom: 3vw;
+    transition: 300ms;
+    display: block;
+}
+
+.MunchBrochure_Mockup img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
 
 
 /* Dead By Daylight Poster Collection */
@@ -998,7 +1018,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Cookbook/CookbookHeader.png);
+    background-image: url(./assets/Cookbook/CookbookHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1010,7 +1030,11 @@ section {
     transition: 300ms;
     margin: 0;
     padding: 4vh;
+}
 
+.Cookbook_Mockup img{
+    margin-bottom: 0;
+    max-width: 50%;
 }
 
 
@@ -1106,7 +1130,26 @@ section {
     height: 35vw;
 }
 
+.CoCoCritters_Mockup h1{
+    font-size:2.5vw;
+    text-align:center;
+}
 
+.CoCoCritters_Mockup img{
+    margin-bottom: 0;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 50%;
+    padding-top: 1.25vw;
+    padding-bottom: 3vw;
+    transition: 300ms;
+    display: block;
+}
+
+.CoCoCritters_Mockup img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
 
 /* Magazine Layout */
 
@@ -1166,7 +1209,26 @@ section {
     transition: 300ms;
 }
 
+.CatMagazine_Mockup h1{
+    font-size:2.5vw;
+    text-align:center;
+}
 
+.CatMagazine_Mockup img{
+    margin-bottom: 0;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 70%;
+    padding-top: 1.25vw;
+    padding-bottom: 3vw;
+    transition: 300ms;
+    display: block;
+}
+
+.CatMagazine_Mockup img:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
 
 /* Apple Still Life */
 
@@ -1221,7 +1283,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/OmoriCards/OmoriCardsHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1773,6 +1835,19 @@ section {
     background-position: top;
 }
 
+/* 1Fish */
+#OneFish {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 
 
 /* Lego Projects Page */
@@ -1827,7 +1902,7 @@ section {
 }
     
  /* 2 */ .lego2 {
-    background-image: url(./assets/LEGO/Brickheadz/Astarion/AstarionThumbnail.png);       /* Update Here */ 
+    background-image: url(./assets/LEGO/Brickheadz/Astarion/AstarionThumbnail.jpg);       /* Update Here */ 
 }    
 .lego2:hover {
     transform: scale(1.05);
@@ -1879,6 +1954,36 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+.AstarionBH_Photos img {
+    max-width: 40%;
+    max-height: 40%;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    display: block;
+    transition: 300ms;
+}
+
+.AstarionBH_Photos img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.AstarionBH_IRLPhotos img{
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    margin: auto;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+    transition: 300ms;
+}
+
+.DesertWell_copy2 img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
 }
 
 /* Minecraft House Diorama */
@@ -1951,7 +2056,7 @@ section {
     max-height: 90%;
     display: flex;
     margin: auto;
-    padding-top: 1vw;
+    padding-top: 2vw;
     margin-bottom: 1vw;
     transition: 300ms;
 }
@@ -2037,26 +2142,27 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/AboutMeHeader.png);
+    background-image: url(./assets/AboutMeHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
-.about-me p{
-    text-align: center;
-    size: 100vw;
+#about_copy {
+    background-color: #534e46;
+    font-size: 1.25vw;
+    color: #F2E5D7;
+    padding-bottom: 0;
+    height: 10vh;
 }
 
-.aboutme {
-    background-color: #534e46;
-}
 
 /* Form */
 
 .contact-form {
     background-color: #534e46;
-    padding: 20px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
