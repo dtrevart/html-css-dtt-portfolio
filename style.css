@@ -46,21 +46,30 @@ nav, .nav-links {
 display: flex;
 }
 
-nav {                                                       /* NavBar */  
- align-items: center;
- height: 12vh;
- position: fixed;
- background-color: #262322;
- width: 100%;
- z-index: 1;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    position: fixed;
+    background-color: #262322;
+    max-width: 100vw; /* Ensure it never overflows */
+    z-index: 1;
+    padding: 0 2.5vw;
+    box-sizing: border-box;
+    overflow-x: hidden; /* hide any overflow if it happens */
+    padding-right: 2vw;
+    width: calc(100% - 20px); /* Adjust as needed */
 }
 
 .nav-links {
+    display: flex;
     list-style: none;
     font-size: 1.3vw;
     gap: 1.5vw;
     white-space: nowrap;
-    padding-left: 52.5vw;
+    margin: 0;  
+    padding: 0;
 }
 
 a {
@@ -80,11 +89,10 @@ a:hover {
 
 .logo {
     font-size: 2vw;
-    text-decoration: none;
-    cursor:pointer;
-    text-align: left;
-    margin-left: 2.5%;
     white-space: nowrap;
+    text-decoration: none;
+    color: #F2E5D7;
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -152,7 +160,7 @@ a:hover {
 .close-btn {
     position: absolute;
     top: 1rem;
-     right: 1rem;
+    right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1925,7 +1933,7 @@ section {
 }
     
  /* 5 */ .lego5 {
-    background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/BeeHouseThumbnail.png);       /* Update Here */
+    background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/BeeHouseThumbnail.jpg);       /* Update Here */
     background-size: contain;
 }    
 .lego5:hover {
@@ -1933,14 +1941,58 @@ section {
 }
     
  /* 6 */ .lego6 {
-    background-image: url(./assets/LEGO/BillsArt/Thumbnail.png);       /* Update Here */
+    background-image: url(./assets/LEGO/BillsArt/Thumbnail.jpg);       /* Update Here */
     background-size: cover;
 }
 .lego6:hover {
     transform: scale(1.05);
 }
 
+/* Lego Projects */
+.LegoProject_Copy a{
+    color:#C2B4B4;
+ }
+ 
+ .LegoProject_Copy a:hover{
+     color:#7C886D;
+     text-decoration: none;
+  }
+ 
+ .LegoProject_Copy img{
+     max-width: 55%;
+     max-height: 55%;
+     display: flex;
+     padding-top: 1.5vw;
+     margin: auto;
+     margin-bottom: 1vw;
+     transition: 300ms;
+ }
+ 
+ .LegoProject_Copy img:hover {
+     transform: scale(1.05);
+     transition: 300ms;
+ }
+ 
+ .LegoProject_Photos img{
+     max-width: 90%;
+     max-height: 90%;
+     display: flex;
+     margin: auto;
+     padding-top: 1.5vw;
+     margin-bottom: 1vw;
+     transition: 300ms;
+ }
+ 
+ .LegoProject_Photos img:hover {
+     transform: scale(1.05);
+     transition: 300ms;
+ }
+ 
+ .LegoProject_Photos table{
+     padding-bottom: 1vw;
+ }
 
+ 
 
 /* Astarion Brickheadz */
 #astarionbrickheadz {
@@ -1954,36 +2006,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-}
-
-.AstarionBH_Photos img {
-    max-width: 40%;
-    max-height: 40%;   
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2vw;
-    display: block;
-    transition: 300ms;
-}
-
-.AstarionBH_Photos img:hover {
-    transform: scale(1.05);
-    transition: 300ms;
-}
-
-.AstarionBH_IRLPhotos img{
-    max-width: 90%;
-    max-height: 90%;
-    display: flex;
-    margin: auto;
-    padding-top: 2vw;
-    margin-bottom: 2vw;
-    transition: 300ms;
-}
-
-.DesertWell_copy2 img:hover {
-    transform: scale(1.05);
-    transition: 300ms;
 }
 
 /* Minecraft House Diorama */
@@ -2028,50 +2050,6 @@ section {
     background-position: top;
 }
 
-.DesertWell_copy a{
-   color:#C2B4B4;
-}
-
-.DesertWell_copy a:hover{
-    color:#7C886D;
-    text-decoration: none;
- }
-
-.DesertWell_copy img{
-    max-width: 55%;
-    max-height: 55%;
-    display: flex;
-    margin: auto;
-    margin-bottom: 1vw;
-    transition: 300ms;
-}
-
-.DesertWell_copy img:hover {
-    transform: scale(1.05);
-    transition: 300ms;
-}
-
-.DesertWell_copy2 img{
-    max-width: 90%;
-    max-height: 90%;
-    display: flex;
-    margin: auto;
-    padding-top: 2vw;
-    margin-bottom: 1vw;
-    transition: 300ms;
-}
-
-.DesertWell_copy2 img:hover {
-    transform: scale(1.05);
-    transition: 300ms;
-}
-
-.DesertWell_copy2 table{
-    padding-bottom: 1vw;
-}
-
-
-
 /* Bee House (Game Scale) */
 #bee-house {
     display: flex;
@@ -2080,7 +2058,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/BeeHouseHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -2094,10 +2072,66 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/BillsArt/Header.png);
+    background-image: url(./assets/LEGO/BillsArt/BillsArtHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+
+
+
+/* FIlms Page */
+#filmpage {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#films {
+    height: 65vw;
+}
+
+/* Film Boxes*/
+.film1, .film2, .film3{
+    width: 25vw;
+   height: 25vw;
+   border-radius: 12.5%;
+   cursor: pointer;
+   transition: 300ms;
+   background-size: contain;
+}
+
+
+
+/* 1 */ .film1 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: contain;
+}    
+.film1:hover {
+    transform: scale(1.05);
+}
+    
+ /* 2 */ .film2 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */ 
+}    
+.film2:hover {
+    transform: scale(1.05);
+}
+
+ /* 3 */ .film3 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: cover;
+}
+.film3:hover {
+    transform: scale(1.05);
 }
 
 

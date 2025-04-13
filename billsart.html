@@ -14,47 +14,47 @@
         <div class="logo"> 
             <a class="logo" href="index.html">Dominic Trevisani</a>
             </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="clientwork.html">Client Work</a></li>
-                <li><a href="lego.html">LEGO</a></li>
-                <li><a href="about.html">About Me</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!--Mobile Navigation-->
+            <div>
+                <ul class="nav-links">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="clientwork.html">Client Work</a></li>
+                    <li><a href="lego.html">LEGO</a></li>
+                    <li><a href="films.html">Films</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
     
-    <nav id="hamburger-nav">
-        <div class="logo"><a href="index.html">Dominic Trevisani</a></div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <!--Hamburger Icon-->
-                <span></span>
+        <!--Mobile Navigation-->
+        
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html">Dominic Trevisani</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <!--Hamburger Icon-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hamburger-menu-overlay">
+            <div class="close-btn">
+                <!--X Icon-->
                 <span></span>
                 <span></span>
             </div>
+            <ul class="hamburger-menu-links">
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="clientwork.html" onclick="toggleMenu()">Client Work</a></li>
+                <li><a href="lego.html" onclick="toggleMenu()">LEGO</a></li>
+                <li><a href="films.html" onclick="toggleMenu()">Films</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
+            </ul>
         </div>
-    </nav>
     
-    <div class="hamburger-menu-overlay">
-        <div class="close-btn">
-            <!--X Icon-->
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="hamburger-menu-links">
-            <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="clientwork.html" onclick="toggleMenu()">Client Work</a></li>
-            <li><a href="lego.html" onclick="toggleMenu()">LEGO</a></li>
-            <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
-        </ul>
-    </div>
-
-
-    
-<!--Page Specific Code Starts Here-->
+    <!--Page Specific Code Starts Here-->
 
 
        
@@ -65,23 +65,28 @@
 </section>
 
 <section id="projectinfo">
-    <div class="projectcopy">
+    <div class="LegoProject_Copy">
         <p>
-        This was my first LEGO project I ever made using 
-        <a href="https://www.bricklink.com/v3/studio/download.page" target="_blank">Bricklink Studio</a>
-        as a Christmas gift more dad. There isn't much to say about this project,
-        as the art is just a recreation of the Buffalo Bills logo, but as my first
-        project of the sorts, it felt right to include.
+            This was my first LEGO project I ever made using 
+            <a href="https://www.bricklink.com/v3/studio/download.page" target="_blank">Bricklink Studio</a>
+            as a Christmas gift more dad. There isn't much to say about this project,
+            as the art is just a recreation of the Buffalo Bills logo, but as my first
+            project of the sorts, it felt right to include.  
         </p>
+        <h1 class="title">Render</h1>
+        <img src="./assets/LEGO/BillsArt/Render.png" onclick="openImage(this)" alt="Render of Buffalo Bills Wall Art">
+    </div>
+    <div class="LegoProject_Photos">
+        <h1 class="title">Photos</h1>
+        <table>
+            <tr>
+                <td><img src="./assets/LEGO/BillsArt/P1.JPG" onclick="openImage(this)" alt="Photo of built Buffalo Bills Wall Art"></td>
+                <td><img src="./assets/LEGO/BillsArt/P2.JPG" onclick="openImage(this)" alt="Photo of built Buffalo Bills Wall Art"></td>
+            </tr>
+        </table>
+    </div>
 
-        <br>
-
-        <h1>Render</h1>
-        <img src="./assets/LEGO/BillsArt/Render.png" onclick="openImage(this)">
-
-        <h1>Built Model</h1>
-        <img src="./assets/LEGO/BillsArt/BuiltModel.jpg" onclick="openImage(this)">
- 
+    <div class="LegoProject_Copy">
         A link to the instructions can be found
        <a class="links" href="./assets/LEGO/BillsArt/BuffaloBillsArt_Instructions.pdf" target="_blank">here</a>.
        <br>
@@ -91,7 +96,6 @@
        <br>
    </div>
 </section>
-
 
 
 <!--Page Specific Code Ends Here-->
@@ -108,6 +112,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="clientwork.html">Client Work</a></li>
                 <li><a href="lego.html">LEGO</a></li>
+                <li><a href="films.html">Films</a></li>
                 <li><a href="about.html">About Me</a></li>
             </ul>
         </div>
