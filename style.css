@@ -63,10 +63,8 @@ display: flex;
 }
 
 #hamburger-nav {
-
     background-color: #262322;
     z-index: 1;
-
 }
 
 .nav-links {
@@ -462,7 +460,7 @@ section {
 }
 
 /* 6 */ .box6 {
-    background-image: url(./assets/Clients/StudentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
+    background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -2106,7 +2104,7 @@ section {
 
 /* Film Boxes*/
 .film1, .film2, .film3{
-    width: 25vw;
+width: 25vw;
    height: 25vw;
    border-radius: 12.5%;
    cursor: pointer;
@@ -2117,29 +2115,90 @@ section {
 
 
 /* 1 */ .film1 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
-    background-size: contain;
+    background-image: url(./assets/Films/DayIn60s/Thumbnail.gif);       /* Update Here */
+    background-size: cover;
+    background-position-x: center;
 }    
 .film1:hover {
     transform: scale(1.05);
 }
     
  /* 2 */ .film2 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */ 
+    background-image: url(./assets/Films/SelfReflection/Thumbnail.gif);       /* Update Here */
+    background-size: cover;
+    background-position-x: center;
 }    
 .film2:hover {
     transform: scale(1.05);
 }
 
  /* 3 */ .film3 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-image: url(./assets/Films/CuppyHeader/Thumbnail.gif);       /* Update Here */
     background-size: cover;
+    background-position-x: center;
 }
 .film3:hover {
     transform: scale(1.05);
 }
 
+/* General Film Stuff */
+.FilmFrames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
 
+.FilmFrames iframe {
+    width: 80vw;     /* You can adjust this */
+    max-width: 960px;
+    height: 54vw;    /* Keeps a 16:9 aspect ratio relative to width */
+    max-height: 540px;
+    padding-bottom: 5vh;
+}
+
+
+/* Day in 60 Seconds */
+#dayin60s {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Films/DayIn60s/Thumbnail.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Self Reflection */
+#selfReflection {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Films/SelfReflection/Thumbnail.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Cuppy's Header */
+#CuppyHeader {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Films/CuppyHeader/Thumbnail.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 
 /* Image Enlargement Overlay */
 
