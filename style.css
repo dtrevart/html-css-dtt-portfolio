@@ -376,6 +376,7 @@ section {
 
 .recent-project-parent a{
     text-decoration: none;
+    display: block;
 }
 
 .project-title {
@@ -397,8 +398,31 @@ section {
     text-align: center;
 }
 
-.project-title:hover {
-    opacity: 1;
+/* Project Animations */
+.animated_box {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+    opacity: 0;
+}
+
+@keyframes rotateLeftRight {
+    0% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+.rotate_me {
+    animation: rotateLeftRight 6s infinite ease-in-out;
+    transform-origin: center; 
+    display: block;
+    width: 100px; 
 }
 
 
@@ -418,56 +442,29 @@ section {
 /* 1 */ .box1 {
     background-image: url(./assets/DBD_Posters/DBDThumbnail.jpg);       /* Update Here */
 }
-.box1:hover {
-    transform: scale(1.05);
-}
-
-
 /* 2 */ .box2 {
     background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
 }
-.box2:hover {
-    transform: scale(1.05);
-}
-
-
 /* 3 */ .box3 {
     background-image: url(./assets/BerryBlue/BerryBluePoster.jpg);       /* Update Here */
     background-size:cover;
     background-repeat: no-repeat;
 }
-.box3:hover {
-    transform: scale(1.05);
-}
-
-
 /* 4 */ .box4 {
     background-image: url(./assets/Clients/Hamlet/HamletThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box4:hover {
-    transform: scale(1.05);
-}
-
 /* 5 */ .box5 {
     background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box5:hover {
-    transform: scale(1.05);
-}
-
 /* 6 */ .box6 {
     background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box6:hover {
-    transform: scale(1.05);
-}
-
 
 
 /* Page Title */
@@ -702,10 +699,10 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/ClientsHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    transition: background-image 1s ease-in-out;
 }
 
 #clientwork {
@@ -1862,17 +1859,17 @@ section {
 
 
 /* Lego Projects Page */
-#legopage {                                               /* Background Image */
+#legopage {
     display: flex;
     justify-content: center;
     gap: 5rem;
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LegoHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
 }
 
 #legoprojects {
@@ -1885,6 +1882,7 @@ section {
     gap: 2vw;
     margin-top: 2vw;
     justify-content: center;
+    padding-bottom: 10vh;
 }
 
 .lego-projects-parent a{
@@ -1893,8 +1891,8 @@ section {
 
 /* Lego Project Boxes */
 
-.lego1, .lego2, .lego3, .lego4, .lego5, .lego6 {
-    width: 25vw;
+.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7 {
+width: 25vw;
    height: 25vw;
    border-radius: 12.5%;
    cursor: pointer;
@@ -1907,48 +1905,29 @@ section {
 /* 1 */ .lego1 {
     background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/Thumbnail.png);       /* Update Here */
     background-size: contain;
-}    
-.lego1:hover {
-    transform: scale(1.05);
-}
-    
- /* 2 */ .lego2 {
+}     
+/* 2 */ .lego2 {
     background-image: url(./assets/LEGO/Brickheadz/Astarion/AstarionThumbnail.jpg);       /* Update Here */ 
 }    
-.lego2:hover {
-    transform: scale(1.05);
-}
-
- /* 3 */ .lego3 {
+/* 3 */ .lego3 {
     background-image: url(./assets/LEGO/LegoMinecraft/TheBridge/TheBridgeThumbnail.png);       /* Update Here */
     background-size: cover;
 }
-.lego3:hover {
-    transform: scale(1.05);
-}
-
 /* 4 */ .lego4 {
     background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellThumbnail.png);       /* Update Here */
     background-size: contain;
-}    
-.lego4:hover {
-    transform: scale(1.05);
-}
-    
- /* 5 */ .lego5 {
+}       
+/* 5 */ .lego5 {
     background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/BeeHouseThumbnail.jpg);       /* Update Here */
     background-size: contain;
-}    
-.lego5:hover {
-    transform: scale(1.05);
-}
-    
- /* 6 */ .lego6 {
+}     
+/* 6 */ .lego6 {
     background-image: url(./assets/LEGO/BillsArt/Thumbnail.jpg);       /* Update Here */
     background-size: cover;
 }
-.lego6:hover {
-    transform: scale(1.05);
+/* 7 */ .lego7 {
+    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-size: cover;
 }
 
 /* Lego Projects */
@@ -2081,7 +2060,19 @@ section {
     background-position: top;
 }
 
-
+/* Sable Ward Brickheadz */
+#SableWardLEGO {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 
 
 /* FIlms Page */
