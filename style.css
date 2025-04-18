@@ -529,164 +529,86 @@ section {
         background-image: url(./assets/DBD_Posters/DBDThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
-    .project1:hover {
-        transform: scale(1.05);
-    }
-    
 
-
-     /* 2 */ .project2 {
+    /* 2 */ .project2 {
         background-image: url(./assets/BerryBlue/BerryBluePoster.jpg);       /* Update Here */
         background-size: cover;
     }
-    .project2:hover {
-        transform: scale(1.05);
-    }
-    
 
-
-     /* 3 */ .project3 {
+    /* 3 */ .project3 {
         background-image: url(./assets/Cookbook/CookBookThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
-    .project3:hover {
-        transform: scale(1.05);
-    }
 
-
-
-   /* 4 */ .project4 {
+    /* 4 */ .project4 {
         background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
-    .project4:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 5 */ .project5 {
         background-image: url(./assets/Planty/PlantyThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
-    .project5:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 6 */ .project6 {
         background-image: url(./assets/MagazinePages/CatMagazineThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
-    .project6:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 7 */ .project7 {
         background-image: url(./assets/DigitalPaintings/Apple/ApplesThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
-    .project7:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 8 */ .project8 {
         background-image: url(./assets/LittleSouls/LittleSoulsThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
-    .project8:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 9 */ .project9 {
         background-image: url(./assets/Brochure/BrochureThumbnail.jpg);       /* Update Here */
         background-size: cover;
     }
-    .project9:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 10 */ .project10 {
         background-image: url(./assets/OmoriCards/OmoriCardsThumbnail.jpg);       /* Update Here */
         background-size: contain;
     }
-    .project10:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 11 */ .project11 {
         background-image: url(./assets/Animated/STAXLogo.gif);       /* Update Here */
         background-size: cover;
         background-position: 60% center;
     }
-    .project11:hover {
-        transform: scale(1.05);
-    }
 
-
-
-      /* 12 */ .project12 {
+    /* 12 */ .project12 {
         background-image: url(./assets/HolidayCards/HolidayCardThumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
-    
-    .project12:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 13 */ .project13 {
         background-image: url(./assets/1Fish/Thumbnail.png);      /* Update Here */
         background-size: cover;
     }
 
-    .project13:hover {
-        transform: scale(1.05);
-    }
-
-
-
     /* 14 */ .project14 {
         background-image: url(./assets/ContentLab/ContentLabThumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
-
-    .project14:hover {
-        transform: scale(1.05);
-    }
-
-
 
     /* 15 */ .project15 {
         background-image: url(./assets/Cuppys/CuppyThumbnail.png);      /* Update Here */
         background-size: cover;
     }
 
-    .project15:hover {
-        transform: scale(1.05);
-    }
-
-    
-
     /* 16 */ .project16 {
         background-image: url(./assets/VTSUnity/VTSUnityThumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
 
-    .project16:hover {
-        transform: scale(1.05);
+    /* 17 */ .project17 {
+        background-image: url(./assets/DoggieDayzzz/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
     }
 
 
@@ -737,42 +659,27 @@ section {
 /* 1 */ .client1 {
     background-image: url(./assets/Clients/Hamlet/HamletThumbnail.jpg);       /* Update Here */
     background-size: contain;
-}    
-.client1:hover {
-    transform: scale(1.05);
-}
-    
- /* 2 */ .client2 {
+}   
+
+/* 2 */ .client2 {
     background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
     background-size: contain;
-}    
-.client2:hover {
-    transform: scale(1.05);
-}
-    
- /* 3 */ .client3 {
+}     
+
+/* 3 */ .client3 {
     background-image: url(./assets/Clients/StudentVoterDrive/VoterDriveThumbnail.png);       /* Update Here */
     background-size: cover;
 }
-.client3:hover {
-    transform: scale(1.05);
-}
 
 /* 4 */ .client4 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-image: url(./assets/Clients/FCPR/FCPRThumbnail.jpg);       /* Update Here */
     background-size: contain;
-}    
-.client4:hover {
-    transform: scale(1.05);
 }
     
- /* 5 */ .client5 {
+/* 5 */ .client5 {
     background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayThumbnail.jpg);       /* Update Here */       /* Update Here */
     background-size: contain;
 }    
-.client5:hover {
-    transform: scale(1.05);
-}
 
 
 
@@ -1325,6 +1232,23 @@ section {
 .OMORIcards2 img:hover {
     transform: scale(1.05);
     transition: 300ms;
+}
+
+
+
+/* Doggie Dayzzz */
+
+#doggiedayzzz {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/DoggieDayzzz/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 
@@ -1926,7 +1850,7 @@ width: 25vw;
     background-size: cover;
 }
 /* 7 */ .lego7 {
-    background-image: url(./assets/Placeholder.png);       /* Update Here */
+    background-image: url(./assets/LEGO/Brickheadz/SableWard/SableWardThumbnial.jpg);       /* Update Here */
     background-size: cover;
 }
 
@@ -2068,7 +1992,7 @@ width: 25vw;
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/LEGO/Brickheadz/SableWard/SableWardHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
