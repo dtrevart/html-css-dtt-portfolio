@@ -370,6 +370,18 @@ section {
     font-size: 1.25vw;
 }
 
+/* Other Page Briefs */
+.pagebrief h1{
+    padding-top: 0.75vh;
+}
+
+.pagebrief p{
+    font-size: 1.25vw;
+    margin: 0 10rem;
+    padding-bottom: 4vh;
+    padding-top: 2vh;
+}
+
 /* Recent Projects */
 
 #recent-projects {
@@ -627,6 +639,11 @@ section {
 
     /* 17 */ .project17 {
         background-image: url(./assets/DoggieDayzzz/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+
+    /* 18 */ .project18 {
+        background-image: url(./assets/Calender/Thumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
 
@@ -1165,6 +1182,39 @@ section {
     transform: scale(1.05);
     transition: 300ms;
 }
+
+/* Calender */
+
+#calender {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Calender/CalendarHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.CalenderPages img{
+    max-width: 90%;
+    max-height: 90%;
+    transition: 300ms;
+    margin: 0;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    transform: rotate(90deg);
+}
+
+.CalenderPages img:hover{
+    transform: scale(1.05) rotate(0deg);
+    transition: 300ms;
+}
+
+
+
 
 /* Apple Still Life */
 
