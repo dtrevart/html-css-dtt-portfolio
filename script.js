@@ -93,36 +93,3 @@ const LEGOHeader_Images = [
     './assets/HeaderSlideshows/LEGO/LegoHeader5.jpg',
     './assets/HeaderSlideshows/LEGO/LegoHeader6.jpg',
 ];
-
-let currentImage_LEGOHeader = 0;
-function changeBackground_LEGO() {
-  const LEGO_Element = document.getElementById('legopage')
-  if (LEGO_Element) {
-    LEGO_Element.style.backgroundImage = `url(${LEGOHeader_Images[currentImage_LEGOHeader]})`;
-    currentImage_LEGOHeader = (currentImage_LEGOHeader + 1) % LEGOHeader_Images.length;
-  }
-}
-setInterval(changeBackground_LEGO, 6000);
-changeBackground_LEGO();
-
-
-
-const ClientHeader_Images = [
-  './assets/HeaderSlideshows/Clients/ClientsHeader1.jpg',
-  './assets/HeaderSlideshows/Clients/ClientsHeader2.jpg',
-  './assets/HeaderSlideshows/Clients/ClientsHeader3.jpg',
-  './assets/HeaderSlideshows/Clients/ClientsHeader4.jpg',
-  './assets/HeaderSlideshows/Clients/ClientsHeader5.jpg',
-  './assets/HeaderSlideshows/Clients/ClientsHeader6.jpg',
-];
-
-let currentImage_ClientHeader = 0;
-function changeBackground_Client() {
-  const Client_Element = document.getElementById('clientworkpage')
-  if (Client_Element) {
-    Client_Element.style.backgroundImage = `url(${ClientHeader_Images[currentImage_ClientHeader]})`;
-    currentImage_ClientHeader = (currentImage_ClientHeader + 1) % ClientHeader_Images.length;
-  }
-}
-setInterval(changeBackground_Client, 6000);
-changeBackground_Client();
