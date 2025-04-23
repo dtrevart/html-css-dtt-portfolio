@@ -75,7 +75,7 @@ display: flex;
     box-sizing: border-box;
     overflow-x: hidden; 
     padding-right: 2vw;
-    width: calc(100% - 20px);
+    width: 100%;
 }
 
 #hamburger-nav {
@@ -469,28 +469,28 @@ section {
 
 
 /* 1 */ .box1 {
-    background-image: url(./assets/DBD_Posters/DBDThumbnail.jpg);       /* Update Here */
+    background-image: url(./assets/Clients/FCPR/FCPRThumbnail.jpg);       /* Update Here */
 }
 /* 2 */ .box2 {
-    background-image: url(./assets/Clients/VTSU_Wellness/VSTU_Pattern.png);       /* Update Here */
+    background-image: url(./assets/1Fish/Presentation-08.jpg);       /* Update Here */
 }
 /* 3 */ .box3 {
-    background-image: url(./assets/BerryBlue/BerryBluePoster.jpg);       /* Update Here */
+    background-image: url(./assets/Cuppys/CuppyThumbnail.png);       /* Update Here */
     background-size:cover;
     background-repeat: no-repeat;
 }
 /* 4 */ .box4 {
-    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.jpg);       /* Update Here */
+    background-image: url(./assets/Films/DayIn60s/Thumbnail.gif);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
 /* 5 */ .box5 {
-    background-image: url(./assets/CocoCritters/CocoCrittersThumbnail.jpg);       /* Update Here */
+    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
 /* 6 */ .box6 {
-    background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayThumbnail.jpg);       /* Update Here */
+    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellThumbnail.png);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -500,7 +500,7 @@ section {
 
 .mainpage_title {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     text-align: center;
 }
 
@@ -537,6 +537,7 @@ section {
     gap: 2vw;
     margin-top: 2vw;
     justify-content: center;
+    padding-bottom: 5vh;
 }
 
 .allprojects-parent a{
@@ -547,7 +548,8 @@ section {
 
 .project1, .project2, .project3, .project4, .project5, .project6, 
 .project7, .project8, .project9, .project10, .project11, .project12,
-.project13, .project14, .project15, .project16, .project17, .project18{
+.project13, .project14, .project15, .project16, .project17, .project18,
+.project19{
     width: 25vw;
     height: 25vw;
     border-radius: 12.5%;
@@ -621,7 +623,7 @@ section {
     }
 
     /* 13 */ .project13 {
-        background-image: url(./assets/1Fish/Thumbnail.png);      /* Update Here */
+        background-image: url(./assets/1Fish/Presentation-08.jpg);      /* Update Here */
         background-size: cover;
     }
 
@@ -649,6 +651,12 @@ section {
         background-image: url(./assets/Calender/Thumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
+
+    /* 18 */ .project19 {
+        background-image: url(./assets/ColorTheoryPosters/ColorTheoryThumbnails.jpg);      /* Update Here */
+        background-size: cover;
+    }
+
 
 
 /* Client Work Page */
@@ -725,6 +733,11 @@ section {
     
 /* 5 */ .client5 {
     background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayThumbnail.jpg);       /* Update Here */       /* Update Here */
+    background-size: contain;
+}    
+
+/* 5 */ .client6 {
+    background-image: url(./assets/Clients/MozartPoster/MozartThumbnail.jpg);       /* Update Here */       /* Update Here */
     background-size: contain;
 }    
 
@@ -1113,6 +1126,8 @@ section {
     transition: 300ms;
 }
 
+
+
 /* Magazine Layout */
 
 #magazinepages {
@@ -1365,6 +1380,8 @@ section {
     background-position: top;
 }
 
+
+
 /* Cuppy's */
 
 #cuppys {
@@ -1548,6 +1565,65 @@ section {
 .holidaycard_roughs img:hover {
     transform: scale(1.05);
     transition: 300ms;
+}
+
+
+
+/* Color Theory Posters */
+
+#colortheoryposters {                                               /* Background Image */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colortheory_copy img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 1vw; /* Combined margin for all sides */
+    transition: transform 300ms;
+}
+
+.colortheory_copy img:hover {
+    transform: scale(1.05);
+}
+
+.colortheory_copy table {
+    width: 90%; /* or whatever size fits your design */
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Optional: Add a bit of styling for tables */
+.colortheory_copy td {
+    padding: 10px;
+}
+
+
+
+/* 1Fish */
+#OneFish {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/1Fish/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 
@@ -1847,19 +1923,39 @@ section {
     background-position: top;
 }
 
-/* 1Fish */
-#OneFish {
+
+
+
+
+/* Mozart Poster */
+#MozartRequiem {
     display: flex;
     justify-content: center;
     gap: 5rem;
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/Clients/MozartPoster/MozartHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
+
+.MozartRequiem_copy img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 50%; 
+    max-height: 50%;
+    transition: transform 300ms;
+    padding: 5vh;
+}
+
+.MozartRequiem_copy img:hover {
+    transform: scale(1.05);
+}
+
+
 
 
 /* Lego Projects Page */
