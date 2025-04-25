@@ -44,6 +44,11 @@
         word-break: break-word;  
     }
 
+    #Header_Video {
+        object-position: center center;
+        top: -0.5vw;
+        transform: scale(1.03); 
+    }
 
 /* Projects */
     #projectinfo {
@@ -56,9 +61,21 @@
         margin-top:0;
     }
 
-    .page_title h1{
-        font-size: 7.5vw;
-        margin-top: none;
+    .mainpage_title {
+        top: -2vw;
+    }
+
+    .mainpage_title h1{
+        font-size: 8vw;
+    }
+
+    
+    .pagebrief p{
+        margin-left: 3vw;
+        margin-right: 3vw;
+        font-size: 2vw;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
     }
 
     .projectcopy {
@@ -380,32 +397,32 @@
     
 
 /* Footer Adjustmnets */
+    .footer-container{
+        padding-top: 1vh;
+    }
+
     .socialIcons{
         display: flex;
         justify-content: center;
     }
-    .socialIcons a{
-        height: 5vw;    
-        width: 5vw;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        font-size: 2vw;
+    .socialIcons a {
+        width: 2rem;
+        height: 2rem;
     }
-    .socialIcons a i{
-      height: 2vw;
-      width: 2vw;
-      font-size: 3vw;
-      padding-top: 1vw;
-      padding-right: 1.5vw;
+    
+    .socialIcons a i {
+        font-size: 1.25rem;
     }
-    .footerNav ul li a{
-        font-size: 2vw;
+    
+    .footer_img {
+        max-width: 50px;
     }
-    .footerBottom {
-        padding: 1vw;
+    
+    .footerNav ul li a {
+        margin: 1rem 0;
+        font-size: 0.75rem;
     }
-    .footerBottom p{
-        font-size: 1.25vw;
+    .footerBottom p {
+        font-size: 0.5rem;
     }
 }

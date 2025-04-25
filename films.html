@@ -51,12 +51,14 @@
             <span></span>
         </div>
         <ul class="hamburger-menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
             <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
             <li><a href="clientwork.html" onclick="toggleMenu()">Client Work</a></li>
             <li><a href="lego.html" onclick="toggleMenu()">LEGO</a></li>
             <li><a href="films.html" onclick="toggleMenu()">Films</a></li>
             <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
         </ul>
+        <img src="./assets/MeLogo.png" alt="Logo" class="hamburger-logo">
     </div>
 
 <!--Page Specific Code Starts Here-->
@@ -64,7 +66,11 @@
 
  
 <section id="filmpage">
-    <div class="page_title">
+    <video autoplay loop muted playsinline id="Header_Video">
+        <source src="./assets/HeaderSlideshows/Filmheader.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="mainpage_title">
         <h1 class="page_title_text">Films</h1>
     </div>
 </section>

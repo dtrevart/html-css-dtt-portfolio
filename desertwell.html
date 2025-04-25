@@ -49,12 +49,14 @@
             <span></span>
         </div>
         <ul class="hamburger-menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
             <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
             <li><a href="clientwork.html" onclick="toggleMenu()">Client Work</a></li>
             <li><a href="lego.html" onclick="toggleMenu()">LEGO</a></li>
             <li><a href="films.html" onclick="toggleMenu()">Films</a></li>
             <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
         </ul>
+        <img src="./assets/MeLogo.png" alt="Logo" class="hamburger-logo">
     </div>
 
 
@@ -107,15 +109,15 @@
         <h1 class="title">Render</h1>
         <img src="./assets/LEGO/LegoMinecraft/DesertWell/DesertWell_Render.png" onclick="openImage(this)" alt="Render of Desert Well">
     </div>
+
     <div class="LegoProject_Photos">
-        <h1 class="title">Photos</h1>
-        <table>
-            <tr>
-                <td><img src="./assets/LEGO/LegoMinecraft/DesertWell/Photo1.jpg" onclick="openImage(this)" alt="Photo of Built Desert Well"></td>
-                <td><img src="./assets/LEGO/LegoMinecraft/DesertWell/Photo2.jpg" onclick="openImage(this)" alt="Photo of Built Desert Well"></td>
-            </tr>
-        </table>
+        <h1 class="title">Renders</h1>
+        <div class="lego-grid">
+            <img src="./assets/LEGO/LegoMinecraft/DesertWell/Photo1.jpg" onclick="openImage(this)" alt="Render 1">
+            <img src="./assets/LEGO/LegoMinecraft/DesertWell/Photo2.jpg" onclick="openImage(this)" alt="Render 2">
+        </div>
     </div>
+
     <div class="LegoProject_Copy">
         <p>
          A link to the instructions can be found

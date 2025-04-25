@@ -49,12 +49,14 @@
             <span></span>
         </div>
         <ul class="hamburger-menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
             <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
             <li><a href="clientwork.html" onclick="toggleMenu()">Client Work</a></li>
             <li><a href="lego.html" onclick="toggleMenu()">LEGO</a></li>
             <li><a href="films.html" onclick="toggleMenu()">Films</a></li>
             <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
         </ul>
+        <img src="./assets/MeLogo.png" alt="Logo" class="hamburger-logo">
     </div>
 
 
@@ -70,7 +72,7 @@
 </section>
 
 <section id="projectinfo">
-    <div class="projectcopy">
+    <div class="LegoProject_Copy">
         <p>
             The Bridge is a LEGO Minecraft module I designed for a Cheesey Studios build competition 
             held in August 2024. The challenge was to create a 16x32 stud module 
@@ -98,7 +100,24 @@
         </p>
         <br>
         <br>
-        <p>This page isn't complete yet. Please check back soon!</p>
+    </div>
+    <div class="LegoProject_Photos">
+        <h1 class="title">Renders</h1>
+        <div class="lego-grid">
+            <img src="./assets/LEGO/LegoMinecraft/TheBridge/1.png" onclick="openImage(this)" alt="Render 1">
+            <img src="./assets/LEGO/LegoMinecraft/TheBridge/2.png" onclick="openImage(this)" alt="Render 2">
+            <img src="./assets/LEGO/LegoMinecraft/TheBridge/3.png" onclick="openImage(this)" alt="Render 1">
+            <img src="./assets/LEGO/LegoMinecraft/TheBridge/TheBridgeModuleInstructions.png" onclick="openImage(this)" alt="Render 2">
+          <!-- Add more images here -->
+        </div>
+    </div>
+
+    <div class="LegoProject_Copy">
+        <p> I'm currently working on finalizing the instructions and parts list. Check back soon!
+        <br>
+        <br>
+        </p>
+   </div>
 </section>
 
 

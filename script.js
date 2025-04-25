@@ -84,12 +84,3 @@ gsap.to(".animated_box", {
   },
   delay: 0.5 // Add a 1-second delay before the animation starts
 });
-
-const LEGOHeader_Images = [
-    './assets/HeaderSlideshows/LEGO/LegoHeader1.jpg',
-    './assets/HeaderSlideshows/LEGO/LegoHeader2.jpg',
-    './assets/HeaderSlideshows/LEGO/LegoHeader3.jpg',
-    './assets/HeaderSlideshows/LEGO/LegoHeader4.jpg',
-    './assets/HeaderSlideshows/LEGO/LegoHeader5.jpg',
-    './assets/HeaderSlideshows/LEGO/LegoHeader6.jpg',
-];
