@@ -520,21 +520,27 @@ section {
 
 
 /* Page Title */
-
-.mainpage_title {
-    position: relative;
+.page_title, .mainpage_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 5vh; 
     z-index: 0;
-    text-align: center;
 }
 
-.page_title {
-    margin-top: 13vw;
-    text-align: center;
-}
-
-.page_title_text {
+.page_title h1, .mainpage_title h1 {
     color: #F2E5D7;
-    font-size: 5vw;
+    font-size: 5vw;             
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;         
+}
+
+.mainpage_title h1 {
+    font-size: 6vw;
 }
 
 
@@ -976,6 +982,7 @@ section {
 #dbd_posters {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 30vw;
     margin-left: auto;
@@ -1416,16 +1423,18 @@ section {
 /* Cuppy's */
 
 #cuppys {
-    display: flex;
-    justify-content: center;
+    background-image: url(./assets/Cuppys/CuppyHeader.jpg);
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
     gap: 5rem;
-    height: 30vw;
+    height: 30vw;           
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Cuppys/CuppyHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    flex-direction: column; 
 }
 
 .cuppy_copy p{
@@ -1602,19 +1611,19 @@ section {
 
 /* Color Theory Posters */
 
-#colortheoryposters {                                               /* Background Image */
-    display: flex;
-    justify-content: center;
+#colortheoryposters {
+    background-image: url(./assets/ColorTheoryPosters/Header.jpg);
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
     gap: 5rem;
-    height: 30vw;
+    height: 30vw;           
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/ColorTheoryPosters/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
 }
 
 .color-grid {
@@ -1897,16 +1906,18 @@ section {
 /* Earth Day Poster */
 
 #earthday25 {
-    display: flex;
-    justify-content: center;
+    background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayHeader.jpg);
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
     gap: 5rem;
-    height: 30vw;
+    height: 30vw;           
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Clients/SustainabilityTeam_EarthDay/EarthDayHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    flex-direction: column; 
 }
 
 .earthday25_copy img {

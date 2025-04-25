@@ -16,32 +16,80 @@
         position: relative;
     }
 
-    .logo {
-        font-size: 5vw;
-        padding-right: 5vw;
-        white-space: nowrap; /* Prevents text from breaking */
+    .logo_container {
+        gap:1.5vw; 
     }
 
+    .logo_img {
+        height: 10vw; 
+    }
+    
+    .logo_text {
+        font-size: 4vw;
+    }
+
+    #profile {
+        background-size: cover; /* Make the background image cover the whole section */
+        background-position: top; /* Optionally, center the background image */
+        background-repeat: no-repeat; /* Prevent background repetition */
+    }
+
+    .btn {
+        width: 15vw;
+        height: 3vh;
+        border-radius: 5vw;
+        font-size: 1.8vw;
+    }
+    
 
 /*Text*/
-    .brief-intro {
+    .brief-boxes {
+        display: flex;
         flex-direction: column;
-        text-align: center;
-    }
-    .brief-image, .brief-text {
-        max-width: 100%;
+        align-items: center; 
+        justify-content: center;
+        text-align: center; 
+        margin: 0 auto; 
+        padding: 0;
+        padding-bottom: 2vh; 
     }
 
-    .brief-text h1{
-        padding-right:1.5vh;
+    .brief-image {
+        padding-left: 0; 
+        padding-right: 0; 
+        padding-bottom: 0; 
+        transform: none; 
+        max-width: 100%; 
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
     }
-    .brief-text p{
-        font-size: 2.75vw;
-        padding:1.5rem;
-        padding-top:0;
+
+    .brief-image img {
+        width: 30vw; 
+        height: auto; 
+        margin: 0 auto;
+        padding-top: 1vh;
+    }
+
+    .brief-text h1 {
+        padding-right: 0;
+        font-size: 5vw;
+        padding-top: 1.25vh;
+    }
+
+    .brief-text p {
+        font-size: 2.5vw;
+        line-height: 1.5;
+        padding: 1.5rem;
+        padding-top: 0;
+        padding-bottom: 1vh;
         padding-right: calc(1.5rem + 1.5vh);
         word-wrap: break-word;
-        word-break: break-word;  
+        word-break: break-word;
+        margin-left: 0;
+        margin-right: 0; 
     }
 
     #Header_Video {
@@ -51,6 +99,19 @@
     }
 
 
+    #recent-projects {
+        padding-top: 1.5vh;
+        padding-bottom: 5vh;
+    }
+    #recent-projects p {
+        font-size: 2.5vw;
+    }
+    #recent-projects h1 {
+        font-size: 6vw;
+    }
+
+
+
 /* Projects */
     #projectinfo {
         padding: 3vw;
@@ -58,16 +119,24 @@
         height: 50vw;
     }
 
-    .page_title{
-        margin-top:0;
+    .page_title, .mainpage_title {
+        margin-top: -3vh; 
     }
 
-    .mainpage_title {
-        top: -2vw;
+    .page_title h1, .mainpage_title h1 {
+        font-size: 7vw;  
+        line-height: 1.2;
     }
 
-    .mainpage_title h1{
-        font-size: 10vw;
+    .page_title, .mainpage_title {
+        display: flex;
+        flex-direction: column;  /* Keeps the text centered vertically */
+        justify-content: center;  /* Centers content vertically */
+        align-items: center;      /* Centers content horizontally */
+    }
+
+    .mainpage_title h1 {
+        font-size: 8vw; 
     }
 
     .pagebrief h1 {
@@ -103,22 +172,6 @@
         display: block;
         transition: 300ms;
     }
-
-/* Main Page Extenders */
-    .home_ME {
-        height: 9vh;
-    }
-    .projects_ME {
-        height: 6vh;
-    }
-    .clients_ME {
-        height: 56vh;
-    }
-    .lego_ME {
-        height: 43.5vh;
-    }
-
-
 
 /*DBD Posters */
     .DBD_Posters {
@@ -206,14 +259,26 @@
 
 
 /* Cookbook */
-    .CookBookPages table{
-        padding-top: 5vh;
-    }
-    .CookbookPages img{
-        max-width: 85%;
-        max-height: 85%;
+    .CookbookPages img {
+        max-width: 90%; 
+        max-height: auto; 
+        padding-top: 2.5vh; 
+        margin: 0 auto; 
     }
 
+    .Cookbook_Mockup img {
+        max-width: 80%; 
+        margin: 0 auto; 
+        display: block;
+        padding-bottom: 2vh;
+    }
+
+
+/* Cuppy's */
+    .cuppy_copy {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
 
 
 /* CoCoCritters */
