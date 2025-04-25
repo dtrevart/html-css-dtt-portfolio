@@ -84,3 +84,8 @@ gsap.to(".animated_box", {
   },
   delay: 0.5 // Add a 1-second delay before the animation starts
 });
+
+document.getElementById('Header_Video').play().catch(function() {
+    // If autoplay fails, log it or offer a fallback
+    console.log('Autoplay failed. Click to play.');
+});

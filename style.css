@@ -274,10 +274,9 @@ a:hover {
 .hamburger-logo {
     width: 100px;
     height: auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
     opacity: 0;
     transition: opacity 0.5s ease-out;
+    margin-top: 2vh; 
 }
 
 .hamburger-menu-overlay.active .hamburger-logo {
@@ -995,9 +994,9 @@ section {
     float: left;
 }
 
-.DBD_Posters img{
+.DBD_Posters img {
     max-width: 75%;
-    max-height: 75%;
+    height: auto;
     padding: 2.5vh;
     transition: 300ms;
     margin: 0;
@@ -1008,7 +1007,9 @@ section {
 }
 
 .DBD_Posters {
-    height: 207.5vh;
+    padding-top: 1vh;
+    padding-bottom: 10vh;
+    height: auto; /* Let content decide the height */
 }
 
 
@@ -1068,8 +1069,13 @@ section {
 .Coco_Package img{
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto; 
     transition: 300ms;
+}
+
+.Coco_Package td {
+    padding: 1rem;
+    vertical-align: top;
 }
 
 .Coco_Package img:hover{
@@ -1323,34 +1329,35 @@ section {
     background-position: top;
 }
 
-.OMORIcards1 img{
-    max-width: 90%;
-    max-height: 90%;
+.omori-tables {
     display: flex;
-    margin: auto;
-    padding-top: 1vw;
-    margin-bottom: 1vw;
-    transition: 300ms;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+  
+.OMORIcards1 table, .OMORIcards2 table {
+    width: 100%;
+    margin: 0;
+    border-spacing: 0;
+    padding: 0;
+    border: none;
 }
 
-.OMORIcards1 img:hover {
+.OMORIcards1 td, .OMORIcards2 td {
+    padding: 2rem;
+    text-align: center;
+}
+  
+.OMORIcards1 img, .OMORIcards2 img {
+    width: 100%; 
+    height: auto;
+    object-fit: contain; 
+    transition: 300ms;
+}
+  
+.OMORIcards1 img:hover, .OMORIcards2 img:hover {
     transform: scale(1.05);
-    transition: 300ms;
-}
-
-.OMORIcards2 img{
-    max-width: 90%;
-    max-height: 90%;
-    display: flex;
-    margin: auto;
-    padding-top: 1vw;
-    margin-bottom: 1vw;
-    transition: 300ms;
-}
-
-.OMORIcards2 img:hover {
-    transform: scale(1.05);
-    transition: 300ms;
 }
 
 
@@ -1650,11 +1657,11 @@ section {
   justify-content: center;
   gap: 1vw;
   margin: 2vw 0;
-  flex-wrap: wrap; /* change from nowrap to wrap */
+  flex-wrap: wrap; 
 }
 
 .fish-row .fish-img {
-  width: 48vw; /* 2x 48vw + gap ≈ 100vw */
+  width: 48vw; 
   padding: 1vw;
   margin: 0;
 }

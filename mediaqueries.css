@@ -22,8 +22,8 @@
         white-space: nowrap; /* Prevents text from breaking */
     }
 
-    /*Text*/
 
+/*Text*/
     .brief-intro {
         flex-direction: column;
         text-align: center;
@@ -50,6 +50,7 @@
         transform: scale(1.03); 
     }
 
+
 /* Projects */
     #projectinfo {
         padding: 3vw;
@@ -66,14 +67,20 @@
     }
 
     .mainpage_title h1{
-        font-size: 8vw;
+        font-size: 10vw;
+    }
+
+    .pagebrief h1 {
+        font-size: 5vw;
+        padding-top: 1.25vh;
     }
 
     
     .pagebrief p{
         margin-left: 3vw;
         margin-right: 3vw;
-        font-size: 2vw;
+        font-size: 2.5vw;
+        line-height: 1.5;
         padding-top: 1vh;
         padding-bottom: 2vh;
     }
@@ -116,8 +123,11 @@
 /*DBD Posters */
     .DBD_Posters {
         padding-top: 1vh;
-        height: 55vh;
+        padding-bottom: 5vh;
+        height: auto; 
+        display: block; 
     }
+
     .DBD_Posters img{
         max-width: 75%;
         max-height: 75%;
@@ -125,8 +135,6 @@
         margin-bottom: 0vw;
         transition: 300ms;
     }
-
-
 
 
 /* Planty */
@@ -139,7 +147,6 @@
         font-size:7.5vw;
         text-align:center;
     }
-
 
 
 /* Magazine Pages */
@@ -177,20 +184,12 @@
     }
 
 
-
 /* Brochure */
     .MunchBrochure_Mockup h1{
         font-size:7.5vw;
         text-align:center;
         padding-bottom: 0.25vh;
     }
-
-
-/* Little Souls */
-    .mobile-filler {
-        height: 29.75vw;
-    }
-
 
 
 /* Hamlet */
@@ -244,7 +243,7 @@
 
 
 /* Holiday Cards */
-    .holidaycards_copy {
+    .holidaycards_copy, .holidaycard_roughs {
         font-size: 3vw;
         line-height: 1.5;
         padding-bottom: 1vh;
@@ -266,9 +265,6 @@
 
 
 /* Apples */
-    .apples_ME {
-        height: 36vh;
-    }
     .Apples h1{
         font-size:5.5vw;
         text-align:center;
@@ -278,13 +274,50 @@
 
 
 /* OMORI Cards */
-    .OMORIcards1 {
-        padding-top: 2vw;
-    }
-    .OMORIcards2 tr {
-        height: 15vh;
+    .OMORIcards1 td, .OMORIcards2 td {
+        padding: 1rem; 
     }
 
+    .OMORIcards1 img, .OMORIcards2 img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .omori-tables {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+
+/* Calendar */
+  .CalenderPages table {
+        display: block;
+        width: 100%;
+        margin: 0;
+  }
+
+  .CalenderPages tr, .CalenderPages td {
+        display: block;
+        width: 100%;
+        text-align: center;
+  }
+
+  .CalenderPages img {
+        width: 85%;
+        max-width: 85%;
+        padding: 0;
+        margin: 3.5vh auto;
+        transform: rotate(0deg);
+  }
+
+  .CalenderPages img:hover {
+        transform: scale(1.05); 
+  }
+
+  .CalenderPages{
+        padding: 0;
+        margin: 0;
+    }
 
 /* STAX */
     .stax_ME {
@@ -296,6 +329,22 @@
         height: 15vh;
     }
 
+/* 1Fish */
+    .fish-row {
+        gap: 4vw; /* increase space between images */
+    }
+
+    .fish-row .fish-img {
+        width: 46%; /* slightly smaller to make room for bigger gap */
+        padding: 0vw 0;
+    }
+
+/* Color Theory Posters */
+    .colortheory_copy {
+        font-size: 3vw;
+        line-height: 1.5;
+        padding-bottom: 1vh;
+    }
 
 /* SusTeam */
     #earthday25 {
@@ -340,6 +389,13 @@
     .VTSU_VoterDrive2 p{
         font-size: 3vw;
         line-height: 1.5;
+    }
+
+/* Mozart's Requiem Poster */
+    .MozartRequiem_copy {
+        font-size: 3vw;
+        line-height: 1.5;
+        padding-bottom: 1vh;
     }
 
 
@@ -399,6 +455,12 @@
 /* Footer Adjustmnets */
     .footer-container{
         padding-top: 1vh;
+        padding-bottom: 0;
+    }
+
+    .footerNav {
+        padding-top: 0;
+        margin: 0;
     }
 
     .socialIcons{
@@ -415,11 +477,12 @@
     }
     
     .footer_img {
-        max-width: 50px;
+        padding-top: 0.25vh;
+        max-width: 40px;
+        padding-bottom: 0.25vh;
     }
     
     .footerNav ul li a {
-        margin: 1rem 0;
         font-size: 0.75rem;
     }
     .footerBottom p {
