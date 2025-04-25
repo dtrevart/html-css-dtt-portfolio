@@ -464,6 +464,11 @@
     }
 
 
+/* Media Extender */
+    .MediaExtender {
+        height: 20vh;
+    }
+
 
 /* Lego Projects */
     .LegoProject_Copy P{
