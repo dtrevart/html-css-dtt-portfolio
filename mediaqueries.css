@@ -472,7 +472,12 @@
         margin: 0 auto; 
     }
 
-  
+
+/* FCP&R */
+    .FCPR_copy p{
+        font-size: 3vw;
+        color: #F2E5D7;
+    }
 
 
 /* Student Voter Drive */
