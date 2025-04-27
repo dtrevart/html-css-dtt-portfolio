@@ -444,6 +444,35 @@
         text-align:center;
     }
 
+    .wellness-grid {
+        display: none; 
+    }
+    
+    .wellness-grid-mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 10px;
+    }
+
+    .wellness-grid-mobile-LastRow {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 49%; 
+        justify-items: center; 
+        text-align: center;
+        gap: 10px; 
+        margin: auto;
+        padding-bottom: 10px
+    }
+    
+    .wellness-grid-mobile-LastRow .grid-item img {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+
+  
 
 
 /* Student Voter Drive */

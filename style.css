@@ -363,8 +363,7 @@ section {
 .brief-boxes {
     display: grid;
     grid-template-columns: 33% 66%;
-    align-items: center;
-    align-items: flex-start; /* Aligns items to the top */
+    align-items: flex-start; 
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
@@ -1846,8 +1845,74 @@ section {
     transition: 300ms;
 }
 
-.wellness-copy table{
-    padding-bottom:2vw;
+.WC_CreativeBrief_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 20px; /* Adds space between the images */
+    text-align: center;
+    justify-content: center;
+    padding-bottom:25px;
+    padding-top: 1vw;
+}
+
+.WC_CreativeBrief_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns for desktop */
+    gap: 20px; 
+    text-align: center;
+    justify-content: center;
+    width: 66%;
+    margin: auto; 
+    padding-bottom: 1vw;
+}
+
+.WC_CreativeBrief_1 img, .WC_CreativeBrief_2 img {
+    padding: 0;
+    margin: 0;
+}
+
+/* Wellness Center Logos */
+.wellness-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 0vw; 
+    text-align: center;
+}
+
+.wellness-grid img, .wellness-grid-mobile img, .wellness-grid-mobile-LastRow img {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item img {
+    width: 100%; 
+    height: auto; 
+    cursor: pointer; 
+    padding: none;
+}
+
+.wellness-grid .grid-item {
+    padding: 20px; 
+}
+
+/* Mobile Grid */
+.wellness-grid-mobile, .wellness-grid-mobile-LastRow {
+    display: none;
+    grid-template-columns: 1fr; 
+    gap: 10px;
+    text-align: center;
+}
+
+.wellness-grid-mobile .grid-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.wellness-grid-mobile .grid-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
 }
 
 
@@ -1972,14 +2037,58 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/Placeholder.png);
+    background-image: url(./assets/Clients/FCPR/FCPRHeader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
+.FCPR_row {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin: 2vw 0;
+    flex-wrap: wrap; 
+}
+  
+.FCPR_row .FCPR_image {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    transition: transform 0.3s
+}
+  
+.FCPR_image:hover, .FCPR_single:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s
+}
+  
+.FCPR_single {
+    display: block;
+    width: 40%;
+    margin: auto;
+    padding: 2vw;
+    transition: transform 0.3s
+}
+  
+.FCPR_copy p{
+    color: #F2E5D7;
+}
 
+.FCPR_copy h1{
+    font-size:2.5vw;
+    text-align:center;
+}
 
+.FCPR_copy a{
+    color:#C2B4B4;
+}
+
+.FCPR_copy a:hover{
+    color:#ABB3A0;
+    text-decoration: none;
+}
 
 
 /* Mozart Poster */
@@ -2287,11 +2396,26 @@ width: 25vw;
 }
 
 .FilmFrames iframe {
-    width: 80vw;     /* You can adjust this */
+    width: 80vw;     
     max-width: 960px;
-    height: 54vw;    /* Keeps a 16:9 aspect ratio relative to width */
+    height: 54vw;   
     max-height: 540px;
-    padding-bottom: 5vh;
+        padding-bottom: 5vh;
+}
+
+/* Specific to Self Reflection */
+.FilmFrames_SR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.FilmFrames_SR iframe {
+    width: 80vw;    
+    max-width: 960px;
+    height: 54vw;   
+    max-height: 540px;
 }
 
 
@@ -2524,12 +2648,13 @@ footer{
     text-decoration: none;
     background-color: #F2E5D7;
     margin: 0.75rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .socialIcons a i {
