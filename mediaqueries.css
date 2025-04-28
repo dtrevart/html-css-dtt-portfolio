@@ -99,6 +99,16 @@
     }
 
 
+/* Mobile Project Display Alterations */
+    #recent-projects {
+        margin: auto;
+    }
+    .recent-project-parent {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 4vh;
+        margin-right: 4vh;
+        gap: 2vh;
+    }
     #recent-projects {
         padding-top: 1.5vh;
         padding-bottom: 5vh;
@@ -110,6 +120,36 @@
         font-size: 6vw;
     }
 
+    #allprojects {
+        margin: auto;
+    }
+    .allprojects-parent {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 4vh;
+        margin-right: 4vh;
+        gap: 2vh;
+    }
+    #clientwork {
+        margin: auto;
+    }
+    .clientwork-parent {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 4vh;
+        margin-right: 4vh;
+        gap: 2vh;
+    }
+    #legoprojects {
+        margin: auto;
+    }
+    .lego-projects-parent {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 4vh;
+        margin-right: 4vh;
+        gap: 2vh;
+    }
+    #films {
+        margin: auto;
+    }
 
 
 /* Projects */
@@ -527,6 +567,10 @@
     }
 
 /* About Me */
+    .pagebrief h2{
+        font-size: 3.25vw;
+    }
+
     .about_copy {
         padding: 2vh;
         font-size: 3vw;
@@ -534,26 +578,66 @@
         height: 50vh;
     }
 
-    .contact-form h1{
-        font-size:7.5vw;
-        text-align:center;
-        padding-bottom: 1vh;
+    .resume-link p {
+        font-size: 3.25vw;
     }
 
-    .contact-form{
-        padding-bottom: 3vh;
-        align-content: center;
-    }
-    
-    .contact-form input {
-        width: 100%
-    }
-    .contact-form textarea {
-        width: 100%
-    }
-    .contact-form button {
-        width: 100%;
-    }
+/* Contact */
+  .contact-form {
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+  }
+
+  .contact-form .heading {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .contact-form h1 {
+    font-size: 8vw;
+  }
+
+  .contact-form form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 60vw; 
+    height: auto;
+    font-size: 4vw;
+  }
+
+  .form__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form label {
+    font-size: 4vw;
+    padding-bottom: 1vw;
+    text-align: center;
+  }
+
+  .contact-form button[type="submit"] {
+    width: 50vw;
+    font-size: 4vw;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 5vw;
+    flex-wrap: wrap;
+  }
+
+  .social-icon i {
+    font-size: 8vw; /* Bigger social icons on mobile */
+  }
+
     
 
 /* Footer Adjustmnets */

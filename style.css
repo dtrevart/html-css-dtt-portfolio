@@ -329,15 +329,16 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding-top: 1.5vh;
 }
 
 .btn {
     font-weight: 500vw;
-    font-size: 0.85vw;
+    font-size: 1rem;
     font-family: Outfit;
     transition: all 300ms ease;
     padding: 1vw;
-    width: 8vw;
+    width:15vw;
     border-radius: 2vw;
     border: #262322 0.1rem solid;
     background: #ABB3A0;
@@ -389,7 +390,14 @@ section {
   
 .brief-text p{
     margin: 1vw;
-    font-size: 1.25vw;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 1.45rem;
+    text-align: center;
+}
+
+.brief-text h1 {
+    font-size: 3rem;
 }
 
 /* Other Page Briefs */
@@ -415,7 +423,8 @@ section {
 /* Recent Projects */
 
 #recent-projects {
-    height: 65vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
 }
 
 .recent-projects-header-text {
@@ -425,10 +434,9 @@ section {
 
 .recent-project-parent {
     display: grid;
-    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-top: 2vw;
-    justify-content: center;
 }
 
 .recent-project-parent a{
@@ -457,6 +465,8 @@ section {
 
 /* Project Animations */
 .animated_box {
+    aspect-ratio: 1/1;
+    width: 100%;
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
     will-change: transform;
@@ -487,14 +497,15 @@ section {
 /* Recent Project Displays */
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
-    width: 25vw;
-    height: 25vw;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 12.5%;
     cursor: pointer;
     transition: 300ms;
-    background-size: contain;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 
-    0 16px 40px rgba(0, 0, 0, 0.05);
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -564,16 +575,15 @@ section {
 }
 
 #allprojects {
-    height: 170vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
 }
 
 .allprojects-parent {
     display: grid;
-    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-top: 2vw;
-    justify-content: center;
-    padding-bottom: 5vh;
 }
 
 .allprojects-parent a{
@@ -586,14 +596,15 @@ section {
 .project7, .project8, .project9, .project10, .project11, .project12,
 .project13, .project14, .project15, .project16, .project17, .project18,
 .project19{
-    width: 25vw;
-    height: 25vw;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 12.5%;
     cursor: pointer;
     transition: 300ms;
-    background-size: contain;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 
-    0 16px 40px rgba(0, 0, 0, 0.05);
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -717,15 +728,15 @@ section {
 }
 
 #clientwork {
-    height: 65vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
 }
 
 .clientwork-parent {
     display: grid;
-    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-top: 2vw;
-    justify-content: center;
 }
 
 .clientwork-parent a{
@@ -735,16 +746,16 @@ section {
 /* Client Work Boxes */
 
 .client1, .client2, .client3, .client4, .client5, .client6 {
-    width: 25vw;
-   height: 25vw;
-   border-radius: 12.5%;
-   cursor: pointer;
-   transition: 300ms;
-   background-size: contain;
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 
-   0 16px 40px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
 }
-
 
 
 /* 1 */ .client1 {
@@ -2173,16 +2184,15 @@ section {
 }
 
 #legoprojects {
-    height: 65vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
 }
 
 .lego-projects-parent {
     display: grid;
-    grid-template-columns: repeat(3, 25vw); /* 3 equal-width columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-top: 2vw;
-    justify-content: center;
-    padding-bottom: 10vh;
 }
 
 .lego-projects-parent a{
@@ -2192,15 +2202,16 @@ section {
 /* Lego Project Boxes */
 
 .lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7 {
-width: 25vw;
-   height: 25vw;
-   border-radius: 12.5%;
-   cursor: pointer;
-   transition: 300ms;
-   background-size: contain;
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 
-   0 16px 40px rgba(0, 0, 0, 0.05);
-}
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 12.5%;
+        cursor: pointer;
+        transition: 300ms;
+        background-size: cover; 
+        background-position: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                    0 16px 40px rgba(0, 0, 0, 0.05);
+    }
 
 
 
@@ -2389,19 +2400,21 @@ width: 25vw;
 }
 
 #films {
-    height: 65vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
 }
 
 /* Film Boxes*/
 .film1, .film2, .film3{
-width: 25vw;
-   height: 25vw;
-   border-radius: 12.5%;
-   cursor: pointer;
-   transition: 300ms;
-   background-size: contain;
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 
-   0 16px 40px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
 }
 
 
