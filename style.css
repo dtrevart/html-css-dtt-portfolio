@@ -513,7 +513,7 @@ section {
     background-image: url(./assets/Clients/FCPR/FCPRThumbnail.jpg);       /* Update Here */
 }
 /* 2 */ .box2 {
-    background-image: url(./assets/1Fish/Presentation-08.jpg);       /* Update Here */
+    background-image: url(./assets/Clients/MozartPoster/MozartThumbnail.jpg);       /* Update Here */
 }
 /* 3 */ .box3 {
     background-image: url(./assets/Cuppys/CuppyThumbnail.png);       /* Update Here */
@@ -521,17 +521,17 @@ section {
     background-repeat: no-repeat;
 }
 /* 4 */ .box4 {
-    background-image: url(./assets/Films/DayIn60s/Thumbnail.gif);       /* Update Here */
+    background-image: url(./assets/Films/SelfReflection/Thumbnail.gif);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
 /* 5 */ .box5 {
-    background-image: url(./assets/Clients/Hamlet/HamletThumbnail.jpg);       /* Update Here */
+    background-image: url(./assets/ContentLab/ContentLabThumbnail.jpg);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
 /* 6 */ .box6 {
-    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellThumbnail.png);       /* Update Here */
+    background-image: url(./assets/Films/WhereWeAre/Thumbnail.gif);       /* Update Here */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -2405,7 +2405,7 @@ section {
 }
 
 /* Film Boxes*/
-.film1, .film2, .film3{
+.film1, .film2, .film3, .film4{
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 12.5%;
@@ -2433,6 +2433,12 @@ section {
 
 /* 3 */ .film3 {
     background-image: url(./assets/Films/CuppyHeader/Thumbnail.gif);       /* Update Here */
+    background-size: cover;
+    background-position-x: center;
+}
+
+/* 3 */ .film4 {
+    background-image: url(./assets/Films/WhereWeAre/Thumbnail.gif);       /* Update Here */
     background-size: cover;
     background-position-x: center;
 }
@@ -2508,6 +2514,20 @@ section {
     margin-left: auto;
     margin-right: auto;
     background-image: url(./assets/Films/CuppyHeader/Thumbnail.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Cuppy's Header */
+#WhereWeAre {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/Placeholder.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

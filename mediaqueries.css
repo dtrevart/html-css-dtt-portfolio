@@ -170,9 +170,9 @@
 
     .page_title, .mainpage_title {
         display: flex;
-        flex-direction: column;  /* Keeps the text centered vertically */
-        justify-content: center;  /* Centers content vertically */
-        align-items: center;      /* Centers content horizontally */
+        flex-direction: column;  
+        justify-content: center;  
+        align-items: center;      
     }
 
     .mainpage_title h1 {
@@ -635,7 +635,7 @@
   }
 
   .social-icon i {
-    font-size: 8vw; /* Bigger social icons on mobile */
+    font-size: 8vw; 
   }
 
     
