@@ -2853,3 +2853,16 @@ footer{
     color: #F2E5D7;
     font-size: 0.75vw;
 }
+
+.footerBottom a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  outline: none; 
+  font-style: italic;
+}
+
+.footerBottom a:hover,
+.footerBottom a:focus {
+  color: #7C886D;
+  outline: none; 
+}
