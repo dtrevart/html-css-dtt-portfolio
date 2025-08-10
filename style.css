@@ -7,6 +7,13 @@
     padding: 0;
 }
 
+:root {
+  --bg-color: #262322; /* match header/nav/footer */
+  --text-color: #F2E5D7;
+  --text-muted: #C2B4B4;
+  --timeline-line-color: #F2E5D7; /* visible line color */
+}
+
 body {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
@@ -406,7 +413,7 @@ section {
 }
 
 .pagebrief h2{
-    padding-top: 2.5vh;
+    padding: 2.5vh;
     color: #F2E5D7;
     font-size: 1.75vw;             
     line-height: 1.1;
@@ -2210,7 +2217,7 @@ section {
 
 /* Lego Project Boxes */
 
-.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7 {
+.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7, .lego8 {
         width: 100%;
         aspect-ratio: 1 / 1;
         border-radius: 12.5%;
@@ -2225,22 +2232,22 @@ section {
 
 
 /* 1 */ .lego1 {
-    background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/Thumbnail.png);       /* Update Here */
+    background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/Thumbnail.jpg);       /* Update Here */
     background-size: contain;
 }     
 /* 2 */ .lego2 {
-    background-image: url(./assets/LEGO/Brickheadz/Astarion/AstarionThumbnail.jpg);       /* Update Here */ 
+    background-image: url(./assets/LEGO/Brickheadz/Astarion/Thumbnail.jpg);       /* Update Here */ 
 }    
 /* 3 */ .lego3 {
     background-image: url(./assets/LEGO/LegoMinecraft/TheBridge/TheBridgeThumbnail.png);       /* Update Here */
     background-size: cover;
 }
 /* 4 */ .lego4 {
-    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellThumbnail.png);       /* Update Here */
+    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/Thumbnail.jpg);       /* Update Here */
     background-size: contain;
 }       
 /* 5 */ .lego5 {
-    background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/BeeHouseThumbnail.jpg);       /* Update Here */
+    background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/Thumbnail.jpg);       /* Update Here */
     background-size: contain;
 }     
 /* 6 */ .lego6 {
@@ -2248,9 +2255,14 @@ section {
     background-size: cover;
 }
 /* 7 */ .lego7 {
-    background-image: url(./assets/LEGO/Brickheadz/SableWard/SableWardThumbnial.jpg);       /* Update Here */
+    background-image: url(./assets/LEGO/Brickheadz/SableWard/Thumbnail.jpg);       /* Update Here */
     background-size: cover;
 }
+/* 7 */ .lego8 {
+    background-image: url(./assets/LEGO/Brickheadz/Sombra/Thumbnail.jpg);       /* Update Here */
+    background-size: cover;
+}
+
 
 /* Lego Projects */
 .LegoProject_Copy a{
@@ -2267,6 +2279,7 @@ section {
     max-height: 55%;
     display: flex;
     padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
     margin: auto;
     margin-bottom: 1vw;
     transition: 300ms;
@@ -2296,6 +2309,45 @@ section {
   transform: scale(1.05);
 }
 
+.LegoProject_Photos_3and1 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2vw;
+  text-align: center;
+}
+
+.large-lego-grid {
+  margin-bottom: 2vw;
+}
+
+.large-lego-grid img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: 300ms ease;
+}
+
+.large-lego-grid img:hover {
+  transform: scale(1.05);
+}
+
+.small-lego-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.small-lego-grid img {
+  width: 100%;
+  max-width: calc(33.33% - 1.34vw); /* 2vw total gap split between 3 images */
+  height: auto;
+  transition: 300ms ease;
+}
+
+.small-lego-grid img:hover {
+  transform: scale(1.05);
+}
  
 
 /* Astarion Brickheadz */
@@ -2306,7 +2358,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/Brickheadz/Astarion/AstarionHeader.png);
+    background-image: url(./assets/LEGO/Brickheadz/Astarion/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -2320,7 +2372,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/DisplayHouseHeader.jpg);
+    background-image: url(./assets/LEGO/LegoMinecraft/HouseDiorama/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -2348,7 +2400,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/DesertWellHeader.jpg);
+    background-image: url(./assets/LEGO/LegoMinecraft/DesertWell/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -2362,7 +2414,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/BeeHouseHeader.jpg);
+    background-image: url(./assets/LEGO/LegoMinecraft/BeeHouse/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -2390,7 +2442,21 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/Brickheadz/SableWard/SableWardHeader.jpg);
+    background-image: url(./assets/LEGO/Brickheadz/SableWard/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Sable Ward Brickheadz */
+#SombraLEGO {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/LEGO/Brickheadz/Sombra/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -2592,178 +2658,297 @@ section {
 }
 
 
-
 /* About Me */
-
-#about {                                               /* Background Image */
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(./assets/AboutMeHeader.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+#about {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./assets/AboutMeHeader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .about_copy {
-    font-size: 1.25vw;
-    color: #F2E5D7;
-    padding-bottom: 0;
-    height: 40vh;
-    padding: 0 10rem;
-    padding-top: 4vh;
+  font-size: 1.25vw;
+  color: #F2E5D7;
+  padding: 4vh 10rem 0 10rem;
+  height: 40vh;
+  line-height: 1.5;
 }
 
 /* Contact Section */
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .social-icon {
-    font-size: 2.5rem;
-    color: #F2E5D7;
-    transition: color 0.3s ease;
+  font-size: 2.5rem;
+  color: #F2E5D7;
+  transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #7C886D;
+  color: #7C886D;
 }
 
 .resume-link p {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    font-size: 1.5vw;
-    text-align: center;
+  padding: 10vh 0;
+  font-size: 1.5vw;
+  text-align: center;
 }
 
 .resume-link a {
-    color: #C2B4B4;
-    font-weight: 600;
-    text-decoration: none;
+  color: #C2B4B4;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .resume-link a:hover {
-    color: #7C886D;
+  color: #7C886D;
 }
-
 
 /* Form */
-
 .contact-form {
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    border-radius: 10px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  
-  .contact-form label {
-    color: #F2E5D7;
-  }
-  
-  .contact-form .heading {
-    font-size: 2.5vw;
-    color: #F2E5D7;
-    margin-bottom: .25vw;
-    font-weight:550;
-    display: block;
-    text-align: center;
-  }
-
-  .contact-form h1{
-    font-size:3.5vw;
-    text-align:center;
-    padding-bottom: 1vh;
+  padding: 2vw 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+  box-sizing: border-box;
 }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form label {
-    margin-bottom: 1vw;
-    font-size: 2.5vh;
-  }
-  
-  textarea {
-    resize: none;
-    align-items: center;
-    color:#000000;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Outfit;
-    padding: 10px;
-    border: none;
-    height: 5vw;
-    width: 30vw;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #F2E5D7;
-    font-family: Outfit;
-    transition: 300ms;
-  }
 
-  .form__contact {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    display: inline-block;
-  }
-  
-  .contact-form input {
-    padding: 10px;
-    border: none;
-    height: 1vw;
-    width: 30vw;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #F2E5D7;
-    font-family: Outfit;
-    transition: 300ms;
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 5px #E5DFE5;
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    font-family: Outfit;
-  }
-  
-  .contact-form button[type="submit"] {
-    background-color: #F2E5D7;
-    color: #262322;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: Outfit;
-    font-weight: 600;
-    transition: 300ms;
-  }
-  
-  .contact-form button[type="submit"]:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-  }
+.contact-form label {
+  color: #F2E5D7;
+  margin-bottom: 0.5rem;
+  font-size: 2.5vh;
+  width: 100%;
+}
 
+.contact-form .heading {
+  font-size: 2.5vw;
+  color: #F2E5D7;
+  margin-bottom: 0.25vw;
+  font-weight: 550;
+  text-align: center;
+  display: block;
+}
+
+.contact-form h1 {
+  font-size: 3.5vw;
+  text-align: center;
+  padding-bottom: 1vh;
+  margin: 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Outfit', sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F2E5D7;
+  color: #000000;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form textarea {
+  height: 100px; /* fixed height for better UX */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #E5DFE5;
+  transform: scale(1.05);
+}
+
+.contact-form button[type="submit"] {
+  background-color: #F2E5D7;
+  color: #262322;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  align-self: center;
+  width: auto;
+  min-width: 120px;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem 0;
+}
+
+/* Line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: var(--timeline-line-color);
+  transform: translateX(-50%);
+  border-radius: 999px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  min-height: 100px;
+  transition: transform 300ms ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+}
+
+/* Left */
+.timeline-item.left .content {
+  grid-column: 1;
+  justify-self: end;
+  text-align: right;
+}
+
+.timeline-item.left .content li {
+  color: var(--text-color);
+  font-weight: 100;
+  font-size: small; 
+  margin: 0.4rem 0.5rem;
+  text-align: right;
+  direction: rtl;
+}
+
+/* Right */
+.timeline-item.right .content {
+  grid-column: 3;
+  justify-self: start;
+  text-align: left;
+}
+
+.timeline-item.right .content li {
+  color: var(--text-color);
+  font-weight: 100;
+  font-size: small;
+  margin: 0.4rem 0.5rem;
+  text-align: left;
+  direction: ltr;
+}
+
+/* Timeline Content Styling */
+.content {
+  background: var(--bg-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  align-self: center;
+}
+
+.content h1 {
+  margin: 0 0 0.1rem 0;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.content h3 {
+  margin: 0 0 0.3rem 0;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Collapsible details */
+.timeline_item_details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.timeline_item_details.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Toggle button */
+.timeline_toggle_btn {
+  background: none;
+  border: none;
+  color: var(--timeline-line-color);
+  font-family: inherit; 
+  font-size: inherit; 
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  transition: ease 300ms;
+}
+
+.timeline_toggle_btn:hover {
+  color:#7C886D;
+  transition: ease 300ms;
+}
+
+.timeline_item_details ul {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem; 
+  list-style-position: outside;     
+  list-style-type: disc;
+}
+
+/* Dots */
+.timeline-item .dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: var(--timeline-line-color);
+  border-radius: 50%;
+}
 
 
 
 /* Footer */
-
-
 
 footer{
     background-color:#262322;
