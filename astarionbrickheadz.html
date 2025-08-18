@@ -7,11 +7,15 @@
     <link rel="icon" type="image/svg" href="./assets/MeLogo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/scrollbar.js" defer></script>
+    <script src="js/page-transitions.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
+
     <nav id="desktop-nav">
         <div class="logo_container"> 
             <img class="logo_img" src="./assets/MeLogo.png">
@@ -22,11 +26,12 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="clientwork.html">Client Work</a></li>
                 <li><a href="lego.html">LEGO</a></li>
-                <l1><a href="films.html">Films</a></l1>
+                <li><a href="films.html">Films</a></li>
                 <li><a href="about.html">About Me</a></li>
             </ul>
         </div>
     </nav>
+
 
     <!--Mobile Navigation-->
         
@@ -62,7 +67,8 @@
             </ul>
         </div>
     
-    <!--Page Specific Code Starts Here-->
+<!--Page Specific Code Starts Here-->
+<div id="scroll-container" class="Page_Content">
 
         
 <section id="astarionbrickheadz">
@@ -94,12 +100,16 @@
         </p>
     </div>
 
-    <div class="LegoProject_Photos">
+    <div class="LegoProject_Renders">
         <h1 class="title">Renders</h1>
-        <div class="lego-grid">
-            <img src="./assets/LEGO/Brickheadz/Astarion/1.png" onclick="openImage(this)" alt="Render 1">
-            <img src="./assets/LEGO/Brickheadz/Astarion/2.png" onclick="openImage(this)" alt="Render 2">
-        </div>
+
+            <div class="LEGO_grid__gif_row">
+                <img src="./assets/LEGO/Brickheadz/Astarion/RenderGIF.gif" onclick="openImage(this)" alt="Rotating Render GIF of Astarion Brickheadz">
+            </div>
+            <div class="LEGO_grid__2row">
+                <img class="LEGO_grid__2row_LEFT" src="./assets/LEGO/Brickheadz/Astarion/FrontPNG.png" onclick="openImage(this)" alt="Front-Facing Render of Astarion Brickheadz">
+                <img class="LEGO_grid__2row_RIGHT" src="./assets/LEGO/Brickheadz/Astarion/BackPNG.png" onclick="openImage(this)" alt="Back-Facing Render of Astarion Brickheadz">
+            </div>  
     </div>
 
 
@@ -151,11 +161,16 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
+</div>
 
 <!--Image Enlargement Overlay-->
 <div class="overlay" id="imageOverlay" onclick="closeImage()">
     <img id="fullImage" src="" alt="Full Size">
+</div>
+
+<!--Custom Scrollbar-->
+<div id="custom-scrollbar">
+    <div id="custom-scrollbar-thumb" tabindex="0"></div>
 </div>
 
 </body>
