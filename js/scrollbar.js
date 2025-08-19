@@ -11,14 +11,18 @@
 
     thumb.style.pointerEvents = 'auto';
 
-    function updateThumb() {
-      const scrollTop = scrollContainer.scrollTop;
-      const pageHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
-      const trackHeight = scrollbar.clientHeight;
-      const thumbHeight = Math.max((scrollContainer.clientHeight / scrollContainer.scrollHeight) * trackHeight, 30);
-      thumb.style.height = thumbHeight + 'px';
-      thumb.style.top = (scrollTop / pageHeight) * (trackHeight - thumbHeight) + 'px';
-    }
+  function updateThumb() {
+    const scrollTop = scrollContainer.scrollTop;
+    const pageHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+    const trackHeight = scrollbar.clientHeight;
+    const thumbHeight = Math.max((scrollContainer.clientHeight / scrollContainer.scrollHeight) * trackHeight, 30);
+    thumb.style.height = thumbHeight + 'px';
+    thumb.style.top = (scrollTop / pageHeight) * (trackHeight - thumbHeight) + 'px';
+
+    if (window.ScrollTrigger) {
+      ScrollTrigger.update();
+  }
+}
 
     scrollContainer.addEventListener('scroll', updateThumb);
     scrollContainer.addEventListener('wheel', updateThumb, { passive: true });

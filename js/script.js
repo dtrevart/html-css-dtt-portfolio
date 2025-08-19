@@ -61,6 +61,44 @@ document.querySelectorAll('.animated_box').forEach((box) => {
   });
 });
 
+// Make sure ScrollTrigger is registered
+gsap.registerPlugin(ScrollTrigger);
+
+const scrollContainer = document.getElementById("scroll-container");
+
+// Tell ScrollTrigger to use #scroll-container for scroll instead of window
+ScrollTrigger.scrollerProxy(scrollContainer, {
+  scrollTop(value) {
+    if (arguments.length) {
+      scrollContainer.scrollTop = value;
+    }
+    return scrollContainer.scrollTop;
+  },
+  getBoundingClientRect() {
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  },
+  // Important: decide how pinning works
+  pinType: scrollContainer.style.transform ? "transform" : "fixed"
+});
+
+// Default all triggers to use our container
+ScrollTrigger.defaults({ scroller: scrollContainer });
+
+// Refresh after everything has loaded
+window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
+});
+
+// Make #scroll-container the default scroller for all triggers
+ScrollTrigger.defaults({
+  scroller: "#scroll-container"
+});
+
 gsap.set(".animated_box", {
   opacity: 0,
   y: 50,
