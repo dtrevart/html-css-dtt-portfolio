@@ -2294,7 +2294,7 @@ section {
     background-image: url(./assets/LEGO/Brickheadz/Astarion/Thumbnail.jpg);       /* Update Here */ 
 }    
 /* 3 */ .lego3 {
-    background-image: url(./assets/LEGO/LegoMinecraft/TheBridge/TheBridgeThumbnail.png);       /* Update Here */
+    background-image: url(./assets/LEGO/LegoMinecraft/TheBridge/Thumbnail.jpg);       /* Update Here */
     background-size: cover;
 }
 /* 4 */ .lego4 {
@@ -2373,9 +2373,13 @@ section {
   margin: 0 auto;
 }
 
+.LegoProject_Renders .title{
+  margin-bottom: 1vw;
+}
+
 /* Render Gif */
 .LEGO_grid__gif_row {
-  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .LEGO_grid__gif_row img {
@@ -2393,7 +2397,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .LEGO_grid__2row_LEFT,
@@ -2425,7 +2429,8 @@ section {
   justify-content: center;
   gap: 2vw;
   flex-wrap: wrap;
-    margin-top: 2vw;
+  margin-bottom: 2vw;
+  margin-top:0;
 }
 
 .LEGO_grid__3row img {
@@ -2439,7 +2444,9 @@ section {
   transform: scale(1.05);
 }
 
- 
+.LEGO_grid__gif_row img, .LEGO_grid__3row img, .LEGO_grid__2row img {
+  display: block;
+}
 
 /* Astarion Brickheadz */
 #astarionbrickheadz {
@@ -2477,7 +2484,7 @@ section {
     height: 30vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./assets/LEGO/LegoMinecraft/TheBridge/TheBridgeHeader.jpg);
+    background-image: url(./assets/LEGO/LegoMinecraft/TheBridge/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
