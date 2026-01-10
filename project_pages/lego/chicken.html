@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Trevisani - Chicken.</title>
+        
+    <link rel="icon" type="image/svg" href="../../assets/MeLogo.png">
+    
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/mediaqueries.css">
+    
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/scrollbar.js" defer></script>
+    <script src="../../js/page-transitions.js" defer></script>
+    <script src="../../js/carousel.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo_container"> 
+            <img class="logo_img" src="../../assets/MeLogo.png">
+            <a class="logo_text" href="../../index.html">Dominic Trevisani</a>
+            </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../clientwork.html">Client Work</a></li>
+                <li><a href="../../lego.html">LEGO</a></li>
+                <li><a href="../../films.html">Films</a></li>
+                <li><a href="../../about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!--Mobile Navigation-->
+<nav id="hamburger-nav">
+    <div class="logo_container"> 
+        <img class="logo_img" src="../../assets/MeLogo.png">
+        <a class="logo_text" href="../../index.html">Dominic Trevisani</a>
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <!--Hamburger Icon-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="hamburger-menu-overlay">
+    <div class="close-btn">
+        <!--X Icon-->
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="hamburger-menu-links">
+        <li><a href="../../index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="../../projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="../../clientwork.html" onclick="toggleMenu()">Client Work</a></li>
+        <li><a href="../../lego.html" onclick="toggleMenu()">LEGO</a></li>
+        <li><a href="../../films.html" onclick="toggleMenu()">Films</a></li>
+        <li><a href="../../about.html" onclick="toggleMenu()">About Me</a></li>
+        <li><img src="../../assets/MeLogo.png" alt="Logo" class="hamburger-logo"></li>
+    </ul>
+</div>
+    
+<!--Page Specific Code Starts Here-->
+<div id="scroll-container" class="Page_Content">
+
+        
+<section id="ChickenLEGO">
+    <div class="page_title">
+        <h1 class="page_title_text">Chicken.</h1>
+    </div>
+</section>
+
+
+<section id="projectinfo">
+    <div class="LegoProject_Copy">
+<p>
+    That's right - this one is a chicken. A simple model at first glance… or so I thought. What began as a quick
+    afternoon design intended as a gift for one of my siblings quickly turned into a much longer and more
+    challenging process than expected. I loved the initial concept and was excited to order parts and begin
+    working on the instructions, but after starting a new job and stepping away for a bit, I returned to the
+    project only to realize something unfortunate: the model couldn't actually be built.
+</p>
+<p>
+    Redesigning the chicken to make it a fully legal LEGO build took weeks. Every time I thought I had resolved
+    one issue, another would appear. The tail wasn't properly connected, the sides of the head were floating,
+    and the wings weren't attached at all. It quickly became a technical puzzle that required constant iteration.
+    While I did have to make some compromises compared to the original concept, I'm proud of the final result and
+    believe it still captures the charm and character I was aiming for.
+</p>
+<p>
+    At its core, this model remains intentionally simple: a chicken sitting on a nest, surrounded by eggs and feed.
+    While I plan to explore more complex play features in future builds as a way to further challenge myself and grow
+    as a designer, this project served a different purpose. It allowed me to experiment with creature-oriented design,
+    something I've especially enjoyed in past sea creature builds, and ultimately resulted in a piece that was both
+    a valuable learning experience and a meaningful gift.
+</p>
+</div>
+</section>
+
+<section class="project-slideshow">
+    <h1 class="title">Renders</h1>
+    <br>
+  <div class="carousel-container">
+    <!-- Background blur layer -->
+    <div class="carousel-bg"></div>
+
+    <!-- Foreground slide images -->
+    <div class="carousel-slide">
+        <img src="../../assets/lego/Chicken/R1.png" onclick="openImage(this)" alt="THE REST STOP Hat Mockup">
+        <img src="../../assets/lego/Chicken/R2.png" onclick="openImage(this)" alt="THE REST STOP Hat Mockup">
+        <img src="../../assets/lego/Chicken/R3.png" onclick="openImage(this)" alt="THE REST STOP Hat Mockup">
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
+
+<section id="projectinfo">
+    <div class="LegoProject_Copy">
+        <p>
+        A link to the instructions can be found
+        <a class="links" href="../../assets/lego/Chicken/Chicken_Instructions.pdf" target="_blank">here</a>.
+        <br>
+        You can find the parts list (.xml)
+        <a class="links" href="../../assets/lego/Chicken/Chicken.xml" download>here</a>.
+        <br>
+        <br>
+        </p>
+    </div>
+</section>
+
+<!--Page Specific Code Ends Here-->
+
+<footer>
+    <div class="footer-container">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/dtrev.art/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC2jbssfnxSAxkTp97whzqxQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/dtrevart" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="clientwork.html">Client Work</a></li>
+                <li><a href="lego.html">LEGO</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+        <img class="footer_img" src="../../assets/MeLogo.png">
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2025 // Designed by <span class="designer">Dominic Trevisani</span> // <a href="https://dtrevart-changelog.netlify.app">Changelog</a></p>
+    </div>
+</footer>
+
+</div>
+
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
+<!--Custom Scrollbar-->
+<div id="custom-scrollbar">
+    <div id="custom-scrollbar-thumb" tabindex="0"></div>
+</div>
+
+</body>
+</html>

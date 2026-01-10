@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Trevisani - Dead By Daylight Poster Collection</title>
+        
+    <link rel="icon" type="image/svg" href="../../assets/MeLogo.png">
+    
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/mediaqueries.css">
+    
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/scrollbar.js" defer></script>
+    <script src="../../js/page-transitions.js" defer></script>
+    <script src="../../js/carousel.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo_container"> 
+            <img class="logo_img" src="../../assets/MeLogo.png">
+            <a class="logo_text" href="../../index.html">Dominic Trevisani</a>
+            </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../clientwork.html">Client Work</a></li>
+                <li><a href="../../lego.html">LEGO</a></li>
+                <li><a href="../../films.html">Films</a></li>
+                <li><a href="../../about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!--Mobile Navigation-->
+<nav id="hamburger-nav">
+    <div class="logo_container"> 
+        <img class="logo_img" src="../../assets/MeLogo.png">
+        <a class="logo_text" href="../../index.html">Dominic Trevisani</a>
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <!--Hamburger Icon-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="hamburger-menu-overlay">
+    <div class="close-btn">
+        <!--X Icon-->
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="hamburger-menu-links">
+        <li><a href="../../index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="../../projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="../../clientwork.html" onclick="toggleMenu()">Client Work</a></li>
+        <li><a href="../../lego.html" onclick="toggleMenu()">LEGO</a></li>
+        <li><a href="../../films.html" onclick="toggleMenu()">Films</a></li>
+        <li><a href="../../about.html" onclick="toggleMenu()">About Me</a></li>
+        <li><img src="../../assets/MeLogo.png" alt="Logo" class="hamburger-logo"></li>
+    </ul>
+</div>
+
+
+    
+<!--Page Specific Code Starts Here-->
+<div id="scroll-container" class="Page_Content">
+
+
+    
+<section id="dbd_posters">
+    <div class="page_title">
+        <h1 class="page_title_text">Dead By Daylight Poster Collection</h1>
+    </div>
+</section>
+
+<section id="projectinfo">
+    <div class="projectcopy">
+        <p>
+            Dead by Daylight is, well, one of the games of all time. Initially, I wasn't into 
+            this genre, but my friends encouraged me to try it. At first, I hated it! However, 
+            after playing more, it became tolerable, and I don't even hate it that much anymore 
+            (though I might not admit that out loud). Playing as Killer, rather than Survivor, 
+            made the game more enjoyable for me. For those unfamiliar, Dead by Daylight is an 
+            asymmetrical horror game where one Killer tries to stop four Survivors from escaping. 
+            Over time, due to balancing changes, Killers have become more powerful, making it easier 
+            for them to "win."
+        </p>
+        <p>
+            One aspect I appreciate about the game is the design of (most of) their original Killers.
+            I was particularly intrigued by the Plague, as I hadn't encountered her before, so I unlocked 
+            her in-game to try her out.
+        </p>
+        <p>
+            During this period, I was inspired by various poster design styles I encountered on Instagram 
+            and Pinterest. Eager to practice these unique styles, I decided to create a poster featuring 
+            the Plague. After sharing it with my friends and receiving positive feedback, I asked if there 
+            were any characters they'd like to see depicted. They suggested the Spirit and the Trickster. 
+            To round out the collection, I added the Singularity, my favorite character design-wise.
+        </p>
+        <p>
+            Each poster incorporates in-game screen captures of the characters, whether from player 
+            perspectives, lore tabs, or gameplay trailers. I included subtle details referencing the 
+            characters, such as the chapters they debuted in or flavor text from add-ons. I aimed to 
+            capture the essence of each character: the Trickster's poster resembles a magazine cover, 
+            while the Spirit's features worn, ancient paper to reflect ancestry.
+        </p>
+    </div>
+</section>
+
+<section class="project-slideshow">
+  <div class="carousel-container">
+    <!-- Background blur layer -->
+    <div class="carousel-bg"></div>
+
+    <!-- Foreground slide images -->
+    <div class="carousel-slide">
+        <img src="../../assets/general/DBD_Posters/Plague.jpg" onclick="openImage(this)" alt="DBD Plague Poster">
+        <img src="../../assets/general/DBD_Posters/Spirit.jpg" onclick="openImage(this)" alt="DBD Spirit Poster">
+        <img src="../../assets/general/DBD_Posters/Singularity.jpg" onclick="openImage(this)" alt="DBD Singularity Poster">
+        <img src="../../assets/general/DBD_Posters/Trickster.jpg" onclick="openImage(this)" alt="DBD Trickster Poster">
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
+
+
+
+<!--Page Specific Code Ends Here-->
+
+<footer>
+    <div class="footer-container">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/dtrev.art/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC2jbssfnxSAxkTp97whzqxQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/dtrevart" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="clientwork.html">Client Work</a></li>
+                <li><a href="lego.html">LEGO</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+        <img class="footer_img" src="../../assets/MeLogo.png">
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2025 // Designed by <span class="designer">Dominic Trevisani</span> // <a href="https://dtrevart-changelog.netlify.app">Changelog</a></p>
+    </div>
+</footer>
+
+</div>
+
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
+<!--Custom Scrollbar-->
+<div id="custom-scrollbar">
+    <div id="custom-scrollbar-thumb" tabindex="0"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Trevisani - Cuppy's</title>
+        
+    <link rel="icon" type="image/svg" href="../../assets/MeLogo.png">
+    
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/mediaqueries.css">
+    
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/scrollbar.js" defer></script>
+    <script src="../../js/page-transitions.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo_container"> 
+            <img class="logo_img" src="../../assets/MeLogo.png">
+            <a class="logo_text" href="../../index.html">Dominic Trevisani</a>
+            </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../clientwork.html">Client Work</a></li>
+                <li><a href="../../lego.html">LEGO</a></li>
+                <li><a href="../../films.html">Films</a></li>
+                <li><a href="../../about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!--Mobile Navigation-->
+<nav id="hamburger-nav">
+    <div class="logo_container"> 
+        <img class="logo_img" src="../../assets/MeLogo.png">
+        <a class="logo_text" href="../../index.html">Dominic Trevisani</a>
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <!--Hamburger Icon-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="hamburger-menu-overlay">
+    <div class="close-btn">
+        <!--X Icon-->
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="hamburger-menu-links">
+        <li><a href="../../index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="../../projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="../../clientwork.html" onclick="toggleMenu()">Client Work</a></li>
+        <li><a href="../../lego.html" onclick="toggleMenu()">LEGO</a></li>
+        <li><a href="../../films.html" onclick="toggleMenu()">Films</a></li>
+        <li><a href="../../about.html" onclick="toggleMenu()">About Me</a></li>
+        <li><img src="../../assets/MeLogo.png" alt="Logo" class="hamburger-logo"></li>
+    </ul>
+</div>
+
+
+    
+<!--Page Specific Code Starts Here-->
+<div id="scroll-container" class="Page_Content">
+
+
+     
+<section id="cuppys">
+    <div class="page_title">
+        <h1 class="page_title_text">Cuppy's Website</h1>
+    </div>
+</section>
+
+<section id="projectinfo">
+    <div class="projectcopy">
+        <p>
+            Cuppy's began as a family joke after my mom picked up a coffee from Holland Farms, 
+            a bakery in Utica, NY. The cup had a simple little cup with smiling face printed on the side, 
+            and, much to my family's dismay, I immediately gave it a name: Cuppy. From there, 
+            I built a full personality and backstory for the character. What started as a silly 
+            in-joke slowly evolved into a full-blown brand concept.
+        </p>
+        <p>
+            In my final semester of college, I had the opportunity to choose my own project. Right 
+            away, I knew I had to bring Cuppy's to life as a cozy baked goods brand - one that blends 
+            charm, warmth, and whimsy with clean, thoughtful design. I created a full logo and visual 
+            identity centered around soft colors, friendly typography, and stylized illustrations, all 
+            designed to make people smile, just like the original Cuppy did.
+        </p>
+        <p>
+            I started with the logo, aiming to capture Cuppy's spirit as authentically as possible. 
+            Thanks to the original Holland Farms cup (and the fact that I'd drawn it before), the 
+            design came together quickly.
+        </p>
+            <img src="../../assets/general/Cuppys/Process.jpg" alt="Cuppy's Logo Design Process" onclick="openImage(this)">
+
+            While experimenting with different layouts, I accidentally created a brand pattern! I love 
+            flipping designs around and viewing them from different angles, and during that process, I 
+            stumbled upon a playful, repeating pattern featuring Cuppy itself.
+        <p>
+            <img src="../../assets/general/Cuppys/Background.jpg" alt="Cuppy's Brand Pattern" onclick="openImage(this)">
+    
+            From there, I knew I wanted to create icons of classic baked goods, and adding animated 
+            versions would make the site feel even more interactive and alive. It was a no-brainer!
+        </p>
+    
+        <table>
+            <tr>
+                <td><img src="../../assets/general/Cuppys/Cuppy.gif" alt="Cuppy Icon" onclick="openImage(this)"></td>
+                <td><img src="../../assets/general/Cuppys/Cookie.gif" alt="Cookie Icon" onclick="openImage(this)"></td>
+                <td><img src="../../assets/general/Cuppys/Bread.gif" alt="Bread Icon" onclick="openImage(this)"></td>
+            </tr>
+        </table>
+            
+        <table>
+            <tr>
+                <td><img src="../../assets/general/Cuppys/Croissant.gif" alt="Croissant Icon" onclick="openImage(this)"></td>
+                <td><img src="../../assets/general/Cuppys/Donut.gif" alt="Donut Icon" onclick="openImage(this)"></td>
+                <td><img src="../../assets/general/Cuppys/Muffin.gif" alt="Muffin Icon" onclick="openImage(this)"></td>
+            </tr>
+        </table>
+    
+        <p>
+            Finally, I designed and built the Cuppy's website with a desktop-first approach, focusing 
+            on accessibility and personality. Using HTML, CSS, and JavaScript, I incorporated playful 
+            animations, a responsive hamburger menu, and custom transitions to give the site an inviting, 
+            interactive feel. The homepage features a 
+            <a href="../film/cuppysheader_film.html">looping video header</a> 
+            to set the tone, followed by product highlights, brand values, and an "About" section 
+            to welcome users into the Cuppy's world. Every part of the site was crafted to reflect 
+            what Cuppy's stands for: sweet, silly, and full of joy!
+        </p>
+
+        <img src="../../assets/general/Cuppys/Cuppy_Animated.gif" alt="Cuppy Animated" onclick="openImage(this)">
+        
+        <a href="https://cuppys.netlify.app" target="_blank">Visit the Cuppy's Website!</a>
+        <br>
+        <br>
+        
+    </div>
+</section>
+
+
+
+<!--Page Specific Code Ends Here-->
+
+<footer>
+    <div class="footer-container">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/dtrev.art/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC2jbssfnxSAxkTp97whzqxQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/dtrevart" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="clientwork.html">Client Work</a></li>
+                <li><a href="lego.html">LEGO</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+        <img class="footer_img" src="../../assets/MeLogo.png">
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2025 // Designed by <span class="designer">Dominic Trevisani</span> // <a href="https://dtrevart-changelog.netlify.app">Changelog</a></p>
+    </div>
+</footer>
+
+</div>
+
+<!--Image Enlargement Overlay-->
+<div class="overlay" id="imageOverlay" onclick="closeImage()">
+    <img id="fullImage" src="" alt="Full Size">
+</div>
+
+<!--Custom Scrollbar-->
+<div id="custom-scrollbar">
+    <div id="custom-scrollbar-thumb" tabindex="0"></div>
+</div>
+
+</body>
+</html>

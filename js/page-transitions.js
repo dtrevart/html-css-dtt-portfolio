@@ -9,8 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("a[href]").forEach(link => {
     const url = link.getAttribute("href");
 
+  
     // Ignore external links & anchors
-    if (url.startsWith("http") || url.startsWith("#")) return;
+    if (url.startsWith("http") 
+    || 
+      url.startsWith("#")
+    ||
+    link.target === "_blank" 
+    ||
+    link.hasAttribute("download")
+    ) return
 
     link.addEventListener("click", (e) => {
       e.preventDefault();
