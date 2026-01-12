@@ -1,8 +1,9 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const page = document.querySelector(".Page_Content");
   if (!page) return;
 
-  // Entry animation
+  // Entry animation on load
   requestAnimationFrame(() => {
     page.classList.add("page-visible");
   });
@@ -10,45 +11,50 @@ document.addEventListener("DOMContentLoaded", () => {
   // Exit animation for internal links
   document.querySelectorAll("a[href]").forEach(link => {
     const url = link.getAttribute("href");
+
+    // Only internal links, ignore anchors / new tabs / external / downloads
     if (
-      !url || 
-      url.startsWith("#") || 
-      link.target === "_blank" || 
+      !url ||
+      url.startsWith("#") ||
+      link.target === "_blank" ||
       link.hasAttribute("download") ||
       (url.startsWith("http") && link.hostname !== window.location.hostname)
     ) return;
 
     link.addEventListener("click", (e) => {
       e.preventDefault();
+
+      // Trigger exit animation
       page.classList.remove("page-visible");
       page.classList.add("page-leave");
 
+      // Wait for CSS transition, then navigate
       setTimeout(() => {
         window.location.href = url;
-      }, 400);
+      }, 400); // match CSS transition duration
     });
   });
 });
 
-// -------------------------------
-// Back / Forward animation
-// -------------------------------
-window.addEventListener("popstate", () => {
+window.addEventListener("pageshow", (event) => {
   const page = document.querySelector(".Page_Content");
   if (!page) return;
 
-  // Animate exit (simulate leaving the page)
-  page.classList.remove("page-visible");
-  page.classList.add("page-leave");
+  // Remove exit state just in case
+  page.classList.remove("page-leave");
 
-  // Wait for transition before resetting entry state
-  setTimeout(() => {
-    page.classList.remove("page-leave");
-    page.classList.add("page-visible");
-    window.scrollTo(0,0);
+  // Subtle fade-in for back/forward navigation
+  page.style.opacity = 0;
+  page.style.transition = "opacity 0.4s ease";
+  requestAnimationFrame(() => {
+    page.style.opacity = 1;
+  });
 
-    if (typeof ScrollTrigger !== "undefined") {
-      ScrollTrigger.refresh(true);
-    }
-  }, 400); // match your CSS transition
+  // Reset scroll
+  window.scrollTo(0, 0);
+
+  // Refresh ScrollTrigger for GSAP animations
+  if (typeof ScrollTrigger !== "undefined") {
+    ScrollTrigger.refresh(true);
+  }
 });
