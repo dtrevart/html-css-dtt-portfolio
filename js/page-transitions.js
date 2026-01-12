@@ -3,14 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!page) return;
 
   // --------------------
-  // ENTRY ANIMATION ON LOAD
+  // ENTRY ANIMATION ON FRESH LOAD
   // --------------------
-  // Ensure page starts from initial state
-  page.style.opacity = 0;
-  page.style.transform = "translateX(50px)";
-  page.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+  // Page starts hidden via CSS:
+  // .Page_Content { opacity: 0; transform: translateX(50px); transition: opacity 0.4s, transform 0.4s; }
 
-  // Trigger entry animation
   requestAnimationFrame(() => {
     page.style.opacity = 1;
     page.style.transform = "translateX(0)";
@@ -34,31 +31,32 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
 
-      // Apply exit animation
+      // Exit animation: fade + slide left
       page.style.opacity = 0;
       page.style.transform = "translateX(-50px)";
 
-      // Wait for CSS transition, then navigate
       setTimeout(() => {
         window.location.href = url;
-      }, 400); // match CSS transition duration
+      }, 400); // match CSS duration
     });
   });
 });
 
 // --------------------
-// SAFE ENTRY ON BACK/FORWARD
+// SAFE ENTRY ON BACK/FORWARD (bfcache)
 // --------------------
 window.addEventListener("pageshow", (event) => {
+  if (!event.persisted) return; // Only run on bfcache restore
+
   const page = document.querySelector(".Page_Content");
   if (!page) return;
 
-  // Reset any exit state
+  // Reset to initial state without transition
   page.style.transition = "none";
   page.style.opacity = 0;
   page.style.transform = "translateX(50px)";
 
-  // Small delay to allow browser to apply styles
+  // Trigger entry animation on next frame
   requestAnimationFrame(() => {
     page.style.transition = "opacity 0.4s ease, transform 0.4s ease";
     page.style.opacity = 1;
@@ -68,7 +66,7 @@ window.addEventListener("pageshow", (event) => {
   // Reset scroll
   window.scrollTo(0, 0);
 
-  // Refresh ScrollTrigger if GSAP is loaded
+  // Refresh ScrollTrigger for GSAP animations
   if (typeof ScrollTrigger !== "undefined") {
     ScrollTrigger.refresh(true);
   }
