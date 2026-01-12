@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const page = document.querySelector(".Page_Content");
   if (!page) return;
 
-  // Entry animation on load
+  // Entry animation
   requestAnimationFrame(() => {
     page.classList.add("page-visible");
   });
@@ -10,44 +10,45 @@ document.addEventListener("DOMContentLoaded", () => {
   // Exit animation for internal links
   document.querySelectorAll("a[href]").forEach(link => {
     const url = link.getAttribute("href");
-
-  // Only internal links, ignore anchors / new tabs / external / downloads
-  if (
-    !url || 
-    url.startsWith("#") || 
-    link.target === "_blank" || 
-    link.hasAttribute("download") ||
-    (url.startsWith("http") && link.hostname !== window.location.hostname)
-  ) return;
+    if (
+      !url || 
+      url.startsWith("#") || 
+      link.target === "_blank" || 
+      link.hasAttribute("download") ||
+      (url.startsWith("http") && link.hostname !== window.location.hostname)
+    ) return;
 
     link.addEventListener("click", (e) => {
       e.preventDefault();
-
-      // Trigger exit animation
       page.classList.remove("page-visible");
       page.classList.add("page-leave");
 
-      // Wait for transition duration, then navigate
       setTimeout(() => {
         window.location.href = url;
-      }, 400); // match your CSS transition
+      }, 400);
     });
   });
 });
 
-window.addEventListener("pageshow", () => {
+// -------------------------------
+// Back / Forward animation
+// -------------------------------
+window.addEventListener("popstate", () => {
   const page = document.querySelector(".Page_Content");
   if (!page) return;
 
-  // Make sure page is visible after back/forward
-  page.classList.remove("page-leave"); // important!
-  page.classList.add("page-visible");
+  // Animate exit (simulate leaving the page)
+  page.classList.remove("page-visible");
+  page.classList.add("page-leave");
 
-  // Reset scroll
-  window.scrollTo(0, 0);
+  // Wait for transition before resetting entry state
+  setTimeout(() => {
+    page.classList.remove("page-leave");
+    page.classList.add("page-visible");
+    window.scrollTo(0,0);
 
-  // Refresh ScrollTrigger for GSAP
-  if (typeof ScrollTrigger !== "undefined") {
-    ScrollTrigger.refresh(true);
-  }
+    if (typeof ScrollTrigger !== "undefined") {
+      ScrollTrigger.refresh(true);
+    }
+  }, 400); // match your CSS transition
 });
