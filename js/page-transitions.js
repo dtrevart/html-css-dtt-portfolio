@@ -34,3 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+window.addEventListener("pageshow", () => {
+  const page = document.querySelector(".Page_Content");
+  if (!page) return;
+
+  // Ensure page is visible when coming back via browser history
+  page.classList.remove("page-leave");
+  page.classList.add("page-visible");
+});
