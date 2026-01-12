@@ -64,14 +64,19 @@ a, .btn {
 }
 
 .Page_Content {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .Page_Content.page-visible {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.Page_Content.page-leave {
+  opacity: 0;
+  transform: translateX(-50px); /* slide left on exit */
 }
 
 
