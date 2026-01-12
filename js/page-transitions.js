@@ -1,4 +1,5 @@
 let transitionTimeout = null;
+let isNavigating = false;
 
 function showPage() {
   const page = document.querySelector(".Page_Content");
@@ -28,37 +29,46 @@ function setupLinks() {
     ) return;
 
     link.addEventListener("click", (e) => {
+      // 🔒 Prevent double or phantom navigation
+      if (isNavigating) return;
+
       e.preventDefault();
+      isNavigating = true;
 
       hidePage();
 
       transitionTimeout = setTimeout(() => {
         window.location.assign(url);
-      }, 500);
+      }, 400); // match CSS exactly
     });
   });
 }
 
 /* Initial load */
 document.addEventListener("DOMContentLoaded", () => {
+  isNavigating = false;
   showPage();
   setupLinks();
 });
 
 /* Back / forward navigation */
 window.addEventListener("pageshow", () => {
+  // Cancel any pending navigation
   if (transitionTimeout) {
     clearTimeout(transitionTimeout);
     transitionTimeout = null;
   }
 
+  isNavigating = false;
   showPage();
 });
 
-/* Safety: cancel timers when leaving */
+/* Safety net */
 window.addEventListener("pagehide", () => {
   if (transitionTimeout) {
     clearTimeout(transitionTimeout);
     transitionTimeout = null;
   }
+
+  isNavigating = false;
 });
