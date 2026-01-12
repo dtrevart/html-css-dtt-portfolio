@@ -74,11 +74,6 @@ a, .btn {
     transform: translateX(0);
 }
 
-.Page_Content.page-leave {
-    opacity: 0;
-    transform: translateX(-50px);
-}
-
 
 /* Scrollbar track */
  ::-webkit-scrollbar {
