@@ -1512,6 +1512,10 @@ section {
     padding-bottom:1rem;
 }
 
+.LegoProject_Copy h1{
+    padding-bottom: 1rem;
+}
+
 .LegoProject_Copy a{
     color:#C2B4B4;
 }
@@ -1620,7 +1624,7 @@ section {
 
 
 /* Lego Project Boxes */
-.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7, .lego8, .lego9, .lego10, .lego11, .lego12, .lego13 {
+.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7, .lego8, .lego9, .lego10, .lego11, .lego12, .lego13, .lego14 {
         width: 100%;
         aspect-ratio: 1 / 1;
         border-radius: 12.5%;
@@ -1955,6 +1959,66 @@ section {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+    }
+
+    /* 14 */ 
+    .lego14 {
+        background-image: url(../assets/lego/Minecraft_ZombieDungeon/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+    }
+    /* Zombie Dungeon Game Scale */
+    #ZombieDungeon_GameScale {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/lego/Minecraft_ZombieDungeon/Header.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .ZD-grid h2 {
+        font-size: 2.5rem;
+        padding-bottom: 0.75rem;
+        line-height: 1.15;
+    }
+    .ZD-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1500px;
+        margin: 1rem auto;
+ 
+    }
+    .ZD-card {
+        background: #262322;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                    0 16px 40px rgba(0, 0, 0, 0.05);
+        text-align: left;
+    }
+    .ZD-card p{
+        font-size: 1.2rem;
+        padding-bottom: 2vh;
+    }
+    .ZD-card h2{
+        color: #F2E5D7;
+    }
+    .ZD-card img {
+        display: block;
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        transition: 300ms ease;
+    }
+    .ZD-card img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
     }
 
 
