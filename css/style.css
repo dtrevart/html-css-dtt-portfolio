@@ -1293,12 +1293,12 @@ section {
         background-size: cover;
         background-position: top;
     }
-    .design-section {
+.design-section {
   padding: 60px 5%;
   text-align: center;
 }
 
-.subtitle {
+.design-section p {
   margin-top: 5px;
   margin-bottom: 40px;
   font-size: 1.15rem;
