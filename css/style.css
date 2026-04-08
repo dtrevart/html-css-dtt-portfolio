@@ -1296,6 +1296,7 @@ section {
 .design-section {
   padding: 60px 5%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .design-section p {
@@ -1375,7 +1376,7 @@ section {
   max-width: 600px;
   width: 90%;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 5%;
   position: relative;
   transform: translateY(30px) scale(0.95);
   opacity: 0;
@@ -1399,8 +1400,8 @@ section {
 }
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 15px;
+  right: 20px;
   font-size: 24px;
   cursor: pointer;
   color:#F2E5D7;
@@ -1811,7 +1812,7 @@ section {
 
 
 /* Lego Project Boxes */
-.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7, .lego8, .lego9, .lego10, .lego11, .lego12, .lego13, .lego14 {
+.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7, .lego8, .lego9, .lego10, .lego11, .lego12, .lego13, .lego14, .lego15 {
         width: 100%;
         aspect-ratio: 1 / 1;
         border-radius: 12.5%;
@@ -1826,7 +1827,7 @@ section {
 
     /* 1 */ 
     .lego1 {
-        background-image: url(../assets/lego/BillsArt/Thumbnail.jpg);       /* Update Here */
+        background-image: url(../assets/lego/BillsArt/Thumbnail.png);       /* Update Here */
         background-size: contain;
     }
     /* Buffalo Bills Wall Art */
@@ -1837,7 +1838,7 @@ section {
         height: 30vw;
         margin-left: auto;
         margin-right: auto;
-        background-image: url(../assets/lego/BillsArt/Header.jpg);
+        background-image: url(../assets/lego/BillsArt/Header.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -2206,6 +2207,25 @@ section {
     .ZD-card img:hover {
         transform: scale(1.05);
         cursor: pointer;
+    }
+
+    /* 15 */ 
+    .lego15 {
+        background-image: url(../assets/lego/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+    }
+    /* Zombie Dungeon Game Scale */
+    #Small_Minecraft_MOC {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/lego/Minecraft_SmallDisplays/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
     }
 
 

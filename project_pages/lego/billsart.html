@@ -13,6 +13,7 @@
     <script src="../../js/script.js" defer></script>
     <script src="../../js/scrollbar.js" defer></script>
     <script src="../../js/page-transitions.js" defer></script>
+    <script src="../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -80,62 +81,86 @@
 <section id="bills-art">
     <div class="page_title">
         <h1 class="page_title_text">Buffalo Bills Art</h1>
-        <p class="page_subtitle_text">December 2023 // LEGO </p>
+        <p class="page_subtitle_text">December 2023 // Updated December 2025 // LEGO </p>
     </div>
 </section>
 
 <section id="projectinfo">
     <div class="LegoProject_Copy">
         <p>
-            This was my very first LEGO project made using
-            <a href="https://www.bricklink.com/v3/studio/download.page" target="_blank">Bricklink Studio</a>,
-            and it was created as a Christmas gift for my dad. The project itself is a simple recreation 
-            of the Buffalo Bills logo, but it holds a special place for me as my first venture into LEGO 
-            design using digital tools. While the design itself is straightforward, just a faithful representation 
-            of the logo, it marked the beginning of my journey into building custom LEGO creations and 
-            experimenting with different styles and techniques.
-        <br>
-        <br>
-            Although it's a simple project, it felt like the perfect way to dive into this creative 
-            process and to make something personal for my dad. The experience gave me a sense of 
-            accomplishment and set the foundation for many more complex and exciting LEGO projects 
-            to come.
+            In fall 2020, LEGO released its first wave of Art sets. While I hadn't fully returned to the 
+            hobby at the time, I was still following along, and seeing those sets made me want to try creating 
+            something of my own. I remember experimenting with mosaic generator tools, turning Destiny 2 emblems 
+            into pixel-style designs that could translate into physical builds. I never ended up making one, but 
+            the idea of working in that “dots” style always stuck with me.
+        </p>
+        <p>
+            My dad has always enjoyed LEGO, but I had never seen him build a set himself. He mostly just loved that 
+            I did. That's why, for Christmas 2023, I decided to make him his own custom LEGO piece: an art build of his 
+            favorite team, the Buffalo Bills. The style was relatively simple, but it still took iteration to make the 
+            logo read clearly and stand out. This project also became my introduction to 
+             <a href="https://www.bricklink.com/v3/studio/download.page" target="_blank">Bricklink Stud.io</a>, 
+            which I now use for all of my LEGO work. Without it, none of my later projects would have been possible.
+        </p>
+        <p>
+            Fast forward to Christmas 2025. That year, I really focused on making thoughtful, personal gifts for 
+            each member of my family. One idea stood out immediately: revisiting the Bills piece, but pushing it further 
+            with a fully brick-built buffalo.
+        </p>
+        <p>
+            Using everything I had learned, I designed a more advanced model that relied heavily on SNOT techniques to capture 
+            the curves of the standing buffalo. While I considered creating the charging version of the logo, I knew I wouldn't 
+            be able to execute it at the level I wanted within the time I had, so that's something I may return to in the future.
+        </p>
+        <p>
+            I'm especially proud of how closely the final model matches the original logo, since achieving organic shapes with LEGO 
+            is always a challenge. The lettering was another hurdle, requiring careful scaling, consistency, and integration with the 
+            back panel.
+        </p>
+        <p>
+            This collection of projects capture my growth over time, not just in technical skill, but in how I approach design, 
+            problem-solving, and creating work that feels meaningful, not just to me, but for those it's for!
         </p>
     </div>
+</section>
 
-    <div class="LegoProject_Renders">
-        <h1 class="title">Renders</h1>
+<section class="project-slideshow">
+    <h1 class="title">Photos</h1>
+    <br>
+  <div class="carousel-container">
+    <!-- Background blur layer -->
+    <div class="carousel-bg"></div>
 
-            <div class="LEGO_grid__gif_row">
-                <img src="../../assets/lego/BillsArt/RenderGIF.gif" onclick="openImage(this)" alt="Rotating Render GIF of Buffalo Bills Wall Art">
-            </div>
-            <div class="LEGO_grid__2row">
-                <img class="LEGO_grid__2row_LEFT" src="../../assets/lego/BillsArt/1PNG.png" onclick="openImage(this)" alt="Render 1 of Buffalo Bills Wall Art">
-                <img class="LEGO_grid__2row_RIGHT" src="../../assets/lego/BillsArt/2PNG.png" onclick="openImage(this)" alt="Render 2 of Buffalo Bills Wall Art">
-            </div>  
+    <!-- Foreground slide images -->
+    <div class="carousel-slide">
+        <img src="../../assets/lego/BillsArt/P1.JPG" onclick="openImage(this)" alt="THE REST STOP Hat Mockup">
+        <img src="../../assets/lego/BillsArt/P2.JPG" onclick="openImage(this)" alt="THE REST STOP Hat Mockup">
+        <img src="../../assets/lego/BillsArt/P3.JPG" onclick="openImage(this)" alt="THE REST STOP Hat Mockup">
     </div>
 
-    <div class="LegoProject_Photos">
-        <h1 class="title">Photos</h1>
-        <div class="lego-grid">
-            <img src="../../assets/lego/BillsArt/P1.JPG" onclick="openImage(this)" alt="Render 1">
-            <img src="../../assets/lego/BillsArt/P2.JPG" onclick="openImage(this)" alt="Render 2">
-        </div>
-    </div>
+    <!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
 
+<section id="projectinfo">
     <div class="LegoProject_Copy">
         <p>
-        A link to the instructions can be found
-       <a class="links" href="../../assets/lego/BillsArt/BuffaloBillsArt_Instructions.pdf" target="_blank">here</a>.
+        Instructions:  
+       <a class="links" href="../../assets/lego/BillsArt/BuffaloBills_DotsArt_Instructions.pdf" target="_blank">Dots Art</a>
+       //
+       <a class="links" href="../../assets/lego/BillsArt/BuffaloBills_StandingBuffalo_Instructions.pdf" target="_blank">Standing Buffalo</a>
        <br>
-       You can find the parts list (.xml)
-       <a class="links" href="../../assets/lego/BillsArt/BuffaloBillsArt.xml" download>here</a>.
+       Parts Lists (.xml):
+       <a class="links" href="../../assets/lego/BillsArt/BuffaloBills_DotsArt.xml" download>Dots Art</a>
+       //
+       <a class="links" href="../../assets/lego/BillsArt/BuffaloBills_StandingBuffalo.xml" target="_blank">Standing Buffalo</a>
        <br>
        <br>
        </p>
    </div>
-
-   <div class="BuffaloBills_ME"></div>
 </section>
 
 

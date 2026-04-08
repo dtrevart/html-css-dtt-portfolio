@@ -591,9 +591,70 @@
         padding-bottom: 2vh;
     }
 
-    .BuffaloBills_ME {
-        height: 8vh;
-    }
+
+/* Design Grid Layout*/
+  .design-section .title {
+    font-size: 1.5rem;
+  }
+
+  .design-section .page_subtitle_text {
+    font-size: 0.8rem;
+  }
+
+  .design-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  .design-item {
+    border-radius: 16px;
+    max-width: 100%;
+  }
+
+  .design-name {
+    font-size: 6vw;
+  }
+
+  #modalTitle {
+    font-size: 6vw;
+  }
+
+  .design-section {
+    padding: 40px 20px;
+  }
+
+  .design-section p {
+    font-size: 1rem;
+  }
+
+/* Modal */
+  .modal-content {
+    padding: 20px;
+    max-width: 70%;
+  }
+
+  .modal-slideshow {
+    height: 225px;
+  }
+
+  .modal-btn {
+    width: 32%;
+    text-align: center;
+    padding: 0.4rem 1.4rem;
+    font-size: 0.8rem;
+  }
+
+  .project-slideshow {
+    margin: 0;
+  }
+
+  .project-slideshow .title {
+    font-size: 1.5rem;
+  }
 
 /* About Me */
     .pagebrief h2{
