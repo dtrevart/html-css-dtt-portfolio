@@ -198,6 +198,36 @@ a:hover {
     color:#C2B4B4;
 }
 
+/* NOTICE */
+.notice {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #F2E5D7;
+    background-color: #262322;
+}
+.notice h1 {
+    padding-top: 1rem;
+    font-size: 2.5rem;
+}
+.notice h2 {
+    padding-top: 0.25rem;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+.notice a{
+    color: #C2B4B4; 
+    text-decoration: none;
+    text-decoration-color: #F2E5D7;
+    transition: 300ms ease;
+}
+.notice a:hover {
+    color: #7C886D;
+    text-decoration: underline;
+    text-underline-offset: 5px; 
+    text-decoration-color: #7C886D;
+    transition: 300ms ease;
+}
 
 /* Hamburger Menu */
 
@@ -489,7 +519,7 @@ section {
 
 #recent-projects {
     padding-top: 2vw;
-    padding-bottom: 4vw;
+    padding-bottom: 2vw;
 }
 
 .recent-projects-header-text {
