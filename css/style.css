@@ -748,6 +748,11 @@ section {
     font-size: 1.25rem;
 }
 
+.downscale {
+    width: 45%;
+    height: auto;
+}
+
 /*Project Carousel*/
 .project-slideshow {
   width: 100%;
@@ -860,7 +865,7 @@ section {
 .project1, .project2, .project3, .project4, .project5, .project6, 
 .project7, .project8, .project9, .project10, .project11, .project12,
 .project13, .project14, .project15, .project16, .project17, .project18,
-.project19, .project20, .project21, .project22{
+.project19, .project20, .project21, .project22, .project23{
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 12.5%;
@@ -1323,6 +1328,26 @@ section {
         background-size: cover;
         background-position: top;
     }
+
+        /* 23 */
+    .project23 {
+        background-image: url(../assets/general/SecondHelpings/Thumbnail.png);      /* Update Here */
+        background-size: cover;
+    }
+    /* Second Helpings */
+    #SecondHelpings {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/general/SecondHelpings/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
 .design-section {
   padding: 60px 5%;
   text-align: center;
@@ -1542,7 +1567,8 @@ section {
     text-decoration: none;
 }
 /* Client Work Boxes */
-.client1, .client2, .client3, .client4, .client5, .client6, .client7 {
+.client1, .client2, .client3, .client4, .client5, .client6, .client7,
+.client8, .client9 {
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 12.5%;
@@ -1699,6 +1725,49 @@ section {
         background-position: top;
     }
 
+    /* 8 */ 
+    .client8 {
+        background-image: url(../assets/client/LivTrvEats/Thumbnail.png);       /* Update Here */       /* Update Here */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }    
+    /* LivTrvEats */
+        #LivTrvEats {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/client/LivTrvEats/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 9 */ 
+    .client9 {
+        background-image: url(../assets/client/GreatHarvestBread/Thumbnail.png);       /* Update Here */       /* Update Here */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }    
+    /* Great Harvest */
+        #GreatHarvest {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/client/GreatHarvestBread/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
 
 
 /* Lego Projects Page */

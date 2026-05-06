@@ -13,6 +13,7 @@
     <script src="../../js/script.js" defer></script>
     <script src="../../js/scrollbar.js" defer></script>
     <script src="../../js/page-transitions.js" defer></script>
+    <script src="../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -31,7 +32,7 @@
                 <li><a href="../../projects.html">Projects</a></li>
                 <li><a href="../../clientwork.html">Client Work</a></li>
                 <li><a href="../../lego.html">LEGO</a></li>
-                <li><a href="../../films.html">Films</a></li>
+                <li><a href="../../films.html">Videography</a></li>
                 <li><a href="https://dtrev-art-shop.fourthwall.com">Store</a></li>
                 <li><a href="../../about.html">About Me</a></li>
             </ul>
@@ -67,14 +68,12 @@
         <li><a href="../../projects.html" onclick="toggleMenu()">Projects</a></li>
         <li><a href="../../clientwork.html" onclick="toggleMenu()">Client Work</a></li>
         <li><a href="../../lego.html" onclick="toggleMenu()">LEGO</a></li>
-        <li><a href="../../films.html" onclick="toggleMenu()">Films</a></li>
+        <li><a href="../../films.html" onclick="toggleMenu()">Videography</a></li>
         <li><a href="https://dtrev-art-shop.fourthwall.com" onclick="toggleMenu()">Store</a></li>
         <li><a href="../../about.html" onclick="toggleMenu()">About Me</a></li>
         <li><img src="../../assets/MeLogo.png" alt="Logo" class="hamburger-logo"></li>
     </ul>
     </div>
-
-
     
 <!--Page Specific Code Starts Here-->
 <div id="scroll-container" class="Page_Content">
@@ -84,7 +83,7 @@
 <section id="cookbook">
     <div class="page_title">
         <h1 class="page_title_text">Cookbook Pages</h1>
-        <p class="page_subtitle_text">November 2024 // Personal // <a href="https://dtrevart-changelog.netlify.app">Updated June 2025</a></p>
+        <p class="page_subtitle_text">November 2024 // Personal // <a href="https://dtrevart-changelog.netlify.app">Updated May 2026</a></p>
     </div>
 </section>
 
@@ -107,17 +106,31 @@
             Through this project, I've been able to create a personalized collection of recipes 
             that reflect both my culinary journey and my growth as a designer.
         </p>
+    </div>
+</section>
 
-        <table width=100%>
-            <tr>
-                <td><img src="../../assets/general/Cookbook/LemonBlueberryScone.jpg" onclick="openImage(this)" alt="Lemon Blueberry Scone Recipe"></td>
-                <td><img src="../../assets/general/Cookbook/CinnamonCrunchScone.jpg" onclick="openImage(this)" alt="Cinnamon Crunch Scone Recipe"></td>
-            </tr>
-        </table>
-        
-        <h1>Mockup</h1>
-        <img src="../../assets/general/Cookbook/Mockup.jpg" onclick="openImage(this)">
-        
+<section class="project-slideshow">
+  <div class="carousel-container">
+    <!-- Background blur layer -->
+    <div class="carousel-bg"></div>
+    
+    <!-- Foreground slide images -->
+    <div class="carousel-slide">
+        <img src="../../assets/general/Cookbook/CinnamonCrunchScone.jpg">
+        <img src="../../assets/general/Cookbook/ChocolateChipMuffins.png">
+        <img src="../../assets/general/Cookbook/LemonBlueberryScone.jpg">
+        <img src="../../assets/general/Cookbook/BananaNutDuckBread.png">
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
+
+<section id="projectinfo">
+    <div class="projectcopy">
         <p>
             A link to the current "cookbook" can be found
             <a class="links" href="../../assets/general/Cookbook/CookBook.pdf" target="_blank">here</a>.   
@@ -138,17 +151,19 @@
             <a href="https://www.linkedin.com/in/dominic-trevisani-453244301/?trk=opento_sprofile_details" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.youtube.com/channel/UC2jbssfnxSAxkTp97whzqxQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.tiktok.com/@dtrev.art" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.pinterest.com/dtrevart/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
             <a href="https://github.com/dtrevart" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://dtrev-art-shop.fourthwall.com" target="_blank"><i class="fa-solid fa-store"></i></a>
         </div>
         <div class="footerNav">
             <ul>
-                <li><a href="../../projects.html">Projects</a></li>
-                <li><a href="../../clientwork.html">Client Work</a></li>
-                <li><a href="../../lego.html">LEGO</a></li>
-                <li><a href="../../films.html">Films</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="clientwork.html">Client Work</a></li>
+                <li><a href="lego.html">LEGO</a></li>
+                <li><a href="films.html">Videography</a></li>
                 <li><a href="https://dtrev-art-shop.fourthwall.com">Store</a></li>
-                <li><a href="../../about.html">About Me</a></li>
+                <li><a href="about.html">About Me</a></li>
             </ul>
         </div>
         <img class="footer_img" src="../../assets/MeLogo.png">
