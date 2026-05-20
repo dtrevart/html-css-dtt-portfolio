@@ -641,6 +641,7 @@ section {
     text-align: center;
     width: 100%;
     margin-top: 5vh;
+    z-index: 3;
 }
 .page_title h1, .mainpage_title h1 {
     color: #F2E5D7;
@@ -2787,8 +2788,8 @@ section {
 }
 
 .timeline_item_details ul {
-  padding-right: 0.25rem;
-  padding-left: 0.25rem; 
+  padding-right: 1rem;
+  padding-left: 1rem; 
   list-style-position: outside;     
   list-style-type: disc;
 }
