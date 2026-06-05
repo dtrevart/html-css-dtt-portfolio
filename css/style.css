@@ -1535,6 +1535,76 @@ section {
 .modal-prev { left: 10px; }
 .modal-next { right: 10px; }
 
+/* Video Modal */
+#modalEmbed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem 0;
+}
+.video-modal #modalEmbed {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-modal #modalEmbed iframe {
+    width: min(300px, 40vw);
+    aspect-ratio: 9 / 16;
+    height: auto;
+    border-radius: 16px;
+}
+#modalEmbed iframe {
+    border-radius: 20px;
+    border: none;
+}
+.video-modal .modal-content {
+    max-height: 95vh;
+    height: 85vh;
+}
+.modal.video-modal .modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+    width: min(380px, 85vw);
+}
+.modal-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+}
+.modal-socials a {
+    text-decoration: none;
+    background-color: #262322;
+    margin: 0.75rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-socials a i {
+    font-size: 2rem;
+    color: #F2E5D7;
+    opacity: 1;
+    transition: 300ms;
+}
+.modal-socials a:hover i {
+    color: #7C886D;
+    transition: 300ms;
+}
+.video-modal #modalTitle {
+    font-size: 1.35vw;
+}
+
 
 /* Client Work Page */
 #clientworkpage {
@@ -2357,7 +2427,7 @@ section {
     padding-bottom: 1rem;
 }
 /* Film Boxes*/
-.film1, .film2, .film3, .film4{
+.film1, .film2, .film3, .film4, .film5{
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 12.5%;
@@ -2477,6 +2547,28 @@ section {
     #WhereWeAre > * {
         position: relative;
         z-index: 2;
+    }
+
+     /* 4 */ .film5 {
+        background-image: url(../assets/film/SocialMediaVideo/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+        background-position-x: center;
+    }
+    /* Social Media Video */
+    #SocialMediaVideos {
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/film/SocialMediaVideo/Header.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        z-index: 0; 
     }
 
 
