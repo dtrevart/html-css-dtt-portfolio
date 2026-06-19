@@ -2397,7 +2397,46 @@ section {
         background-size: cover;
         background-position: top;
     }
+    
 
+    /* 16 */ 
+    .lego16 {
+        background-image: url(../assets/lego/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+    }
+    /* Chocolatier Display */
+    #Chocolatier {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/lego/Chocolatier_Display/ChocolatierDisplay.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+        /* 17 */ 
+    .lego17 {
+        background-image: url(../assets/lego/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+    }
+    /* Zombie Dungeon Game Scale */
+    #Minecraft_PaleGarden {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/lego/Minecraft_PaleGarden/Mechanism.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
 
 /* FIlms Page */
 #filmpage {                                               /* Background Image */
