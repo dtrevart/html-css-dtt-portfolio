@@ -1,0 +1,190 @@
+/* Projects Boxes */
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8,
+.project9{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+    /* 1 */ 
+    .project1 {
+        background-image: url(../../assets/Projects/Personal/LittleSouls/Thumbnail.jpg);       /* Update Here */
+        background-size: contain;
+    }
+    /* Little Souls */
+    #little_souls {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/LittleSouls/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 2 */ 
+    .project2 {
+        background-image: url(../../assets/Projects/Personal/Cookbook/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* Cookbook Pages */
+    #cookbook {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/Cookbook/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 3 */
+    .project3 {
+        background-image: url(../../assets/Projects/Personal/BerryBlue/BerryBluePoster.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* Berryblue Poster Page */
+    #berryblue_poster {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/BerryBlue/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 4 */ 
+    .project4 {
+        background-image: url(../../assets/Projects/Personal/DBD_Posters/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* Dead By Daylight Poster Collection */
+    #dbd_posters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/DBD_Posters/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 5 */ 
+    .project5 {
+        background-image: url(../../assets/Projects/Personal/VTSUnity/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* VTSUnity Poster */
+    #vtsunity_poster {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/VTSUnity/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 6 */ 
+    .project6 {
+        background-image: url(../../assets/Projects/Personal/ColorTheoryPosters/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* Color Theory Posters */
+    #colortheoryposters {
+        background-image: url(../../assets/Projects/Personal/ColorTheoryPosters/Header.jpg);
+        display: flex;          
+        justify-content: center; 
+        align-items: center;     
+        gap: 5rem;
+        height: 30vw;           
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        flex-direction: column; 
+    }
+
+    /* 7 */ 
+    .project7 {
+        background-image: url(../../assets/Projects/Personal/MedSlidePosters/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* Medical Slide Posters */
+    #med_slide_posters {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/MedSlidePosters/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 8 */
+    .project8 {
+        background-image: url(../../assets/Projects/Personal/RESTSTOP_Rebrand_Project/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* REST STOP REBRAND PROJECT */
+    #reststop_project {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/RESTSTOP_Rebrand_Project/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 9 */
+    .project9 {
+        background-image: url(../../assets/Projects/Personal/SecondHelpings/Thumbnail.png);      /* Update Here */
+        background-size: cover;
+    }
+    /* Second Helpings */
+    #SecondHelpings {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Personal/SecondHelpings/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }

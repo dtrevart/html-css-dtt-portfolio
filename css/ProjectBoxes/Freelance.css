@@ -1,0 +1,132 @@
+/* Projects Boxes */
+.project1, .project2, .project3, .project4, .project5, .project6{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* 6 */
+.project6 {
+    background-image: url(../../assets/Client/Freelance/GreatHarvestBread/Thumbnail.png);       /* Update Here */       /* Update Here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}    
+/* Great Harvest */
+    #GreatHarvest {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../assets/Client/Freelance/GreatHarvestBread/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* 5 */
+.project5 {
+    background-image: url(../../assets/Client/Freelance/LivTrvEats/Thumbnail.png);       /* Update Here */       /* Update Here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}    
+/* LivTrvEats */
+#LivTrvEats {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../assets/Client/Freelance/LivTrvEats/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* 4 */ 
+.project4 {
+    background-image: url(../../assets/Client/Freelance/MozartPoster/Thumbnail.jpg);       /* Update Here */       /* Update Here */
+    background-size: contain;
+}
+/* Mozart Poster */
+#MozartRequiem {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../assets/Client/Freelance/MozartPoster/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* 3 */ 
+.project3 {
+    background-image: url(../../assets/Client/Freelance/SustainabilityTeam_EarthDay/Thumbnail.jpg);       /* Update Here */
+    background-size: contain;
+}
+/* Earth Day Poster */
+#earthday25 {
+    background-image: url(../../assets/Client/Freelance/SustainabilityTeam_EarthDay/Header.jpg);
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+    gap: 5rem;
+    height: 30vw;           
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    flex-direction: column; 
+}
+
+/* 2 */ 
+.project2 {
+    background-image: url(../../assets/Client/Freelance/Hamlet/Thumbnail.jpg);       /* Update Here */
+    background-size: cover;
+}
+/* Hamlet Posters */
+#hamlet_poster {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../assets/Client/Freelance/Hamlet/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* 1 */ 
+.project1 {
+    background-image: url(../../assets/Client/Freelance/VTSU_Wellness/Thumbnail.png);       /* Update Here */
+    background-size: contain;
+}
+/* VTSU Wellness Center */
+#vtsu_wellness {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../assets/Client/Freelance/VTSU_Wellness/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}

@@ -1,0 +1,88 @@
+/* Projects Boxes */
+.project1, .project2, .project3, .project4{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+   /* 1 */ 
+    .project1 {
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_Astarion/Thumbnail.jpg);       /* Update Here */
+        background-size: contain;
+    }
+    /* Astarion Brickheadz */
+        #astarionbrickheadz {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_Astarion/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 2 */ 
+    .project2 {
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_SableWard/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Sable Ward Brickheadz */
+    #SableWardLEGO {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_SableWard/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    
+    /* 3 */ 
+    .project3 {
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_Sombra/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Sombra Brickheadz */
+    #SombraLEGO {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_Sombra/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 4 */ 
+    .project4 {
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_Moira/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Moira Brickheadz */
+    #MoiraLEGO {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/Brickheadz/Brickheadz_Moira/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }

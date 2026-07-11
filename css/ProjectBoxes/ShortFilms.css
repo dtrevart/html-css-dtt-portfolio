@@ -1,0 +1,89 @@
+/* Projects Boxes */
+.project1, .project2, .project3, .project4{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+
+    /* 1 */ .project1 {
+        background-image: url(../../assets/Videography/ShortFilms/DayIn60s/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+        background-position-x: center;
+    }
+    /* Day in 60 Seconds */
+    #dayin60s {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Videography/ShortFilms/DayIn60s/Thumbnail.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 2 */ .project2 {
+        background-image: url(../../assets/Videography/ShortFilms/SelfReflection/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+        background-position-x: center;
+    }
+    /* Self Reflection */
+    #selfReflection {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Videography/ShortFilms/SelfReflection/Thumbnail.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 4 */ .project3 {
+        background-image: url(../../assets/Videography/ShortFilms/WhereWeAre/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    /* Where We Are */
+    #WhereWeAre {
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Videography/ShortFilms/WhereWeAre/WhereWeAreHeader.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        z-index: 0; 
+    }
+    #WhereWeAre::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4; 
+        z-index: 0;
+    }
+    #WhereWeAre > * {
+        position: relative;
+        z-index: 2;
+    }

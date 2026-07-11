@@ -1,0 +1,102 @@
+.homepage-grid{
+    width:min(1200px,95%);
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+
+.homepage-card{
+    position:relative;
+    display:flex;
+    align-items:center;
+    height:55vh;
+    min-height:420px;
+    overflow:hidden;
+    border-radius:40px;
+    text-decoration:none;
+    background:#262322;
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.15);
+}
+
+.homepage-card:hover{
+    transform:translateY(-6px);
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.3);
+}
+
+.card-bg{
+
+    position:absolute;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+    transition:
+        transform 6s linear,
+        opacity .8s ease;
+}
+
+.homepage-card:hover .card-bg{
+    transform:scale(1.05);
+}
+
+.card-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    transition:background .35s ease;
+}
+
+.homepage-card:hover .card-overlay{
+    background:rgba(0,0,0,.35);
+}
+
+.card-content{
+    position:relative;
+    z-index:2;
+    padding:4rem;
+    color:#F2E5D7;
+}
+
+.card-content h2{
+    margin:0;
+    font-size:clamp(4rem,9vw,8rem);
+    line-height:.9;
+    transition:color .35s ease;
+}
+
+.homepage-card:hover h2{
+    color:#7C886D;
+}
+
+.card-content p{
+    margin-top:1rem;
+    font-size:1.2rem;
+    letter-spacing:.05em;
+    color:#ddd;
+}
+
+.homepage-card,
+.homepage-card:hover,
+.homepage-card:visited,
+.homepage-card:active {
+    text-decoration: none;
+}
+
+.card-label{
+    margin-bottom:0.3rem;
+    margin-left: 0.5rem;
+    font-weight:400;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:#BEB1A4;
+}
+
+.card-content .card-label {
+    font-size: .75rem;
+}

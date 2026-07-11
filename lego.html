@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="0XxrKOEANFY6ZE1xe-2ejrVx7c08LV8MAZTM8t5F7-4" />
-    <title>Dominic Trevisani - LEGO Projects</title>
+    <title>Dominic Trevisani - LEGO</title>
     <link rel="icon" type="image/svg" href="./assets/MeLogo.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
+    <link rel="stylesheet" href="./css/projectpages.css">
     <script src="js/script.js" defer></script>
     <script src="js/scrollbar.js" defer></script>
     <script src="js/page-transitions.js" defer></script>
+    <script src="js/HeaderSlideshows/LEGO.js" defer></script>
+    <script src="js/cardbackground.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -28,9 +31,8 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="clientwork.html">Client Work</a></li>
                 <li><a href="lego.html">LEGO</a></li>
-                <li><a href="films.html">Videography</a></li>
+                <li><a href="Videography.html">Videography</a></li>
                 <li><a href="https://dtrev-art-shop.fourthwall.com">Store</a></li>
-                <li><a href="about.html">About Me</a></li>
             </ul>
         </div>
     </nav>
@@ -64,9 +66,8 @@
             <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
             <li><a href="clientwork.html" onclick="toggleMenu()">Client Work</a></li>
             <li><a href="lego.html" onclick="toggleMenu()">LEGO</a></li>
-            <li><a href="films.html" onclick="toggleMenu()">Videography</a></li>
+            <li><a href="Videography.html" onclick="toggleMenu()">Videography</a></li>
             <li><a href="https://dtrev-art-shop.fourthwall.com" onclick="toggleMenu()">Store</a></li>
-            <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
             <li><img src="./assets/MeLogo.png" alt="Logo" class="hamburger-logo"></li>
         </ul>
     </div>
@@ -76,18 +77,18 @@
 
 
  
-<section id="legopage">
-    <video autoplay loop muted playsinline id="Header_Video">
-        <source src="./assets/HeaderSlideshows/LEGOHeader.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<section id="projectpage">
+    <div class="header-slider">
+        <div class="header-track"></div>
+    </div>
+
     <div class="mainpage_title">
-        <h1 class="page_title_text">LEGO Projects</h1>
+        <h1 class="page_title_text">LEGO</h1>
     </div>
 </section>
 
 <div class="brief-intro">
-    <div class="pagebrief">
+    <div class="subpagebrief">
         <h1 class="title">Brick by Brick</h1>
         <p> 
             Even when I'm off the clock, I'm still designing - just with plastic bricks instead
@@ -98,115 +99,89 @@
     </div>
 </div>
 
+<section class="homepage-section">
+
+<div class="section-bg"></div>
 
 
-<section id="legoprojects">
-    <div class="lego-projects-parent">
-        <!--Project 15-->
-        <a href="./project_pages/lego/small_minecraft_displays.html">
-        <div class="animated_box lego15">
-            <div class="project-title">Small Minecraft Displays</div>  <!--Update Here-->
-        </div>
+<!--General MOCs-->
+    <div class="feature-card">
+        <a href="/project_pages/LEGO/General/LEGO_TalentPool_25.html "class="card-image">
+            <img src="./assets/LEGO/General/LEGO_TalentPool_25/Thumbnail.jpg" alt="Deep Sea Creatures LEGO Ideas project" >
         </a>
 
-        <!--Project 14-->
-        <a href="./project_pages/lego/zombiedungeon_gamescale.html">
-        <div class="animated_box lego14">
-            <div class="project-title">LEGO Minecraft 21587 Zombie Dungeon Upscale</div>  <!--Update Here-->
+        <div class="card-content">
+            <p class="card-label">
+                Featured Work // LEGO // General MOCs
+            </p>
+            <h2 class="card-title">
+                LEGO Design Talent Pool '25 Assignment
+            </h2>
+            <p class="card-description">
+                A collection of merchandise from various sources and projects, made to be wearable.
+            </p>
+            <span class="card-link">
+                <a href="project_pages/LEGO/General/LEGO_TalentPool_25.html">View Project Page</a>
+            </span>
         </div>
-        </a>
-
-        <!--Project 13-->
-        <a href="./project_pages/lego/curlworksfish_LEGO.html">
-        <div class="animated_box lego13">
-            <div class="project-title">Curlworks Fish Art</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 12-->
-        <a href="./project_pages/lego/chicken.html">
-        <div class="animated_box lego12">
-            <div class="project-title">Chicken.</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 11-->
-        <a href="./project_pages/lego/deep_sea_creatures.html">
-        <div class="animated_box lego11">
-            <div class="project-title">Deep Sea Creatures</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 10-->
-        <a href="./project_pages/lego/deep_sea_diorama.html">
-        <div class="animated_box lego10">
-            <div class="project-title">Deep Sea Diorama</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 9-->
-        <a href="./project_pages/lego/moirabrickheadz.html">
-        <div class="animated_box lego9">
-            <div class="project-title">Moira Brickheadz</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 8-->
-        <a href="./project_pages/lego/sombrabrickheadz.html">
-        <div class="animated_box lego8">
-            <div class="project-title">Sombra Brickheadz</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 7-->
-        <a href="./project_pages/lego/sablebrickheadz.html">
-        <div class="animated_box lego7">
-            <div class="project-title">Sable Ward Brickheadz</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 6-->
-        <a href="./project_pages/lego/housediorama.html">
-        <div class="animated_box lego6">
-            <div class="project-title">Minecraft House Diorama</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 5-->
-        <a href="./project_pages/lego/astarionbrickheadz.html">
-        <div class="animated_box lego5">
-            <div class="project-title">Astarion Brickheadz</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 4-->
-        <a href="./project_pages/lego/thebridge.html">
-        <div class="animated_box lego4">
-            <div class="project-title">The Bridge</div>  <!--Update Here-->
-        </div>
-        </a>
-    
-        <!--Project 3-->
-        <a href="./project_pages/lego/desertwell.html">
-        <div class="animated_box lego3">
-            <div class="project-title">Desert Well</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 2-->
-        <a href="./project_pages/lego/beehouse.html">
-        <div class="animated_box lego2">
-            <div class="project-title">Bee House (Game Scale)</div>  <!--Update Here-->
-        </div>
-        </a>
-
-        <!--Project 1-->
-        <a href="./project_pages/lego/billsart.html">
-        <div class="animated_box lego1">
-            <div class="project-title">Buffalo Bills Art</div>  <!--Update Here-->
-        </div>
-        </a>
     </div>
+    <a class="majorlink_button" href="/GeneralMOCs.html">
+        View All General MOCs
+    </a>
+
+<!--LEGO Minecraft-->
+        <div class="feature-card">
+        <a href="/project_pages/client/fcp&r.html"class="card-image">
+            <img src="./assets/LEGO/Minecraft/Minecraft_ZombieDungeon/Thumbnail.gif" alt="Deep Sea Creatures LEGO Ideas project" >
+        </a>
+
+        <div class="card-content">
+            <p class="card-label">
+                Featured Work // LEGO // Minecraft
+            </p>
+            <h2 class="card-title">
+                LEGO Minecraft 21587 Zombie Dungeon Upscale
+            </h2>
+            <p class="card-description">
+                A collection of merchandise from various sources and projects, made to be wearable.
+            </p>
+            <span class="card-link">
+                <a href="project_pages/LEGO/Minecraft/zombiedungeon_gamescale.html">View Project Page</a>
+            </span>
+        </div>
+    </div>
+
+    <a class="majorlink_button" href="/LEGOMinecraft_MOCs.html">
+        View All LEGO Minecraft MOCs
+    </a>
+
+<!--Brickheadz-->
+        <div class="feature-card">
+        <a href="/project_pages/LEGO/Brickheadz/moirabrickheadz.html"class="card-image">
+            <img src="./assets/LEGO/Brickheadz/Brickheadz_Moira/Thumbnail.jpg" alt="Deep Sea Creatures LEGO Ideas project" >
+        </a>
+
+        <div class="card-content">
+            <p class="card-label">
+                Featured Work // LEGO // Brickheadz
+            </p>
+            <h2 class="card-title">
+                Moira Brickheadz
+            </h2>
+            <p class="card-description">
+                A collection of merchandise from various sources and projects, made to be wearable.
+            </p>
+            <span class="card-link">
+                <a href="project_pages/LEGO/Brickheadz/moirabrickheadz.html">View Project Page</a>
+            </span>
+        </div>
+    </div>
+
+    <a class="majorlink_button" href="/Brickheadz_MOCs.html">
+        View All Brickheadz MOCs
+    </a>
+
+
 </section>
 
 
@@ -230,9 +205,8 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="clientwork.html">Client Work</a></li>
                 <li><a href="lego.html">LEGO</a></li>
-                <li><a href="films.html">Videography</a></li>
+                <li><a href="Videography.html">Videography</a></li>
                 <li><a href="https://dtrev-art-shop.fourthwall.com">Store</a></li>
-                <li><a href="about.html">About Me</a></li>
             </ul>
         </div>
         <img class="footer_img" src="./assets/MeLogo.png">

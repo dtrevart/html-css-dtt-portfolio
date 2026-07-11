@@ -498,22 +498,61 @@ section {
 /* Other Page Briefs */
 .pagebrief h1{
     padding-top: 0.75vh;
+    padding-bottom: 2vh;
 }
 
-.pagebrief h2{
-    padding: 2.5vh;
+.pagebrief h2 {
+    padding-bottom: 1rem;
     color: #F2E5D7;
-    font-size: 1.75vw;             
-    line-height: 1.1;
+    font-size: 1.75vw;
+    line-height: 1.2;
     text-align: center;
 }
 
 .pagebrief p{
     font-size: 1.25vw;
-    margin: 0 10rem;
-    padding-bottom: 4vh;
-    padding-top: 2vh;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+    text-align:justify;
+    width: 90%;
 }
+
+.pagebrief {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-logo {
+    display: block;
+    width: 180px;      
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.subpagebrief h1{
+    padding-top: 0.75vh;
+    padding-bottom: 2vh;
+}
+.subpagebrief p{
+    font-size: 1.25vw;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+    text-align:center;
+    width: 90%;
+}
+.subpagebrief {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* Recent Projects */
 
@@ -754,6 +793,15 @@ section {
     height: auto;
 }
 
+.quote {
+    font-size: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem; 
+}
+
 /*Project Carousel*/
 .project-slideshow {
   width: 100%;
@@ -839,16 +887,61 @@ section {
 
 
 
-/* Project Page */
-#projectpage {                                               /* Background Image */
+#projectpage {
     position: relative;
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+.header-slider {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+.header-track {
+    display: flex;
+    height: 100%;
+    width: max-content;
+    animation: scrollHeader 40s linear infinite;
+}
+.header-track img {
+    height: 100%;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+@keyframes scrollHeader {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+#projectpage::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 1;
+}
+.mainpage_title {
+    position: relative;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vw;
-    overflow: hidden;
-    margin: 0;
+    z-index: 2;
 }
+
+
+
+
 #allprojects {
     padding-top: 2vw;
     padding-bottom: 4vw;
@@ -858,465 +951,21 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 .allprojects-parent a{
     text-decoration: none;
 }
-/* Projects Boxes */
-.project1, .project2, .project3, .project4, .project5, .project6, 
-.project7, .project8, .project9, .project10, .project11, .project12,
-.project13, .project14, .project15, .project16, .project17, .project18,
-.project19, .project20, .project21, .project22, .project23{
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 12.5%;
-    cursor: pointer;
-    transition: 300ms;
-    background-size: cover; 
-    background-position: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-                0 16px 40px rgba(0, 0, 0, 0.05);
-}
 
-
-    /* 1 */
-    .project1 {
-        background-image: url(../assets/general/STAX/STAXLogo.gif);       /* Update Here */
-        background-size: cover;
-        background-position: 60% center;
-    }
-    /* STAX */
-    #stax {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/STAX/STAXLogo.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 10%;
-    }
-    
-
-    /* 2 */ 
-    .project2 {
-        background-image: url(../assets/general/OmoriCards/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* Omori Playing Cards */
-    #omori_cards {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/OmoriCards/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
 
     
-    /* 3 */ 
-    .project3 {
-        background-image: url(../assets/general/DoggieDayzzz/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* Doggie Dayzzz */
-    #doggiedayzzz {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/DoggieDayzzz/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 4 */
-    .project4 {
-        background-image: url(../assets/general/HolidayCards/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Holiday Cards */
-    #holiday_cards {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/HolidayCards/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 5 */ 
-    .project5 {
-        background-image: url(../assets/general/LittleSouls/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* Little Souls */
-    #little_souls {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/LittleSouls/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 6 */ 
-    .project6 {
-        background-image: url(../assets/general/Munch_Brochure/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Brochure Page */
-    #brochure {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/Munch_Brochure/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 7 */ 
-    .project7 {
-        background-image: url(../assets/general/Apple_StillLife/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Apple Still Life */
-    #apples {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/Apple_StillLife/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 8 */ 
-    .project8 {
-        background-image: url(../assets/general/CatMagazine_Layout/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* Magazine Layout */
-    #magazinepages {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/CatMagazine_Layout/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 9 */ 
-    .project9 {
-        background-image: url(../assets/general/Calender/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Calender */
-    #calender {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/Calender/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    .CalenderPages{
-        transform: rotate(90deg);
-    }
-    .CalenderPages:hover{
-        transform: scale(1.05) rotate(0deg);
-        transition: 300ms;
-    }
-
-
-    /* 10 */ 
-    .project10 {
-        background-image: url(../assets/general/1Fish/Update2.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* 1Fish */
-    #OneFish {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/1Fish/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 11 */ 
-    .project11 {
-        background-image: url(../assets/general/Planty/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* Planty Page */
-    #planty {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/Planty/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 12 */
-    .project12 {
-        background-image: url(../assets/general/CocoCritters/Thumbnail.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* CoCoCritters */
-    #cococritters {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/CoCoCritters/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 13 */ 
-    .project13 {
-        background-image: url(../assets/general/Cookbook/Thumbnail.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* Cookbook Pages */
-    #cookbook {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/Cookbook/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 14 */
-    .project14 {
-        background-image: url(../assets/general/BerryBlue/BerryBluePoster.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* Berryblue Poster Page */
-    #berryblue_poster {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/BerryBlue/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 15 */ .project15 {
-        background-image: url(../assets/general/DBD_Posters/Thumbnail.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* Dead By Daylight Poster Collection */
-    #dbd_posters {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/DBD_Posters/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 16 */ 
-    .project16 {
-        background-image: url(../assets/general/VTSUnity/Thumbnail.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* VTSUnity Poster */
-    #vtsunity_poster {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/VTSUnity/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 17 */ 
-    .project17 {
-        background-image: url(../assets/general/ContentLab/Thumbnail.jpg);     /* Update Here */
-        background-size: cover;
-    }
-    /* Content Lab */
-    #content_lab {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/ContentLab/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 18 */ 
-    .project18 {
-        background-image: url(../assets/general/ColorTheoryPosters/Thumbnail.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* Color Theory Posters */
-    #colortheoryposters {
-        background-image: url(../assets/general/ColorTheoryPosters/Header.jpg);
-        display: flex;          
-        justify-content: center; 
-        align-items: center;     
-        gap: 5rem;
-        height: 30vw;           
-        margin-left: auto;
-        margin-right: auto;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        flex-direction: column; 
-    }
-
-
-    /* 19 */ 
-    .project19 {
-        background-image: url(../assets/general/Cuppys/Thumbnail.png);      /* Update Here */
-        background-size: cover;
-    }
-    /* Cuppy's */
-    #cuppys {
-        background-image: url(../assets/general/Cuppys/Header.jpg);
-        display: flex;          
-        justify-content: center; 
-        align-items: center;     
-        gap: 5rem;
-        height: 30vw;           
-        margin-left: auto;
-        margin-right: auto;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        flex-direction: column; 
-    }
-
-
-    /* 20 */ 
-    .project20 {
-        background-image: url(../assets/general/MedSlidePosters/Thumbnail.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* Medical Slide Posters */
-    #med_slide_posters {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/MedSlidePosters/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 21 */
-    .project21 {
-        background-image: url(../assets/general/RESTSTOP_Rebrand_Project/Thumbnail.jpg);      /* Update Here */
-        background-size: cover;
-    }
-    /* REST STOP REBRAND PROJECT */
-    #reststop_project {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/RESTSTOP_Rebrand_Project/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
 
     /* 22 */
     .project22 {
         background-image: url(../assets/general/Store/Thumbnail.jpg);      /* Update Here */
         background-size: cover;
     }
-    /* Christmas '25 Gifts! */
+    /* Store */
     #Christmas25 {                                               /* Background Image */
         display: flex;
         justify-content: center;
@@ -1330,24 +979,7 @@ section {
         background-position: top;
     }
 
-        /* 23 */
-    .project23 {
-        background-image: url(../assets/general/SecondHelpings/Thumbnail.png);      /* Update Here */
-        background-size: cover;
-    }
-    /* Second Helpings */
-    #SecondHelpings {                                               /* Background Image */
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/general/SecondHelpings/Header.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
+
 
 .design-section {
   padding: 60px 5%;
@@ -1606,264 +1238,9 @@ section {
 }
 
 
-/* Client Work Page */
-#clientworkpage {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vw;
-    overflow: hidden;
-    margin: 0;
-}
-#Header_Video {
-    position: absolute;
-    top: 10%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-#clientwork {
-    padding-top: 2vw;
-    padding-bottom: 4vw;
-}
-.clientwork-parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2vw;
-    margin-top: 2vw;
-}
-.clientwork-parent a{
-    text-decoration: none;
-}
-/* Client Work Boxes */
-.client1, .client2, .client3, .client4, .client5, .client6, .client7,
-.client8, .client9 {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 12.5%;
-    cursor: pointer;
-    transition: 300ms;
-    background-size: cover; 
-    background-position: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-                0 16px 40px rgba(0, 0, 0, 0.05);
-}
 
 
-    /* 1 */ 
-    .client1 {
-        background-image: url(../assets/client/StudentVoterDrive/Thumbnail.png);       /* Update Here */
-        background-size: contain;
-    }
-    /* Student Voter Drive */
-    #student_voter_drive {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/StudentVoterDrive/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
 
-
-    /* 2 */ 
-    .client2 {
-        background-image: url(../assets/client/VTSU_Wellness/Thumbnail.png);       /* Update Here */
-        background-size: contain;
-    }
-    /* VTSU Wellness Center */
-    #vtsu_wellness {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/VTSU_Wellness/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 3 */ 
-    .client3 {
-        background-image: url(../assets/client/Hamlet/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Hamlet Posters */
-    #hamlet_poster {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/Hamlet/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 4 */ 
-    .client4 {
-        background-image: url(../assets/client/SustainabilityTeam_EarthDay/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* Earth Day Poster */
-    #earthday25 {
-        background-image: url(../assets/client/SustainabilityTeam_EarthDay/Header.jpg);
-        display: flex;          
-        justify-content: center; 
-        align-items: center;     
-        gap: 5rem;
-        height: 30vw;           
-        margin-left: auto;
-        margin-right: auto;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        flex-direction: column; 
-    }
-
-    
-    /* 5 */ 
-    .client5 {
-        background-image: url(../assets/client/MozartPoster/Thumbnail.jpg);       /* Update Here */       /* Update Here */
-        background-size: contain;
-    }
-    /* Mozart Poster */
-    #MozartRequiem {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/MozartPoster/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 6 */ 
-    .client6 {
-        background-image: url(../assets/client/FCPR/Thumbnail.jpg);       /* Update Here */       /* Update Here */
-        background-size: contain;
-    }
-    /* Friends of Castleton Parks & Rec */
-    #fcpr {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/FCPR/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 7 */ 
-    .client7 {
-        background-image: url(../assets/client/LEGO_TalentPool_25/Thumbnail.jpg);       /* Update Here */       /* Update Here */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    }    
-    /* LEGO Group Assignment */
-        #LEGO_Group_Assignment {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/LEGO_TalentPool_25/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-    /* 8 */ 
-    .client8 {
-        background-image: url(../assets/client/LivTrvEats/Thumbnail.png);       /* Update Here */       /* Update Here */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    }    
-    /* LivTrvEats */
-        #LivTrvEats {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/LivTrvEats/Header.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-    /* 9 */ 
-    .client9 {
-        background-image: url(../assets/client/GreatHarvestBread/Thumbnail.png);       /* Update Here */       /* Update Here */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    }    
-    /* Great Harvest */
-        #GreatHarvest {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/client/GreatHarvestBread/Header.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-/* Lego Projects Page */
-#legopage {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vw;
-    overflow: hidden;
-    margin: 0;
-}
-#legoprojects {
-    padding-top: 2vw;
-    padding-bottom: 4vw;
-}
-.lego-projects-parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2vw;
-    margin-top: 2vw;
-}
-.lego-projects-parent a{
-    text-decoration: none;
-}
 
 /* Lego Projects */
 .LegoProject_Copy p{
@@ -1981,477 +1358,8 @@ section {
 }
 
 
-/* Lego Project Boxes */
-.lego1, .lego2, .lego3, .lego4, .lego5, .lego6, .lego7, .lego8, .lego9, .lego10, .lego11, .lego12, .lego13, .lego14, .lego15 {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        border-radius: 12.5%;
-        cursor: pointer;
-        transition: 300ms;
-        background-size: cover; 
-        background-position: center;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-                    0 16px 40px rgba(0, 0, 0, 0.05);
-}
 
 
-    /* 1 */ 
-    .lego1 {
-        background-image: url(../assets/lego/BillsArt/Thumbnail.png);       /* Update Here */
-        background-size: contain;
-    }
-    /* Buffalo Bills Wall Art */
-    #bills-art {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/BillsArt/Header.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 2 */ 
-    .lego2 {
-        background-image: url(../assets/lego/Minecraft_BeeHouse/Thumbnail.jpg);     /* Update Here */
-        background-size: cover;
-    }
-    /* Bee House (Game Scale) */
-    #bee-house {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Minecraft_BeeHouse/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 3 */ 
-    .lego3 {
-        background-image: url(../assets/lego/Minecraft_DesertWell/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Desert Well */
-    #desertwell {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Minecraft_DesertWell/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 4 */ 
-    .lego4 {
-        background-image: url(../assets/lego/Minecraft_TheBridge/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* The Bridge */
-    #the-bridge {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Minecraft_TheBridge/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    
-    
-    /* 5 */ 
-    .lego5 {
-        background-image: url(../assets/lego/Brickheadz_Astartion/Thumbnail.jpg);       /* Update Here */
-        background-size: contain;
-    }
-    /* Astarion Brickheadz */
-        #astarionbrickheadz {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Brickheadz_Astartion/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-    
-    /* 6 */ 
-    .lego6 {
-        background-image: url(../assets/lego/Minecraft_HouseDiorama/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Minecraft House Diorama */
-    #housediorama {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Minecraft_HouseDiorama/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    
-    
-    /* 7 */ 
-    .lego7 {
-        background-image: url(../assets/lego/Brickheadz_SableWard/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Sable Ward Brickheadz */
-    #SableWardLEGO {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Brickheadz_SableWard/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    
-    
-    /* 8 */ 
-    .lego8 {
-        background-image: url(../assets/lego/Brickheadz_Sombra/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Sombra Brickheadz */
-    #SombraLEGO {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Brickheadz_Sombra/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 9 */ 
-    .lego9 {
-        background-image: url(../assets/lego/Brickheadz_Moira/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Moira Brickheadz */
-    #MoiraLEGO {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Brickheadz_Moira/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 10 */ 
-    .lego10 {
-        background-image: url(../assets/lego/DeepSeaDiorama/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Deep Sea Diorama */
-    #SeaDiorama {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/DeepSeaDiorama/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 11 */ 
-    .lego11 {
-        background-image: url(../assets/lego/DeepSeaCreatures/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Deep Sea Creatures */
-    #SeaCreatures {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/DeepSeaCreatures/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    .creature-grid h2 {
-        font-size: 2.5rem;
-    }
-    .creature-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 3rem auto;
-        padding: 0 1.5rem;
-    }
-    .creature-card {
-        background: #262322;
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-                    0 16px 40px rgba(0, 0, 0, 0.05);
-        text-align: left;
-    }
-    .creature-card p{
-        font-size: 1.2rem;
-        padding-bottom: 2vh;
-    }
-    .creature-card h2{
-        color: #F2E5D7;
-    }
-    .creature-card img {
-        display: block;
-        max-width: 100%;
-        border-radius: 8px;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        transition: 300ms ease;
-    }
-    .creature-card img:hover {
-        transform: scale(1.05);
-    }
-    .creature-links {
-        list-style: none;
-        display: flex;
-        gap: 1rem; 
-        font-size: 1.1rem; 
-        padding-bottom: 1rem;
-    }
-    .creature-links li a {
-        text-decoration: none;
-        color: #C2B4B4;
-        transition: color 0.3s ease;
-    }
-    .creature-links li a:hover {
-        color: #7C886D;
-    }
-    .octo_colors{
-        gap: 1rem; 
-        font-size: 1.1rem; 
-        padding-bottom: 1rem;
-        padding-lefT: 1rem;
-    }
-    .octo_colors a{
-        color: #C2B4B4;
-    }
-    .octo_colors a:hover{
-        text-decoration: none;
-        color: #7C886D;
-    }
-
-
-    /* 12 */ 
-    .lego12 {
-        background-image: url(../assets/lego/Chicken/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* Chicken */
-    #ChickenLEGO {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Chicken/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 13 */ 
-    .lego13 {
-        background-image: url(../assets/lego/CurlworksFish/Thumbnail.jpg);       /* Update Here */
-        background-size: cover;
-    }
-    /* CurlworksFish */
-    #CurlworksFish {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/CurlworksFish/Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-    /* 14 */ 
-    .lego14 {
-        background-image: url(../assets/lego/Minecraft_ZombieDungeon/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-    }
-    /* Zombie Dungeon Game Scale */
-    #ZombieDungeon_GameScale {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Minecraft_ZombieDungeon/Header.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-    .ZD-grid h2 {
-        font-size: 2.5rem;
-        padding-bottom: 0.75rem;
-        line-height: 1.15;
-    }
-    .ZD-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        max-width: 1500px;
-        margin: 1rem auto;
- 
-    }
-    .ZD-card {
-        background: #262322;
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-                    0 16px 40px rgba(0, 0, 0, 0.05);
-        text-align: left;
-    }
-    .ZD-card p{
-        font-size: 1.2rem;
-        padding-bottom: 2vh;
-    }
-    .ZD-card h2{
-        color: #F2E5D7;
-    }
-    .ZD-card img {
-        display: block;
-        max-width: 100%;
-        border-radius: 8px;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        transition: 300ms ease;
-    }
-    .ZD-card img:hover {
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    /* 15 */ 
-    .lego15 {
-        background-image: url(../assets/lego/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-    }
-    /* Zombie Dungeon Game Scale */
-    #Small_Minecraft_MOC {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Minecraft_SmallDisplays/Header.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    
-
-    /* 16 */ 
-    .lego16 {
-        background-image: url(../assets/lego/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-    }
-    /* Chocolatier Display */
-    #Chocolatier {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Chocolatier_Display/ChocolatierDisplay.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-        /* 17 */ 
-    .lego17 {
-        background-image: url(../assets/lego/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-    }
-    /* Zombie Dungeon Game Scale */
-    #Minecraft_PaleGarden {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/lego/Minecraft_PaleGarden/Mechanism.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-/* FIlms Page */
-#filmpage {                                               /* Background Image */
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vw;
-    overflow: hidden;
-    margin: 0;
-}
-#films {
-    padding-top: 2vw;
-    padding-bottom: 4vw;
-}
 /* General Film Stuff */
 .FilmFrames {
     display: flex;
@@ -2465,134 +1373,8 @@ section {
     max-height: 540px;
     padding-bottom: 1rem;
 }
-/* Film Boxes*/
-.film1, .film2, .film3, .film4, .film5{
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 12.5%;
-    cursor: pointer;
-    transition: 300ms;
-    background-size: cover; 
-    background-position: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-                0 16px 40px rgba(0, 0, 0, 0.05);
-}
 
 
-    /* 1 */ .film1 {
-        background-image: url(../assets/film/DayIn60s/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-        background-position-x: center;
-    }
-    /* Day in 60 Seconds */
-    #dayin60s {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/film/DayIn60s/Thumbnail.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    
-
-    /* 2 */ .film2 {
-        background-image: url(../assets/film/SelfReflection/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-        background-position-x: center;
-    }
-    /* Self Reflection */
-    #selfReflection {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/film/SelfReflection/Thumbnail.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    .FilmFrames_SR {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem auto;
-    }
-    .FilmFrames_SR iframe {
-        width: 80vw;    
-        max-width: 960px;
-        height: 54vw;   
-        max-height: 540px;
-    }
-
-
-    /* 3 */ .film3 {
-        background-image: url(../assets/film/CuppyHeader/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-        background-position-x: center;
-    }
-    /* Cuppy's Header */
-    #CuppyHeader {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/film/CuppyHeader/Thumbnail.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-
-
-    /* 4 */ .film4 {
-        background-image: url(../assets/film/WhereWeAre/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-        background-position-x: center;
-    }
-    /* Where We Are */
-    #WhereWeAre {
-        position: relative; 
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../assets/film/WhereWeAre/WhereWeAreHeader.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
-        z-index: 0; 
-    }
-    #WhereWeAre::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.4; 
-        z-index: 0;
-    }
-    #WhereWeAre > * {
-        position: relative;
-        z-index: 2;
-    }
-
-     /* 4 */ .film5 {
-        background-image: url(../assets/film/SocialMediaVideo/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-        background-position-x: center;
-    }
     /* Social Media Video */
     #SocialMediaVideos {
         position: relative; 
@@ -2602,7 +1384,7 @@ section {
         height: 30vw;
         margin-left: auto;
         margin-right: auto;
-        background-image: url(../assets/film/SocialMediaVideo/Header.gif);
+        background-image: url(/assets/Videography/SocialMediaVideo/Header.gif);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

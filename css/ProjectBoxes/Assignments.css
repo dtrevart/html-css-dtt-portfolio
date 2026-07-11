@@ -1,0 +1,258 @@
+/* Projects Boxes */
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8,
+.project9, .project10, .project11, .project12{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+    /* 1 */
+    .project1 {
+        background-image: url(../../assets/Projects/Assignments/STAX/STAXLogo.gif);       /* Update Here */
+        background-size: cover;
+        background-position: 60% center;
+    }
+    /* STAX */
+    #stax {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/STAX/STAXLogo.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 10%;
+    }
+    
+
+    /* 2 */ 
+    .project2 {
+        background-image: url(../../assets/Projects/Assignments/OmoriCards/Thumbnail.jpg);       /* Update Here */
+        background-size: contain;
+    }
+    /* Omori Playing Cards */
+    #omori_cards {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/OmoriCards/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    
+    /* 3 */ 
+    .project3 {
+        background-image: url(../../assets/Projects/Assignments/DoggieDayzzz/Thumbnail.jpg);       /* Update Here */
+        background-size: contain;
+    }
+    /* Doggie Dayzzz */
+    #doggiedayzzz {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/DoggieDayzzz/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 4 */
+    .project4 {
+        background-image: url(../../assets/Projects/Assignments/HolidayCards/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Holiday Cards */
+    #holiday_cards {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/HolidayCards/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 5 */ 
+    .project5 {
+        background-image: url(../../assets/Projects/Assignments/Munch_Brochure/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Brochure Page */
+    #brochure {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/Munch_Brochure/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 6 */ 
+    .project6 {
+        background-image: url(../../assets/Projects/Assignments/Apple_StillLife/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Apple Still Life */
+    #apples {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/Apple_StillLife/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 7 */ 
+    .project7 {
+        background-image: url(../../assets/Projects/Assignments/CatMagazine_Layout/Thumbnail.jpg);       /* Update Here */
+        background-size: contain;
+    }
+    /* Magazine Layout */
+    #magazinepages {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/CatMagazine_Layout/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 8 */ 
+    .project8 {
+        background-image: url(../../assets/Projects/Assignments/Calender/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Calender */
+    #calender {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/Calender/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .CalenderPages{
+        transform: rotate(90deg);
+    }
+    .CalenderPages:hover{
+        transform: scale(1.05) rotate(0deg);
+        transition: 300ms;
+    }
+
+    /* 9 */ 
+    .project9 {
+        background-image: url(../../assets/Projects/Assignments/1Fish/Update2.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* 1Fish */
+    #OneFish {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/1Fish/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 10 */ 
+    .project10 {
+        background-image: url(../../assets/Projects/Assignments/Planty/Thumbnail.jpg);       /* Update Here */
+        background-size: contain;
+    }
+    /* Planty Page */
+    #planty {                                               /* Background Image */
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/Planty/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 11 */
+    .project11 {
+        background-image: url(../../assets/Projects/Assignments/CocoCritters/Thumbnail.jpg);      /* Update Here */
+        background-size: cover;
+    }
+    /* CoCoCritters */
+    #cococritters {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Projects/Assignments/CoCoCritters/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 12 */ 
+    .project12 {
+        background-image: url(../../assets/Projects/Assignments/Cuppys/Thumbnail.png);      /* Update Here */
+        background-size: cover;
+    }
+    /* Cuppy's */
+    #cuppys {
+        background-image: url(../../assets/Projects/Assignments/Cuppys/Header.jpg);
+        display: flex;          
+        justify-content: center; 
+        align-items: center;     
+        gap: 5rem;
+        height: 30vw;           
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        flex-direction: column; 
+    }

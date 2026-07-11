@@ -1,0 +1,198 @@
+/* Projects Boxes */
+.project1, .project2, .project3, .project4{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12.5%;
+    cursor: pointer;
+    transition: 300ms;
+    background-size: cover; 
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+
+    /* Chocolatier Display */
+    #Chocolatier {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/lego/Chocolatier_Display/ChocolatierDisplay.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 4 */ 
+    .project4 {
+        background-image: url(../../assets/LEGO/General/Chicken/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* Chicken */
+    #ChickenLEGO {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/General/Chicken/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 3 */ 
+    .project3 {
+        background-image: url(../../assets/LEGO/General/CurlworksFish/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* CurlworksFish */
+    #CurlworksFish {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/General/CurlworksFish/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    /* 2 */ 
+    .project2 {
+        background-image: url(../../assets/LEGO/General/LEGO_TalentPool_25/Thumbnail.jpg);       /* Update Here */
+        background-size: cover;
+    }
+    /* LEGO Group Assignment */
+        #LEGO_Group_Assignment {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/General/LEGO_TalentPool_25/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    /* Deep Sea Diorama */
+    #SeaDiorama {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/General/DeepSeaDiorama/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    /* Deep Sea Creatures */
+    #SeaCreatures {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/General/DeepSeaCreatures/Header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .creature-grid h2 {
+        font-size: 2.5rem;
+    }
+    .creature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+    }
+    .creature-card {
+        background: #262322;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+                    0 16px 40px rgba(0, 0, 0, 0.05);
+        text-align: left;
+    }
+    .creature-card p{
+        font-size: 1.2rem;
+        padding-bottom: 2vh;
+    }
+    .creature-card h2{
+        color: #F2E5D7;
+    }
+    .creature-card img {
+        display: block;
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        transition: 300ms ease;
+    }
+    .creature-card img:hover {
+        transform: scale(1.05);
+    }
+    .creature-links {
+        list-style: none;
+        display: flex;
+        gap: 1rem; 
+        font-size: 1.1rem; 
+        padding-bottom: 1rem;
+    }
+    .creature-links li a {
+        text-decoration: none;
+        color: #C2B4B4;
+        transition: color 0.3s ease;
+    }
+    .creature-links li a:hover {
+        color: #7C886D;
+    }
+    .octo_colors{
+        gap: 1rem; 
+        font-size: 1.1rem; 
+        padding-bottom: 1rem;
+        padding-lefT: 1rem;
+    }
+    .octo_colors a{
+        color: #C2B4B4;
+    }
+    .octo_colors a:hover{
+        text-decoration: none;
+        color: #7C886D;
+    }
+
+
+    /* 1 */ 
+    .project1 {
+        background-image: url(../../assets/LEGO/General/BillsArt/Thumbnail.png);       /* Update Here */
+        background-size: contain;
+    }
+    /* Buffalo Bills Wall Art */
+    #bills-art {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/General/BillsArt/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
