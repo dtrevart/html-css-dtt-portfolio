@@ -1,4 +1,28 @@
-@media screen and (max-width: 800px) {
+@media (hover: hover) and (pointer: fine) {
+    .btn:hover {
+        cursor: pointer;
+        background:#7C886D;
+    }
+
+    .homepage-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 30px 70px rgba(0,0,0,.3);
+    }
+
+    .homepage-card:hover .card-bg {
+        transform: scale(1.05);
+    }
+
+    .homepage-card:hover .card-overlay {
+        background: rgba(0,0,0,.35);
+    }
+
+    .homepage-card:hover h2 {
+        color: #7C886D;
+    }
+}
+
+@media screen and (max-width: 900px) {
     #desktop-nav {
         display: none;
         visibility: collapse;
@@ -50,54 +74,7 @@
 }
 
 /*Text*/
-    .brief-boxes {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center;
-        text-align: center; 
-        margin: 0 auto; 
-        padding: 0;
-        padding-bottom: 2vh; 
-    }
 
-    .brief-image {
-        padding-left: 0; 
-        padding-right: 0; 
-        padding-bottom: 0; 
-        transform: none; 
-        max-width: 70%; 
-        height: auto; 
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-    }
-
-    .brief-image img {
-        width: 6rem; 
-        height: auto; 
-        margin: 0 auto;
-        padding-top: 1vh;
-    }
-
-    .brief-text h1 {
-        padding-right: 0;
-        font-size: 5vw;
-        padding-top: 1.25vh;
-    }
-
-    .brief-text p {
-        font-size: 2.5vw;
-        line-height: 1.5;
-        padding: 1.5rem;
-        padding-top: 0;
-        padding-bottom: 1vh;
-        padding-right: calc(1.5rem + 1.5vh);
-        word-wrap: break-word;
-        word-break: break-word;
-        margin-left: 0;
-        margin-right: 0; 
-    }
 
     #Header_Video {
         object-position: center center;
@@ -107,26 +84,6 @@
 
 
 /* Mobile Project Display Alterations */
-    #recent-projects {
-        margin: auto;
-    }
-    .recent-project-parent {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 4vh;
-        margin-right: 4vh;
-        gap: 2vh;
-    }
-    #recent-projects {
-        padding-top: 1.5vh;
-        padding-bottom: 5vh;
-    }
-    #recent-projects p {
-        font-size: 2.5vw;
-    }
-    #recent-projects h1 {
-        font-size: 6vw;
-    }
-
     #allprojects {
         margin: auto;
     }
@@ -136,28 +93,6 @@
         margin-right: 4vh;
         gap: 2vh;
     }
-    #clientwork {
-        margin: auto;
-    }
-    .clientwork-parent {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 4vh;
-        margin-right: 4vh;
-        gap: 2vh;
-    }
-    #legoprojects {
-        margin: auto;
-    }
-    .lego-projects-parent {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 4vh;
-        margin-right: 4vh;
-        gap: 2vh;
-    }
-    #films {
-        margin: auto;
-    }
-
 
 /* Projects */
     #projectinfo {
@@ -166,26 +101,7 @@
         height: 50vw;
     }
 
-    .page_title, .mainpage_title {
-        margin-top: 1rem;
-        padding-bottom: 2rem;
-    }
-
-    .page_title h1, .mainpage_title h1 {
-        font-size: 1.5rem;
-        line-height: 1.2;
-    }
-
-    .page_title, .mainpage_title {
-        display: flex;
-        flex-direction: column;  
-        justify-content: center;  
-        align-items: center;     
-    }
-
-    .mainpage_title h1 {
-        font-size: 8vw; 
-    }
+  
 
     .pagebrief h1 {
         font-size: 5vw;
@@ -203,7 +119,7 @@
     }
 
     .projectcopy {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1.25;
         padding-top: 0.4rem;
     }
@@ -228,7 +144,7 @@
         transition: 300ms;
     }
     .page_subtitle_text {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     .note {
     font-size: .6rem;
@@ -248,363 +164,17 @@
   display: block;
 }
 
-
-/*DBD Posters */
-    .DBD_Posters {
-        padding-top: 1vh;
-        padding-bottom: 5vh;
-        height: auto; 
-        display: block; 
-    }
-
-    .DBD_Posters img{
-        max-width: 75%;
-        max-height: 75%;
-        padding-top: 2.25vw;
-        margin-bottom: 0vw;
-        transition: 300ms;
-    }
-
-
-/* Planty */
-    .plantycopy {
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-
-    .plantycopy h1{
-        font-size:7.5vw;
-        text-align:center;
-    }
-
-
-/* Magazine Pages */
-    .magazinecopy {
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-    .magazinecopy h1{
-        font-size:7.5vw;
-        text-align:center;
-        padding-bottom: 0.25vh;
-    }
-    .magazineimg2 {
-        height: 50vw;
-        padding-bottom: 0vh;
-        margin-bottom: 0vh;
-        height: 18vh;
-    }
-    .magazineimg2 img {
-        padding-top: 2vh;
-        padding-bottom: 0vh;
-        margin-bottom: 0vh;
-        scale: calc(120%);
-    }
-    .CatMagazine_Mockup h1{
-        font-size:7.5vw;
-        padding-top: 0vh;
-        margin-top: 0vh;
-        text-align:center;
-    }
-    .CatMagazine_Mockup img {
-        padding-top: 3.25vh;
-        scale: calc(120%);
-        padding-bottom: 5vh;
-    }
-
-
-/* Brochure */
-    .MunchBrochure_Mockup h1{
-        font-size:7.5vw;
-        text-align:center;
-        padding-bottom: 0.25vh;
-    }
-
-
-/* Hamlet */
-    .hamletcopy {
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-
-    .hamletcopy h1{
-        font-size:7.5vw;
-        text-align:center;
-    }
-
-
-
-/* Cookbook */
-    .CookbookPages img {
-        max-width: 90%; 
-        max-height: auto; 
-        padding-top: 2.5vh; 
-        margin: 0 auto; 
-    }
-
-    .Cookbook_Mockup img {
-        max-width: 80%; 
-        margin: 0 auto; 
-        display: block;
-        padding-bottom: 2vh;
-    }
-
-
-/* Cuppy's */
-    .cuppy_copy {
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-
-
-/* CoCoCritters */
-    .Coco_Package h1{
-        font-size:7.5vw;
-        padding-top: 0.5vh;
-        padding-bottom: 1.25vh;
-    }
-    .Coco_Render h1{
-        font-size:7.5vw;
-        padding-top: 0.5vh;
-        padding-bottom: 1.25vh;
-    }
-    .Coco_Ads h1{
-        font-size:7.5vw;
-        padding-top: 0.5vh;
-        padding-bottom: 1.25vh;
-    }
-    .CoCoCritters_Mockup h1{
-        font-size:7.5vw;
-        padding-top: 6.5vh;
-        padding-bottom: 1.25vh;
-    }
-    .Coco_ME {
-        height: 8vh;
-    }
-
-
-/* Holiday Cards */
-    .holidaycards_copy, .holidaycard_roughs {
-        font-size: 3vw;
-        line-height: 1.5;
-        padding-bottom: 1vh;
-    }
-    .holidaycard_roughs h1{
-        font-size:7.5vw;
-        padding-top: 1vh;
-        padding-bottom: 1.25vh;
-    }
-    .holidaycards_copy img {
-        height: 70%;
-        width: 70%;
-        padding-top: 2vh;
-        padding-bottom: 2.5vh;
-    }
-    .holidaycard_roughs img{
-        padding-bottom: 2vh;
-    }
-
-
-/* Apples */
-    .Apples h1{
-        font-size:5.5vw;
-        text-align:center;
-        padding-bottom: 0.25vh;
-        padding-top: 1vh;
-    }
-
-
-/* OMORI Cards */
-    .OMORIcards1 td, .OMORIcards2 td {
-        padding: 1rem; 
-    }
-
-    .OMORIcards1 img, .OMORIcards2 img {
-        max-width: 100%; 
-        height: auto; 
-    }
-
-    .omori-tables {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-
-/* Calendar */
-  .CalenderPages table {
-        display: block;
-        width: 100%;
-        margin: 0;
-  }
-
-  .CalenderPages tr, .CalenderPages td {
-        display: block;
-        width: 100%;
-        text-align: center;
-  }
-
-  .CalenderPages img {
-        width: 85%;
-        max-width: 85%;
-        padding: 0;
-        margin: 3.5vh auto;
-        transform: rotate(0deg);
-  }
-
-  .CalenderPages img:hover {
-        transform: scale(1.05); 
-  }
-
-  .CalenderPages{
-        padding: 0;
-        margin: 0;
-    }
-
-/* STAX */
-    .stax_ME {
-        height: 34.5vh;
-    }    
-
-/* VTSUnity */
-    .vtsunity_ME {
-        height: 15vh;
-    }
-
-/* 1Fish */
-    .fish-row {
-        gap: 4vw; /* increase space between images */
-    }
-
-    .fish-row .fish-img {
-        width: 46%; /* slightly smaller to make room for bigger gap */
-        padding: 0vw 0;
-    }
-
-/* Color Theory Posters */
-    .colortheory_copy {
-        font-size: 3vw;
-        line-height: 1.5;
-        padding-bottom: 1vh;
-    }
-
-/* SusTeam */
-    #earthday25 {
-        background-position: center;
-        background-size: 112%;
-    }
-
-    .earthday25_copy, .earthday25_copy2 {
-        font-size: 3vw;
-        line-height: 1.5;
-        padding: 0vh;
-        margin: 0vh;
-    }
-
-    .earthday25_copy img, .earthday25_copy2 img{
-        scale: calc(120%);
-    }
-    .earthday25_copy img {
-        padding: 3vh;
-    }
-    .earthday25_copy2 img {
-        padding: 5vh;
-    }
-
-/* VTSU Wellness */
-    .wellness-copy {
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-    .wellness-copy h1{
-        font-size:7.5vw;
-        text-align:center;
-    }
-
-    .wellness-grid {
-        display: none; 
-    }
-    
-    .wellness-grid-mobile {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 10px;
-    }
-
-    .wellness-grid-mobile-LastRow {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 49%; 
-        justify-items: center; 
-        text-align: center;
-        gap: 10px; 
-        margin: auto;
-        padding-bottom: 10px
-    }
-    
-    .wellness-grid-mobile-LastRow .grid-item img {
-        width: 100%; 
-        max-width: 300px; 
-        height: auto; 
-        margin: 0 auto; 
-    }
-
-
-/* FCP&R */
-    .FCPR_copy p{
-        font-size: 3vw;
-        color: #F2E5D7;
-    }
-
-
-/* Student Voter Drive */
-    .VTSU_VoterDrive1 p{
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-    .VTSU_VoterDrive2 p{
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-
-/* Mozart's Requiem Poster */
-    .MozartRequiem_copy {
-        font-size: 3vw;
-        line-height: 1.5;
-        padding-bottom: 1vh;
-    }
-
-
 /* Media Extender */
     .MediaExtender {
         height: 20vh;
     }
-
-
-/* Lego Projects */
-    .LegoProject_Copy P{
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-    .LegoProject_Copy h1{
-        font-size:7.5vw;
-        text-align:center;
-    }
-    .LegoProject_Photos h1{
-        font-size:7.5vw;
-        text-align:center;
-    }
-    .LegoProject_Copy img, .LegoProject_Photos img {
-        padding-top: 1vh;
-        padding-bottom: 2vh;
-    }
-
 
 /* Design Grid Layout*/
   .design-section .title {
     font-size: 1.5rem;
   }
 
-  .design-section .page_subtitle_text {
+  .design-section {
     font-size: 0.8rem;
   }
 
@@ -662,179 +232,213 @@
   .project-slideshow .title {
     font-size: 1.5rem;
   }
-
-/* About Me */
-    .pagebrief h2{
-        font-size: 3.25vw;
+}
+    
+/* Briefs */
+@media (max-width: 900px) {
+    .subpagebrief {
+        width: 92%;
     }
-
-    .about_copy {
-        padding: 2vh;
-        font-size: 3vw;
-        line-height: 1.5;
-        height: 50vh;
+    .title {
+        font-size: clamp(2rem, 6vw, 3rem);
     }
-
-    .resume-link p {
-        font-size: 3.25vw;
-    }
-
-    .resume-link h1 {
-        font-size: 2rem;
-        padding: none;
-    }
-
-
-/* Timeline*/
-  .timeline {
-    padding-left: 2rem;
-    padding-right: 1rem;
-  }
-
-  /* Move timeline line left */
-  .timeline::before {
-    left: 1rem;
-  }
-
-  /* Stack everything into one column */
-  .timeline-item {
-    grid-template-columns: 1fr;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Align all content left */
-  .timeline-item.left .content,
-  .timeline-item.right .content {
-    grid-column: 1;
-    justify-self: start;
-    text-align: left;
-    max-width: 100%;
-    margin-left: 1.5rem;
-  }
-
-  /* Normalize bullet alignment */
-  .timeline-item.left .content li,
-  .timeline-item.right .content li {
-    text-align: left;
-    direction: ltr;
-    margin-left: 0;
-  }
-
-  /* Reposition dots */
-.timeline-item .dot {
-  left: calc(1rem - 32px);
 }
 
-  /* Slightly tighter content */
-  .content {
-    padding: 0.9rem 1rem;
-  }
+@media (max-width: 900px) {
+    .subpagebrief {
+        width: 92%;
+    }
+    .title {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+}
 
-  .content h1 {
-    font-size: 1.1rem;
-  }
-
-  .content h3 {
-    font-size: 0.8rem;
-  }
-
-
-/* Contact */
-  .contact-form {
-    padding-top: 1vh;
-    padding-bottom: 5vh;
-  }
-
-  .contact-form .heading {
-    font-size: 5vw;
-    margin-bottom: 2vw;
-  }
-
-  .contact-form h1 {
-    font-size: 8vw;
-  }
-
-  .contact-form form {
-    width: 100%;
-    align-items: center;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 60vw; 
-    height: auto;
-    font-size: 4vw;
-  }
-
-  .form__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-form label {
-    font-size: 4vw;
-    padding-bottom: 1vw;
-    text-align: center;
-  }
-
-  .contact-form button[type="submit"] {
-    width: 50vw;
-    font-size: 4vw;
-  }
-
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 5vw;
-    margin-bottom: 5vw;
-    flex-wrap: wrap;
-  }
-
-  .social-icon i {
-    font-size: 8vw; 
-  }
-
-    
-
-/* Footer Adjustmnets */
-    .footer-container{
-        padding-top: 1vh;
-        padding-bottom: 0;
+@media (max-width:900px){
+    #projectpage {
+        height:400px;
     }
 
-    .footerNav {
-        padding-top: 0;
-        margin: 0;
+    .header-track {
+        animation-duration:32s;
+    }
+
+    .page_title h1,
+    .mainpage_title h1, 
+    .projectpage_titles h1{
+        font-size:clamp(3.25rem, 8vw, 5rem);
+        transform:translateY(0);
+    }
+}
+
+
+@media (max-width:600px){
+    #projectpage {
+        height:220px;
+    }
+
+    .header-track {
+        animation-duration:28s;
+    }
+
+    .page_title h1,
+    .mainpage_title h1, 
+    .projectpage_titles h1{
+        font-size:clamp(2rem,8vw,3rem);
+        line-height:1;
+        padding-bottom: 0;
+    }
+    .projectpage_titles .page_title_text {
+        max-width:90%;
+        font-size:clamp(2rem,8vw,3rem);
+        line-height:1;
+    }
+
+}
+
+/* All Project Pages */
+@media(max-width:900px){
+    .homepage-section{
+        width:100%;
+        padding:2rem 2rem;
+    }
+    .feature-card{
+        width:100%;
+        max-width:1100px;
+        grid-template-columns:1fr;
+        gap:1.5rem;
+        padding:1.5rem;
+        border-radius:28px;
+    }
+
+    .feature-card{
+        grid-template-columns:1fr;
+        gap:1.5rem;
+        width:92%;
+        padding:1.5rem;
+        border-radius:28px;
+    }
+
+
+    .card-image{
+        width:100%;
+        border-radius:20px;
+    }
+
+
+    .card-content{
+        text-align:center;
+        align-items:center;
+    }
+
+
+    .card-title{
+        font-size:clamp(2rem,7vw,3rem);
+    }
+
+
+    .card-description{
+        max-width:45ch;
+        font-size:1rem;
+        line-height:1.6;
+    }
+
+
+    .card-link{
+        margin-top:1.5rem;
+    }
+
+
+    .majorlink_button{
+        width:92%;
+        padding:1.5rem;
+        font-size:1.2rem;
+        border-radius:28px;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .feature-card{
+        width:95%;
+        padding:1rem;
+        border-radius:22px;
+    }
+
+
+    .card-image{
+        border-radius:16px;
+    }
+
+
+    .card-label{
+        font-size:.65rem;
+    }
+
+
+    .card-title{
+        font-size:2rem;
+        line-height:1;
+    }
+
+
+    .card-description{
+        font-size:.95rem;
+    }
+
+
+    .majorlink_button{
+        width:95%;
+        font-size:1rem;
+        padding:1.25rem;
+        border-radius:22px;
+    }
+}
+
+/* Footer */
+@media (max-width:600px){
+
+    .footer-container{
+        padding-top:1.5rem;
     }
 
     .socialIcons{
-        display: flex;
-        justify-content: center;
+        gap:.25rem;
     }
+
     .socialIcons a {
-        width: 1.5rem;
-        height: 1.5rem;
-        padding-bottom: 0rem;
-        margin-bottom: 0.25rem;
+        width:2rem;
+        height:2rem;
+        margin:.35rem;
     }
-    
+
     .socialIcons a i {
-        font-size: 1rem;
+        font-size:1rem;
     }
-    
-    .footer_img {
-        max-width: 35px;
-        margin: none;
-        padding: none;
+
+    .footerNav{
+        margin:.75rem 0;
     }
-    
+
+    .footerNav ul {
+        gap:.5rem 1rem;
+    }
+
     .footerNav ul li a {
-        font-size: 0.5rem;
+        font-size:.75rem;
     }
-    .footerBottom p {
-        font-size: 0.4rem;
-        padding: none;
-        margin: none;
+
+    .footer_img {
+        max-width:45px;
+        padding-bottom:.5rem;
+    }
+
+    .footerBottom{
+        padding:0 .75rem .75rem;
+    }
+
+    .footerBottom p{
+        font-size:.6rem;
+        line-height:1.4;
     }
 }

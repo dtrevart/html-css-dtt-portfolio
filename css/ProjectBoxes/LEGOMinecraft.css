@@ -1,5 +1,5 @@
 /* Projects Boxes */
-.project1, .project2, .project3, .project4, .project5, .project_X{
+.project1, .project2, .project3, .project4, .project5, .project6, .project_X{
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 12.5%;
@@ -166,7 +166,7 @@
     
     /* 6 */ 
     .project6 {
-        background-image: url(../../assets/LEGO/Minecraft/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
+        background-image: url(../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Thumbnail.gif);       /* Update Here */
         background-size: cover;
     }
     /* Zombie Dungeon Game Scale */
@@ -177,7 +177,7 @@
         height: 30vw;
         margin-left: auto;
         margin-right: auto;
-        background-image: url(../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Mechanism.png);
+        background-image: url(../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Header.gif);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;

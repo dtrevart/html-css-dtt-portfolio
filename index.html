@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
     <link rel="stylesheet" href="./css/ProjectBoxes/HomePage.css">
+    <link rel="stylesheet" href="./css/PageQueries/HomePageQuery.css">
     <script src="js/script.js" defer></script>
     <script src="js/scrollbar.js" defer></script>
     <script src="js/page-transitions.js" defer></script>
@@ -94,12 +95,20 @@
                     are proud to stand behind.
                 </p>
                 <div class="btn-container">
-                    <button class="btn" onclick="window.open('./assets/Trevisani_Resume.pdf')" target="_blank">
-                    View Resume
-                    </button>
-                    <button class="btn" onclick="location.href='about.html'">
-                    Contact Info
-                    </button>
+
+<button class="btn" onclick="scrollToSection('about')">
+    About Me
+</button>
+
+ <button class="btn" onclick="window.open('./assets/Trevisani_Resume.pdf')">
+        View Resume
+</button>
+
+
+<button class="btn" onclick="scrollToSection('contact')">
+    Contact
+</button>
+
                 </div>
             </div>
         </div>
@@ -150,7 +159,7 @@
 </section>
 
 
-  <div class="brief-intro">
+  <div class="brief-intro" id="about">
     <div class="pagebrief">
     <img class="intro-logo" src="./assets/MeLogo.png">
       <h2>
@@ -383,7 +392,7 @@
   <!-- Add more items here -->
 </div>
 
-  <div class="contact-form">
+  <div class="contact-form" id="contact">
     <span class="heading"><h1>Want to Connect?</h1></span>
     <div class="social-links">
             <a href="https://www.instagram.com/dtrev.art/" target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a>

@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+
+    .ZD-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin: 1rem 1rem;
+    }
+
+    .ZD-grid h2 {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+        line-height: 1.15;
+    }
+
+    .ZD-card {
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .ZD-card p {
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .ZD-card img {
+        border-radius: 6px;
+    }
+
+    .ZD-card img:hover {
+        transform: none;
+    }
+}

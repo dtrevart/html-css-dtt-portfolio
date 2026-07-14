@@ -134,3 +134,18 @@ if (headerVideo) {
         console.log('Autoplay failed. Click to play.');
     });
 }
+
+/* ============================
+   AutoScroll Functionality
+============================ */
+function scrollToSection(id) {
+    const container = document.getElementById("scroll-container");
+    const target = document.getElementById(id);
+
+    if (!container || !target) return;
+
+    container.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth"
+    });
+}

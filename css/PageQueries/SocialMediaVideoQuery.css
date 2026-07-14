@@ -1,0 +1,46 @@
+@media (max-width:600px){
+
+    .video-modal .modal-content {
+        width:95vw;
+        height:90vh;
+        max-height:90vh;
+        border-radius:16px;
+    }
+
+
+    .video-modal #modalEmbed {
+        flex:1;
+        padding:0;
+    }
+
+
+    .video-modal #modalEmbed iframe {
+        width:auto;
+        height:65vh;
+        max-width:90vw;
+        aspect-ratio:9 / 16;
+        border-radius:12px;
+    }
+
+
+    .modal-socials {
+        bottom:15px;
+    }
+
+
+    .modal-socials a {
+        width:45px;
+        height:45px;
+        margin:.35rem;
+    }
+
+
+    .modal-socials a i {
+        font-size:1.25rem;
+    }
+
+
+    .video-modal #modalTitle {
+        font-size:1rem;
+    }
+}
