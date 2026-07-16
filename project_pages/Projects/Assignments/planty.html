@@ -14,6 +14,7 @@
     <script src="../../../js/script.js" defer></script>
     <script src="../../../js/scrollbar.js" defer></script>
     <script src="../../../js/page-transitions.js" defer></script>
+    <script src="../../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -119,32 +120,36 @@
             interactive features with a visually engaging interface, I believe this app could be an excellent 
             tool for plant lovers everywhere.
         </p>
-        <h1>Main Pages</h1>
-        </p> 
+    </div>
+</section>
 
-    <table width=100%>
-        <tr>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/1.jpg" alt="Landing Page for Planty App" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/2.jpg" alt="Plant Icon Page" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/3.jpg" alt="Photo Album Page" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/4.jpg" alt="Plant Identifier Page" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/5.jpg" alt="Plant Identified Page" onclick="openImage(this)"></td>
-        </tr>
-    </table>
-    <table width="100%">
-        <tr>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/6.jpg" alt="Achievements Page" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/7.jpg" alt="Home Page/Plant Status Page" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/8.jpg" alt="Plant Profile Page" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/9.jpg" alt="Plant Costume Page" onclick="openImage(this)"></td>
-            <td><img src="../../../assets/Projects/Assignments/Planty/AppPages/10.jpg" alt="Plant Profile Creation Page" onclick="openImage(this)"></td>
-        </tr>
-    </table>
+<section class="project-slideshow">
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/1.jpg" onclick="openImage(this)" alt="Loading Page">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/2.jpg" onclick="openImage(this)" alt="Home Page">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/3.jpg" onclick="openImage(this)" alt="Plant Page">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/4.jpg" onclick="openImage(this)" alt="Customize Plant Page - Outfits">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/5.jpg" onclick="openImage(this)" alt="Customize Plant Page - Plant Type">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/6.jpg" onclick="openImage(this)" alt="Photo Album Page">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/7.jpg" onclick="openImage(this)" alt="Plant Identification Page">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/8.jpg" onclick="openImage(this)" alt="Plant Identified Page">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/9.jpg" onclick="openImage(this)" alt="Add Plant Page">
+                <img src="../../../assets/Projects/Assignments/Planty/AppPages/10.jpg" onclick="openImage(this)" alt="Achievements Page">
+                <img src="../../../assets/Projects/Assignments/Planty/Mockup.jpg" onclick="openImage(this)" alt="Mockup">
+            </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
  
-
-    <h1>Mockup</h1>
-    <img src="../../../assets/Projects/Assignments/Planty/Mockup.jpg" onclick="openImage(this)">
-
+<section id="projectinfo">
+    <div class="projectcopy">
     <h1>Video of App</h1>
         <div class="FilmFrames">
             <iframe width="1372" height="772" src="https://www.youtube.com/embed/3ZQvFANBl0A" title="Planty Project Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

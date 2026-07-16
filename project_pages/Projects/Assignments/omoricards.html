@@ -14,6 +14,7 @@
     <script src="../../../js/script.js" defer></script>
     <script src="../../../js/scrollbar.js" defer></script>
     <script src="../../../js/page-transitions.js" defer></script>
+    <script src="../../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -106,22 +107,27 @@
             for the game.
 
         </p>
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Assignments/OmoriCards/A_10.jpg" onclick="openImage(this)" alt="Ace of Spades - 10 of Spades"></td>
-                <td><img src="../../../assets/Projects/Assignments/OmoriCards/Suits.jpg" onclick="openImage(this)" alt="Card Suits"></td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Assignments/OmoriCards/InfoCard.jpg" onclick="openImage(this)" alt="Info Cards and Card Back"></td>
-                <td><img src="../../../assets/Projects/Assignments/OmoriCards/FaceCards.jpg" onclick="openImage(this)" alt="Face Cards"></td>
-                <td><img src="../../../assets/Projects/Assignments/OmoriCards/Jokers.jpg" onclick="openImage(this)" alt="Jokes"></td>
-            </tr>
-         </table>
-        <br>
-        <br>
     </div>
+</section>
+
+
+<section class="project-slideshow">
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/Projects/Assignments/OmoriCards/A_10.jpg" onclick="openImage(this)" alt="Cards - Ace through 10">
+                <img src="../../../assets/Projects/Assignments/OmoriCards/Suits.jpg" onclick="openImage(this)" alt="Cards - Suits">
+                <img src="../../../assets/Projects/Assignments/OmoriCards/FaceCards.jpg" onclick="openImage(this)" alt="Cards - Face Cards">
+                <img src="../../../assets/Projects/Assignments/OmoriCards/Jokers.jpg" onclick="openImage(this)" alt="Cards - Joker Cards">
+                <img src="../../../assets/Projects/Assignments/OmoriCards/InfoCard.jpg" onclick="openImage(this)" alt="Cards - Info Cards">
+            </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
 </section>
 
 

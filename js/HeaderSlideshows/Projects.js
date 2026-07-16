@@ -2,7 +2,7 @@ const headerImages = [
     "../../assets/Projects/Personal/RESTSTOP_Rebrand_Project/Header.jpg",
     "../../assets/Projects/Assignments/Apple_StillLife/Header.jpg",
     "../../assets/Projects/Personal/BerryBlue/Header.jpg",
-    "../../assets/Projects/Assignments/general/1Fish/Header.jpg",
+    "../../assets/Projects/Assignments/1Fish/Header.jpg",
     "../../assets/Projects/Assignments/CatMagazine_Layout/Header.jpg",
     "../../assets/Projects/Personal/SecondHelpings/Header.png"
 ];

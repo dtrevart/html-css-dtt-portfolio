@@ -14,6 +14,7 @@
     <script src="../../../js/script.js" defer></script>
     <script src="../../../js/scrollbar.js" defer></script>
     <script src="../../../js/page-transitions.js" defer></script>
+    <script src="../../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -117,27 +118,46 @@
             adding more life to the desert theme.
         </p>
     </div>
+</section>
 
-    <div class="LegoProject_Renders">
-        <h1 class="title">Renders</h1>
-
-            <div class="LEGO_grid__gif_row">
-                <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/RenderGIF.gif" onclick="openImage(this)" alt="Rotating Render GIF of Desert Well (Game Scale)">
+<section class="project-slideshow">
+    <h1 class="title">Renders</h1>
+    <br>
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/1PNG.png" onclick="openImage(this)" alt="Render 1">
+                <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/2PNG.png" onclick="openImage(this)" alt="Render 2">
+                <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/RenderGIF.gif" onclick="openImage(this)" alt="360 Render GIF">
             </div>
-            <div class="LEGO_grid__2row">
-                <img class="LEGO_grid__2row_LEFT" src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/1PNG.png" onclick="openImage(this)" alt="Render 1 of Desert Well (Game Scale)">
-                <img class="LEGO_grid__2row_RIGHT" src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/2PNG.png" onclick="openImage(this)" alt="Render 2 of Desert Well (Game Scale)">
-            </div>  
-    </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
 
-    <div class="LegoProject_Photos">
-        <h1 class="title">Photos</h1>
-        <div class="lego-grid">
-            <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/P1.jpg" onclick="openImage(this)" alt="Render 1">
-            <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/P2.JPG" onclick="openImage(this)" alt="Render 2">
-        </div>
-    </div>
+<section class="project-slideshow">
+    <h1 class="title">Photos</h1>
+    <br>
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/P1.jpg" onclick="openImage(this)" alt="Photo 1">
+                <img src="../../../assets/LEGO/Minecraft/Minecraft_DesertWell/P2.JPG" onclick="openImage(this)" alt="Photo 2">
+            </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
 
+<section id="projectinfo">
     <div class="projectcopy">
         <p>
          A link to the instructions can be found

@@ -13,7 +13,8 @@
     
     <script src="../../../js/script.js" defer></script>
     <script src="../../../js/scrollbar.js" defer></script>
-    <script src="../../../js/page-transitions.js" defer></script>
+    <script src="../../../js/page-transitions.js" defer></script>    
+    <script src="../../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -91,7 +92,6 @@
             One of my favorite assignments during my time at Lyndon was creating holiday cards for 
             various occasions. The project began with sketching rough thumbnails, followed by selecting 
             three concepts to present to the class, and ultimately refining one into a final design.
-        <img src="../../../assets/Projects/Assignments/HolidayCards/Roughs.jpg" onclick="openImage(this)">
         </p>
         <p>
             I approached the assignment with a playful spirit, choosing to design cards for less 
@@ -101,19 +101,30 @@
             took on a slightly unsettling tone (intentionally so), and a National Kitten Day card, which 
             was crafted more to amuse my professor than for serious consideration.
         </p>
+    </div>
+</section>
 
-        <h1>Roughs</h1>
-        
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Assignments/HolidayCards/CardRough1.jpg" alt="" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/HolidayCards/CardRough2.jpg" alt="" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignmentsl/HolidayCards/CardRough3.jpg" alt="" onclick="openImage(this)"></td>
-            </tr>
-        </table>
+<section class="project-slideshow">
+    <h1 class="title">Mockups</h1>
+    <br>
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/Projects/Assignments/HolidayCards/CardRough1.jpg" onclick="openImage(this)" alt="Graduation Card Rough">
+                <img src="../../../assets/Projects/Assignments/HolidayCards/CardRough2.jpg" onclick="openImage(this)" alt="Valentines Card Rough">
+                <img src="../../../assets/Projects/Assignments/HolidayCards/CardRough3.jpg" onclick="openImage(this)" alt="National Kitten Day Rough">
+            </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
 
-        <br>
-
+<section id="projectinfo">
+    <div class="projectcopy">
         <p>
             Through feedback, I learned valuable lessons in composition and clarity. For instance, 
             in the graduation card, the parents in the background were too large, detracting from 
@@ -126,7 +137,7 @@
             This project not only allowed me to experiment with different styles and themes, but 
             also emphasized the importance of iteration and responsiveness to feedback in the design 
             process.
-        <img src="../../../assets/Projects/Assignments/HolidayCards/CardFinal.jpg" onclick="openImage(this)">
+        <img class="downscale" src="../../../assets/Projects/Assignments/HolidayCards/CardFinal.jpg" onclick="openImage(this)" alt="Graduation Card">
         </p>
     </div>
 </section>

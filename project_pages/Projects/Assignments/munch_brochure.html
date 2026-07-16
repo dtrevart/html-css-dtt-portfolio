@@ -14,6 +14,7 @@
     <script src="../../../js/script.js" defer></script>
     <script src="../../../js/scrollbar.js" defer></script>
     <script src="../../../js/page-transitions.js" defer></script>
+    <script src="../../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -104,28 +105,26 @@
             The brochure aimed to encourage viewers to experience the Munch Museet not just as a 
             museum, but as a space where the raw emotion of Munch’s art can be felt and understood.
         </p>
-        
-<h1>Front and Back</h1>
-<table class="MunchBrochure">
-    <tr>
-        <td><img src="../../../assets/Projects/Assignments/Munch_Brochure/Front.jpg" onclick="openImage(this)" alt="Front of Printed Brochure"></td>
-        <td><img src="../../../assets/Projects/Assignments/Munch_Brochure/Back.jpg" onclick="openImage(this)" alt="Back of Printed Brochure"></td>
-    </tr>
-</table>
-
-<h1>Display</h1>
-<img src="../../../assets/Projects/Assignments/Munch_Brochure/Display.jpg" onclick="openImage(this)" alt="Edvard Munch Brochure Display">
-
-<h1>Mockups</h1>
-<table class="MunchBrochure">
-    <tr>
-        <td><img src="../../../assets/Projects/Assignments/Munch_Brochure/Mockup1.jpg" onclick="openImage(this)" alt="Front of Printed Brochure"></td>
-        <td><img src="../../../assets/Projects/Assignments/Munch_Brochure/Mockup2.jpg" onclick="openImage(this)" alt="Back of Printed Brochure"></td>
-    </tr>
-</table>
     </div>
 </section>
 
+<section class="project-slideshow">
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/Projects/Assignments/Munch_Brochure/Front.jpg" onclick="openImage(this)" alt="Brochure - Front">
+                <img src="../../../assets/Projects/Assignments/Munch_Brochure/Back.jpg" onclick="openImage(this)" alt="Brochure - Back">
+                <img src="../../../assets/Projects/Assignments/Munch_Brochure/Mockup1.jpg" onclick="openImage(this)" alt="Brochure - Mockup (1)">
+                <img src="../../../assets/Projects/Assignments/Munch_Brochure/Mockup2.jpg" onclick="openImage(this)" alt="Brochure - Mockup (2)">
+            </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
 
 
 <!--Page Specific Code Ends Here-->

@@ -14,6 +14,7 @@
     <script src="../../../js/script.js" defer></script>
     <script src="../../../js/scrollbar.js" defer></script>
     <script src="../../../js/page-transitions.js" defer></script>
+    <script src="../../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -117,28 +118,37 @@
             chance to explore how thoughtful design can build trust and create a more enjoyable experience 
             for both people and their four-legged family members.
         </p>
+    </div>
+</section>
 
-        <h1>Pages</h1> 
+<section class="project-slideshow">
+    <h1 class="title">Pages</h1>
+    <br>
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Log_In.jpg" onclick="openImage(this)" alt="Log In Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Sign_Up.jpg" onclick="openImage(this)" alt="Sign Up Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Account.jpg" onclick="openImage(this)" alt="Account Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Create_Reservations.jpg" onclick="openImage(this)" alt="Create Reservation Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Payment_Screen.jpg" onclick="openImage(this)" alt="Payment Screen Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Our_Story.jpg" onclick="openImage(this)" alt="Our Story Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Services.jpg" onclick="openImage(this)" alt="Services Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Past_Updates.jpg" onclick="openImage(this)" alt="Past Updates Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Contact_Us.jpg" onclick="openImage(this)" alt="Contact Us Page">
+                <img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Menu_ScreenState.jpg" onclick="openImage(this)" alt="Menu Screen State">
+            </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
+</section>
 
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Log_In.jpg" alt="Landing Page for Planty App" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Sign_Up.jpg" alt="Plant Icon Page" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Account.jpg" alt="Photo Album Page" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Create_Reservations.jpg" alt="Plant Identifier Page" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Payment_Screen.jpg" alt="Plant Identified Page" onclick="openImage(this)"></td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Our_Story.jpg" alt="Achievements Page" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Services.jpg" alt="Home Page/Plant Status Page" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Past_Updates.jpg" alt="Plant Profile Page" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Contact_Us.jpg" alt="Plant Costume Page" onclick="openImage(this)"></td>
-                <td><img src="../../../assets/Projects/Assignments/DoggieDayzzz/SitePages/Menu_ScreenState.jpg" alt="Plant Profile Creation Page" onclick="openImage(this)"></td>
-            </tr>
-        </table>
-
+<section id="projectinfo">
+    <div class="projectcopy">
         <h1>Video of App</h1>
 
         <div class="FilmFrames">

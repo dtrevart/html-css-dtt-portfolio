@@ -14,6 +14,7 @@
     <script src="../../../js/script.js" defer></script>
     <script src="../../../js/scrollbar.js" defer></script>
     <script src="../../../js/page-transitions.js" defer></script>
+    <script src="../../../js/carousel.js" defer></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -105,32 +106,24 @@
             visually when placed side by side. That's why you'll see a few different versions here, 
             each playing with layout and connection in its own way.
         </p>
-    
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/1.jpg" alt="Poster 1" onclick="openImage(this)" loading="lazy"></td>
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/2.jpg" alt="Poster 2" onclick="openImage(this)" loading="lazy"></td>
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/3.jpg" alt="Poster 3" onclick="openImage(this)" loading="lazy"></td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/4.jpg" alt="Poster 4" onclick="openImage(this)" loading="lazy"></td>
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/5.jpg" alt="Poster 5" onclick="openImage(this)" loading="lazy"></td> 
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/6.jpg" alt="Poster 6" onclick="openImage(this)" loading="lazy"></td>
-            </tr>
-        </table>
-       
-        <table>
-            <tr>
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/7.jpg" alt="Poster 7" onclick="openImage(this)" loading="lazy"></td>
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/8.jpg" alt="Poster 8" onclick="openImage(this)" loading="lazy"></td> 
-                <td><img src="../../../assets/Projects/Personal/ColorTheoryPosters/9.jpg" alt="Poster 9" onclick="openImage(this)" loading="lazy"></td>
-            </tr>
-        </table>
-        <br>
     </div>
+</section>
+
+<section class="project-slideshow">
+    <div class="carousel-container">
+<!-- Background blur layer -->
+        <div class="carousel-bg"></div>
+<!-- Foreground slide images -->
+            <div class="carousel-slide">
+                <img src="../../../assets/Projects/Personal/ColorTheoryPosters/Poster-01.png" onclick="openImage(this)" alt="Render 1">
+                <img src="../../../assets/Projects/Personal/ColorTheoryPosters/Poster-02.png" onclick="openImage(this)" alt="Render 1">
+                <img src="../../../assets/Projects/Personal/ColorTheoryPosters/Poster-03.png" onclick="openImage(this)" alt="Render 1">
+            </div>
+<!-- Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+    <button class="carousel-toggle" id="togglePlay">&#10073;&#10073;</button>
+  </div>
 </section>
 
 <!--Page Specific Code Ends Here-->

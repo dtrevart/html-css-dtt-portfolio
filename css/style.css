@@ -533,7 +533,7 @@ section {
 }
 
 .subpagebrief {
-    width: min(900px, 90%);
+    width: min(1200px, 90%);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -624,50 +624,6 @@ section {
     transform-origin: center; 
     display: block;
     width: 100px; 
-}
-
-
-
-/* Recent Project Displays */
-
-.box1, .box2, .box3, .box4, .box5, .box6 {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 12.5%;
-    cursor: pointer;
-    transition: 300ms;
-    background-size: cover; 
-    background-position: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-                0 16px 40px rgba(0, 0, 0, 0.05);
-}
-
-
-/* 1 */ .box1 {
-    background-image: url(../assets/general/RESTSTOP_Rebrand_Project/Thumbnail.jpg);       /* Update Here */
-}
-/* 2 */ .box2 {
-    background-image: url(../assets/client/MozartPoster/Thumbnail.jpg);       /* Update Here */
-}
-/* 3 */ .box3 {
-    background-image: url(../assets/general/MedSlidePosters/Thumbnail.jpg);       /* Update Here */
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-/* 4 */ .box4 {
-    background-image: url(../assets/client/LEGO_TalentPool_25/Thumbnail.jpg);       /* Update Here */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-/* 5 */ .box5 {
-    background-image: url(../assets/lego/Brickheadz_Moira/Thumbnail.jpg);       /* Update Here */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-/* 6 */ .box6 {
-    background-image: url(../assets/film/WhereWeAre/Thumbnail.gif);       /* Update Here */
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 
@@ -870,44 +826,63 @@ section {
 
 #projectpage {
     position: relative;
-    height: 600px;
-    overflow: hidden;
     width: 100%;
+    height: 600px;
     margin: auto;
+    overflow: hidden;
 }
+
+/* Slideshow */
 .header-slider {
     position: absolute;
     inset: 0;
     overflow: hidden;
+    z-index: 0;
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
+
 .header-track {
     display: flex;
     height: 100%;
     width: max-content;
     animation: scrollHeader 40s linear infinite;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
 }
+
 .header-track img {
+    display: block;
     height: 100%;
     width: auto;
     flex-shrink: 0;
     object-fit: cover;
+    transform: translateZ(0);
+    -webkit-user-drag: none;
+    user-select: none;
 }
+
 @keyframes scrollHeader {
     from {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
     to {
-        transform: translateX(-50%);
+        transform: translate3d(-50%, 0, 0);
     }
 }
+
 #projectpage::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,.35);
+    background: rgba(0, 0, 0, .35);
     z-index: 1;
+    pointer-events: none;
 }
-/* Title Container */
+
+/* Title */
 .mainpage_title {
     position: absolute;
     inset: 0;
@@ -917,6 +892,7 @@ section {
     text-align: center;
     z-index: 2;
 }
+
 .page_title h1,
 .mainpage_title h1 {
     color:#F2E5D7;
@@ -1239,129 +1215,6 @@ section {
 .video-modal #modalTitle {
     font-size: 1.35vw;
 }
-
-
-
-
-
-
-/* Lego Projects */
-.LegoProject_Copy p{
-    padding-bottom:1rem;
-}
-
-.LegoProject_Copy h1{
-    padding-bottom: 1rem;
-}
-
-.LegoProject_Copy a{
-    color:#C2B4B4;
-}
-.LegoProject_Copy a:hover{
-    color:#7C886D;
-    text-decoration: none;
-}
- .LegoProject_Copy img{
-    max-width: 55%;
-    max-height: 55%;
-    display: flex;
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
-    margin: auto;
-    margin-bottom: 1vw;
-    transition: 300ms;
-}
- .LegoProject_Copy img:hover {
-    transform: scale(1.05);
-    transition: 300ms;
-} 
-.lego-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-}
-.lego-grid img {
-    width: calc(50% - 2vw); /* 2 per row with spacing */
-    height: auto;
-    transition: 300ms;
-}
-.lego-grid img:hover {
-    transform: scale(1.05);
-}
-/* Render Parent */
-.LegoProject_Renders {
-    padding: 2vw;
-    text-align: center;
-    max-width: 75%;
-    margin: 0 auto;
-}
-.LegoProject_Renders .title{
-    margin-bottom: 1vw;
-}
-/* Render Gif */
-.LEGO_grid__gif_row {
-    margin-bottom: 2vw;
-}
-.LEGO_grid__gif_row img {
-    width: 100%;
-    height: auto;
-    transition: 300ms ease;
-}
-.LEGO_grid__gif_row img:hover {
-    transform: scale(1.05);
-}
-/* Row of 2 */
-.LEGO_grid__2row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 2vw;
-}
-.LEGO_grid__2row_LEFT,
-.LEGO_grid__2row_RIGHT {
-    width: 50%;
-    height: auto;
-}
-.LEGO_grid__2row_LEFT {
-    padding-right: 1vw; 
-    box-sizing: border-box;
-    transition: 300ms ease;
-}
-.LEGO_grid__2row_RIGHT {
-    padding-left: 1vw; 
-    box-sizing: border-box;
-    transition: 300ms ease;
-}
-.LEGO_grid__2row img:hover {
-  transform: scale(1.05);
-}
-/* Row of 3 */
-.LEGO_grid__3row {
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    flex-wrap: wrap;
-    margin-bottom: 2vw;
-    margin-top:0;
-}
-.LEGO_grid__3row img {
-    width: 100%;
-    max-width: calc(33.33% - 1.34vw); 
-    height: auto;
-    transition: 300ms ease;
-}
-.LEGO_grid__3row img:hover {
-    transform: scale(1.05);
-}
-.LEGO_grid__gif_row img, .LEGO_grid__3row img, .LEGO_grid__2row img {
-    display: block;
-}
-
-
-
 
 
 
