@@ -3,7 +3,8 @@ const headerImages = [
     "../../assets/LEGO/Minecraft/Minecraft_DesertWell/Header.jpg",
     "../../assets/LEGO/Minecraft/Minecraft_TheBridge/Header.jpg",
     "../../assets/LEGO/Minecraft/Minecraft_HouseDiorama/Header.jpg",
-    "../../assets/LEGO/Minecraft/Minecraft_SmallDisplays/Header.png"
+    "../../assets/LEGO/Minecraft/Minecraft_SmallDisplays/Header.png",
+    "../../assets/LEGO/Minecraft/SilentGale/Header.png",
 ];
 
 

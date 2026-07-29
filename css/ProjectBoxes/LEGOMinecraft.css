@@ -1,5 +1,5 @@
 /* Projects Boxes */
-.project1, .project2, .project3, .project4, .project5, .project6, .project_X{
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project_X{
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 12.5%;
@@ -105,6 +105,68 @@
         background-size: cover;
         background-position: top;
     }
+
+
+    /* X */ 
+    .project_X {
+        background-image: url(../../assets/LEGO/Minecraft/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+    }
+    /* Small Minecraft MOC */
+    #Small_Minecraft_MOC {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/Minecraft/Minecraft_SmallDisplays/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    
+    /* 6 */ 
+    .project6 {
+        background-image: url(../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+    }
+    /* Pale Garden */
+    #Minecraft_PaleGarden {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Header.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    /* 7 */ 
+    .project7 {
+        background-image: url(../../assets/LEGO/Minecraft/SilentGale/Thumbnail.png);       /* Update Here */
+        background-size: cover;
+    }
+    /* Pale Garden */
+    #Minecraft_SilentGale {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/Minecraft/SilentGale/Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+
+
     .ZD-grid h2 {
         font-size: 2.5rem;
         padding-bottom: 0.75rem;
@@ -144,41 +206,15 @@
         transform: scale(1.05);
         cursor: pointer;
     }
-
-    /* X */ 
-    .project_X {
-        background-image: url(../../assets/LEGO/Minecraft/Minecraft_SmallDisplays/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
+    .ZD-card a{
+        color: #C2B4B4;; 
+        text-decoration: none;
+        transition: 300ms ease;
     }
-    /* Small Minecraft MOC */
-    #Small_Minecraft_MOC {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../../assets/LEGO/Minecraft/Minecraft_SmallDisplays/Header.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-    
-    /* 6 */ 
-    .project6 {
-        background-image: url(../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Thumbnail.gif);       /* Update Here */
-        background-size: cover;
-    }
-    /* Zombie Dungeon Game Scale */
-    #Minecraft_PaleGarden {
-        display: flex;
-        justify-content: center;
-        gap: 5rem;
-        height: 30vw;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Header.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
+    .ZD-card a:hover {
+        color: #7C886D;
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+        text-decoration-color: #7C886D;
+        transition: 300ms ease;
     }
