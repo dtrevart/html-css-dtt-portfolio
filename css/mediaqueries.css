@@ -442,3 +442,15 @@
         line-height:1.4;
     }
 }
+
+/* Quote */
+@media (max-width: 900px) {
+    .quote {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .quote {
+        font-size: 0.9rem;
+    }
+}
