@@ -1,6 +1,6 @@
 const headerImages = [
     "../../../assets/LEGO/General/DeepSeaCreatures/Header.jpg",
-    "../../../assets/LEGO/Minecraft/Minecraft_DesertWell/Header.jpg",
+    "../../../assets/LEGO/Minecraft/Minecraft_BeeHouse/Header.png",
     "../../../assets/LEGO/Brickheadz/Brickheadz_SableWard/Header.jpg",
     "../../../assets/LEGO/General/CurlworksFish/Header.jpg",
     "../../../assets/LEGO/Minecraft/Minecraft_TheBridge/Header.jpg",
