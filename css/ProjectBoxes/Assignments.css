@@ -30,6 +30,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 10%;
+        position: relative;
     }
     
 
@@ -50,6 +51,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
     
@@ -70,6 +72,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
 
@@ -90,6 +93,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
     /* 5 */ 
@@ -109,6 +113,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
     /* 6 */ 
@@ -128,6 +133,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
 
@@ -148,6 +154,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
 
@@ -168,6 +175,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
     .CalenderPages{
         transform: rotate(90deg);
@@ -194,6 +202,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
 
@@ -214,6 +223,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
 
@@ -234,6 +244,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        position: relative;
     }
 
     /* 12 */ 
@@ -255,4 +266,5 @@
         background-size: cover;
         background-position: top;
         flex-direction: column; 
+        position: relative;
     }

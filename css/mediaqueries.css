@@ -454,3 +454,12 @@
         font-size: 0.9rem;
     }
 }
+
+/* Back */
+@media (max-width: 900px) {
+    .project_back {
+        bottom: 20px;
+        font-size: 0.6rem;
+        text-underline-offset: 6px;
+    }
+}

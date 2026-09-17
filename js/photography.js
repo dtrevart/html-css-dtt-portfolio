@@ -11,11 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const photoDrops = document.querySelectorAll(".photo-drop");
 
-
-    /* ==============================
-       PHOTO DROP DATA
-       ============================== */
-
     const photoData = {
         "Arcade": {
             title: "// Arcade //",
@@ -112,10 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
 
-    /* ==============================
-       OPEN MODAL
-       ============================== */
-
     function openPhotoDrop(dropID) {
 
         const drop = photoData[dropID];
@@ -176,10 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* ==============================
-       CLOSE MODAL
-       ============================== */
-
     function closePhotoModal() {
 
         photoModal.classList.remove("show");
@@ -191,10 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-    /* ==============================
-       DROP CLICK
-       ============================== */
 
     photoDrops.forEach(drop => {
 
@@ -225,16 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* ==============================
-       CLOSE BUTTON
-       ============================== */
-
     photoModalClose.addEventListener("click", closePhotoModal);
-
-
-    /* ==============================
-       CLICK BACKDROP TO CLOSE
-       ============================== */
 
     photoModal.addEventListener("click", event => {
 
@@ -246,11 +220,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
     });
-
-
-    /* ==============================
-       ESCAPE KEY
-       ============================== */
 
     document.addEventListener("keydown", event => {
 

@@ -917,7 +917,7 @@ section {
     font-size: clamp(5rem, 10vw, 7rem);
     line-height: .95;
     margin: 0;
-    padding: 0;
+    padding: 0 5%;
     padding-bottom: 1rem;
     text-align:center;
 
@@ -1635,4 +1635,30 @@ footer{
 .footerBottom a:focus {
   color: #7C886D;
   outline: none; 
+}
+
+/* Back Button */
+.project_back {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #F2E5D7;
+    font-size: 1rem;
+    font-weight: 200;
+
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 10px;
+
+    transition: color 0.4s ease, text-decoration-color 0.4s ease;
+}
+
+.project_back:hover {
+    color: #C2B4B4;
+    text-decoration-color: #C2B4B4;
+    transition: color 0.4s ease, text-decoration-color 0.4s ease;
+    text-underline-offset: 10px;
+
 }

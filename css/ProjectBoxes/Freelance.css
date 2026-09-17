@@ -30,6 +30,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
 }
 
 /* 6 */
@@ -51,6 +52,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
 }
 
 /* 5 */
@@ -72,6 +74,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
 }
 
 /* 4 */ 
@@ -91,6 +94,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
 }
 
 /* 3 */ 
@@ -112,6 +116,7 @@
     background-size: cover;
     background-position: top;
     flex-direction: column; 
+    position: relative;
 }
 
 /* 2 */ 
@@ -131,6 +136,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
 }
 
 /* 1 */ 
@@ -150,4 +156,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
 }
