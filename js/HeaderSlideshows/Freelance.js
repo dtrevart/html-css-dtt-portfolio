@@ -3,6 +3,7 @@ const headerImages = [
     "../../assets/Client/Freelance/GreatHarvestBread/Header.png",
     "../../assets/Client/Freelance/MozartPoster/Header.jpg",
     "../../assets/Client/Freelance/LivTrvEats/Header.png",
+    "../../assets/Client/Freelance/SnapORazzo_RestStop/Header.png",
 ];
 
 

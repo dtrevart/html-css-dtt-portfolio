@@ -5,7 +5,7 @@ const headerImages = [
     "../../../assets/LEGO/Minecraft/Minecraft_ZombieDungeon/Header.gif",
     "../../../assets/Videography/ShortFilms/DayIn60s/Thumbnail.gif",
     "../../../assets/LEGO/Minecraft/Minecraft_PaleGarden/Header.gif",
-    
+    "../../../assets/Videography/ShortFilms/OBX_26/Header.gif",
 ];
 
 

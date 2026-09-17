@@ -2,6 +2,7 @@ const headerImages = [
     "../../../assets/Videography/ShortFilms/WhereWeAre/WhereWeAreHeader.gif",
     "../../../assets/Videography/ShortFilms/SelfReflection/Thumbnail.gif",
     "../../../assets/Videography/ShortFilms/DayIn60s/Thumbnail.gif",
+    "../../../assets/Videography/ShortFilms/OBX_26/Thumbnail.gif"
     
 ];
 

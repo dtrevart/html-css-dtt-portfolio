@@ -19,7 +19,7 @@ const imageSets = {
         "./assets/Client/Freelance/Hamlet/Header.jpg",
         "./assets/Client/ContentLab/StudentVoterDrive/Header.jpg",
         "./assets/Client/Freelance/MozartPoster/Header.jpg",
-        "./assets/Client/ContentLab/ContentLab/Header.jpg",
+        "./assets/Client/ContentLab/ContentLab/Header.jpg"
     ],
 
     lego: [
@@ -37,10 +37,17 @@ const imageSets = {
 
         "./assets/Videography/ShortFilms/WhereWeAre/WhereWeAreHeader.gif",
         "./assets/Videography/ShortFilms/SelfReflection/Thumbnail.gif",
-        "./assets/Videography/ShortFilms/DayIn60s/Thumbnail.gif"
+        "./assets/Videography/ShortFilms/DayIn60s/Thumbnail.gif",
+        "./assets/Videography/ShortFilms/OBX_26/Header.gif"
+    ],
+    
+    photo: [
 
+        "./assets/Photography/OBX_26/Sunset.png",
+        "./assets/Photography/05_26_26/1.png",
+        "./assets/Photography/Arcade/Arcade1.png",
+        "./assets/Photography/08_11_26/Wall.png"
     ]
-
 };
 
 

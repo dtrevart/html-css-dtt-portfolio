@@ -87,3 +87,22 @@
         position: relative;
         z-index: 2;
     }
+
+    /* 4 */ .project4 {
+        background-image: url(../../assets/Videography/ShortFilms/OBX_26/Thumbnail.gif);       /* Update Here */
+        background-size: cover;
+        background-position-x: center;
+    }
+    /* OBX 26 */
+    #OBX_26 {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/Videography/ShortFilms/OBX_26/Header.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
