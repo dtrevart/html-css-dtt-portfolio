@@ -230,7 +230,7 @@
   }
 
   .project-slideshow .title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
     
@@ -267,6 +267,10 @@
     .projectpage_titles h1{
         font-size:clamp(3.25rem, 8vw, 5rem);
         transform:translateY(0);
+        padding: 0;
+    }
+    .page_subtitle_text p {
+        padding: 0;
     }
 }
 
@@ -461,5 +465,12 @@
         bottom: 20px;
         font-size: 0.6rem;
         text-underline-offset: 6px;
+    }
+}
+
+/* All Project Headers */
+@media screen and (max-width: 900px) {
+    .mobile_project_header {
+        height: 40vw !important;
     }
 }
