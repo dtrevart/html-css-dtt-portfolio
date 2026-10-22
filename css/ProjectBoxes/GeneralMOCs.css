@@ -1,5 +1,5 @@
 /* Projects Boxes */
-.project1, .project2, .project3, .project4{
+.project1, .project2, .project3, .project4, .project5{
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 12.5%;
@@ -10,14 +10,33 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
                 0 16px 40px rgba(0, 0, 0, 0.05);
 }
-
+    /* 5 */ 
+    .project5 {
+        background-image: url(../../assets/LEGO/General/OliviaRodrigo/OR_ProjectThumbnail.png);       /* Update Here */
+        background-size: cover;
+    }
     /* Olivia Rodrigo Minifigure Displays */
+    #OR_LEGO {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../../assets/LEGO/General/OliviaRodrigo/OliviaRodrigo_LEGO_Header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+
     .OR-grid h2 {
         font-size: 2.5rem;
     }
     .OR-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 2rem;
         max-width: 1200px;
         margin: 3rem auto;
@@ -30,6 +49,10 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
                     0 16px 40px rgba(0, 0, 0, 0.05);
         text-align: left;
+
+            box-sizing: border-box;
+        flex: 1 1 300px;
+        max-width: 350px;
     }
     .OR-card p{
         font-size: 1.2rem;
@@ -37,6 +60,14 @@
     }
     .OR-card h2{
         color: #F2E5D7;
+    }
+    .OR-card a {
+        text-decoration: none;
+        color: #C2B4B4;
+        transition: color 0.3s ease;
+    }
+    .OR-card a:hover {
+        color: #7C886D;
     }
     .OR-card img {
         display: block;

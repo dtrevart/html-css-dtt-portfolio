@@ -27,6 +27,7 @@ const imageSets = {
         "./assets/LEGO/General/DeepSeaCreatures/Header.jpg",
         "./assets/LEGO/Minecraft/Minecraft_ZombieDungeon/Header.gif",
         "./assets/LEGO/Brickheadz/Brickheadz_Moira/Header.jpg",
+        "./assets/LEGO/General/OliviaRodrigo/OliviaRodrigo_LEGO_Header.png",
         "./assets/LEGO/General/CurlworksFish/Header.jpg",
         "./assets/LEGO/Minecraft/Minecraft_DesertWell/Header.jpg",
         "./assets/LEGO/Brickheadz/Brickheadz_SableWard/Header.jpg"

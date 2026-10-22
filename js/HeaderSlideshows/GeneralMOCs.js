@@ -1,5 +1,6 @@
 const headerImages = [
     "../../../assets/LEGO/General/DeepSeaCreatures/Header.jpg",
+    "../../../assets/LEGO/General/OliviaRodrigo/OliviaRodrigo_LEGO_Header.png",
     "../../../assets/LEGO/General/CurlworksFish/Header.jpg",
     "../../../assets/LEGO/General/DeepSeaDiorama/Header.jpg",
     "../../../assets/LEGO/General/BillsArt/Header.png",
