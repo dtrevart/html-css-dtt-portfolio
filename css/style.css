@@ -1436,7 +1436,7 @@ section {
 .timeline-item.left .content li {
   color: var(--text-color);
   font-weight: 100;
-  font-size: small; 
+  font-size: 0.9rem;
   margin: 0.4rem 0.5rem;
   text-align: right;
   direction: rtl;
@@ -1452,7 +1452,7 @@ section {
 .timeline-item.right .content li {
   color: var(--text-color);
   font-weight: 100;
-  font-size: small;
+  font-size: 0.9rem;
   margin: 0.4rem 0.5rem;
   text-align: left;
   direction: ltr;
